@@ -16,6 +16,10 @@
 <copyright>Copyright 2026</copyright>
 <ttl>60</ttl>
 
+<!-- REQUIRED channel pubDate -->
+<pubDate>Sun, 15 Feb 2026 10:00:00 GMT</pubDate>
+
+<!-- REQUIRED channel lastBuildDate -->
 <lastBuildDate>Sun, 15 Feb 2026 10:00:00 GMT</lastBuildDate>
 
 <!-- ITEM 1 -->
@@ -24,13 +28,11 @@
 <link>https://example.com/comic1</link>
 <guid>https://example.com/comic1</guid>
 <pubDate>Sun, 15 Feb 2026 10:00:00 GMT</pubDate>
-<description>
-<![CDATA[
+<description><![CDATA[
 <a href="https://example.com/comic1">
 <img src="https://media.lunardistribution.com/images/covers/large/1225AC0477.jpg" width="140"/>
 </a>
-]]>
-</description>
+]]></description>
 </item>
 
 <!-- ITEM 2 -->
@@ -39,13 +41,11 @@
 <link>https://example.com/comic2</link>
 <guid>https://example.com/comic2</guid>
 <pubDate>Sun, 15 Feb 2026 10:00:00 GMT</pubDate>
-<description>
-<![CDATA[
+<description><![CDATA[
 <a href="https://example.com/comic2">
 <img src="https://images.penguinrandomhouse.com/cover/d/75960621387000111" width="140"/>
 </a>
-]]>
-</description>
+]]></description>
 </item>
 
 </channel>
