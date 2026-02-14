@@ -1,23 +1,52 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+
 <channel>
+
 <title>Weekly Pull List</title>
-<link>https://YOURUSERNAME.github.io/weekly-comics-feed/feed.xml</link>
-<description>New comic releases</description>
+<link>https://mrcyberrick.github.io/weekly-pull-feed/</link>
+<description>Latest comic releases</description>
 <language>en-us</language>
+
+<atom:link href="https://mrcyberrick.github.io/weekly-pull-feed/feed.xml"
+           rel="self"
+           type="application/rss+xml"/>
+
 <copyright>Copyright 2026</copyright>
-<pubDate>Sat, 15 Feb 2026 10:00:00 GMT</pubDate>
-<lastBuildDate>Sat, 15 Feb 2026 10:00:00 GMT</lastBuildDate>
 <ttl>60</ttl>
 
+<lastBuildDate>Sun, 15 Feb 2026 10:00:00 GMT</lastBuildDate>
+
+<!-- ITEM 1 -->
 <item>
-<title>Sample Comic</title>
-<link>https://example.com</link>
-<description>Replace this with your real comics later</description>
-<pubDate>Sat, 15 Feb 2026 10:00:00 GMT</pubDate>
-<guid>sample1</guid>
+<title>Sample Comic 1</title>
+<link>https://example.com/comic1</link>
+<guid>https://example.com/comic1</guid>
+<pubDate>Sun, 15 Feb 2026 10:00:00 GMT</pubDate>
+<description>
+<![CDATA[
+<a href="https://example.com/comic1">
+<img src="https://media.lunardistribution.com/images/covers/large/1225AC0477.jpg" width="140"/>
+</a>
+]]>
+</description>
+</item>
+
+<!-- ITEM 2 -->
+<item>
+<title>Sample Comic 2</title>
+<link>https://example.com/comic2</link>
+<guid>https://example.com/comic2</guid>
+<pubDate>Sun, 15 Feb 2026 10:00:00 GMT</pubDate>
+<description>
+<![CDATA[
+<a href="https://example.com/comic2">
+<img src="https://images.penguinrandomhouse.com/cover/d/75960621387000111" width="140"/>
+</a>
+]]>
+</description>
 </item>
 
 </channel>
 </rss>
-
