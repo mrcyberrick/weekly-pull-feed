@@ -1,1 +1,23 @@
-weekly feed
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>Weekly Pull List</title>
+<link>https://YOURUSERNAME.github.io/weekly-comics-feed/feed.xml</link>
+<description>New comic releases</description>
+<language>en-us</language>
+<copyright>Copyright 2026</copyright>
+<pubDate>Sat, 15 Feb 2026 10:00:00 GMT</pubDate>
+<lastBuildDate>Sat, 15 Feb 2026 10:00:00 GMT</lastBuildDate>
+<ttl>60</ttl>
+
+<item>
+<title>Sample Comic</title>
+<link>https://example.com</link>
+<description>Replace this with your real comics later</description>
+<pubDate>Sat, 15 Feb 2026 10:00:00 GMT</pubDate>
+<guid>sample1</guid>
+</item>
+
+</channel>
+</rss>
+
