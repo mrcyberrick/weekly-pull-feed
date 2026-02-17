@@ -1,4 +1,4 @@
-name: Resize and Convert Thumbnails
+name: Optimize Thumbnails
 
 on:
   push:
