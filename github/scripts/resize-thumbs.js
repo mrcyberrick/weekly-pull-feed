@@ -16,11 +16,16 @@ const thumbsDir = path.join(__dirname, '..', 'thumbs');
     console.log("Optimizing:", file);
 
     try {
-      // Overwrite the original .jpg with WebP content
+      const tempPath = fullPath + ".tmp";
+
+      // Write optimized WebP to a temporary file
       await sharp(fullPath)
-        .resize({ width: 300 })     // resize to max width 300px
-        .webp({ quality: 80 })      // convert to WebP
-        .toFile(fullPath);          // overwrite original file
+        .resize({ width: 300 })
+        .webp({ quality: 80 })
+        .toFile(tempPath);
+
+      // Replace original file with optimized version
+      fs.renameSync(tempPath, fullPath);
 
       console.log("Optimized:", file);
 
