@@ -3,68 +3,40 @@ name: Optimize Thumbnails
 on:
   push:
     paths:
-      - 'thumbs/**.raw'
-  workflow_dispatch:
+      - 'thumbs/**'
 
-# Prevents multiple runs from colliding; they will queue instead of canceling
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
-
+# 🔐 REQUIRED PERMISSIONS
 permissions:
   contents: write
 
 jobs:
   optimize:
     runs-on: ubuntu-latest
-    # Prevents the bot from triggering its own workflow in an infinite loop
-    if: github.actor != 'github-actions[bot]'
 
     steps:
-      - name: Checkout repo
+      # Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Fetches full history for reliable rebasing
 
-      - name: Setup Node.js
+      # Setup Node
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install Sharp
+      # Install Sharp image library
+      - name: Install dependencies
         run: npm install sharp
 
-      - name: Run Optimization Script
+      # Run optimizer script
+      - name: Optimize thumbnails
         run: node scripts/resize-thumbs.js
 
-      - name: Commit and Push with Retry
+      # Commit optimized images back to repo
+      - name: Commit optimized thumbnails
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          # Stage all changes: new .webp files and deleted .raw files
-          git add thumbs/*.webp
-          git add -u thumbs/*.raw || echo "No .raw files to remove"
-          
-          # Only proceed if there are actual changes to commit
-          if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Automated thumbnail optimization"
-            
-            # Retry loop (up to 5 times) to handle "cannot lock ref" or "rejected" errors
-            for i in {1..5}; do
-              echo "Attempt $i to sync and push..."
-              
-              # Pull latest changes from Apps Script (like newsletter.html)
-              # and place our image commits on top of them
-              if git pull --rebase origin main && git push origin main; then
-                echo "Push successful"
-                exit 0
-              fi
-              
-              echo "Conflict or lock detected, retrying in 5 seconds..."
-              sleep 5
-            done
-            exit 1 # Fail the job if all 5 attempts fail
-          else
-            echo "No image changes to commit"
-          fi
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add thumbs/*
+          git diff --staged --quiet || git commit -m "Auto optimize thumbnails"
+          git push
