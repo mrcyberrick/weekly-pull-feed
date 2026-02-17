@@ -19,7 +19,7 @@ const thumbsDir = path.join(__dirname, '..', 'thumbs');
 
     try {
       await sharp(fullPath)
-        .resize({ width: 300 })     // resize to max width 300px
+        .resize({ width: 300 })     // max width 300px
         .webp({ quality: 80 })      // convert to WebP
         .toFile(outputPath);
 
