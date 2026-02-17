@@ -26,20 +26,24 @@ const thumbsDir = path.join(__dirname, '..', 'thumbs');
 
       // Force decode → resize → re-encode as WebP
       await sharp(fullPath, { failOn: 'none' })
-        .rotate() // auto-orient
+        .rotate()
+        .ensureAlpha()
         .resize(300, 300, { fit: "inside" })
         .webp({ quality: 70 })
         .toFile(fullPath + ".tmp");
 
       const after = fs.statSync(fullPath + ".tmp").size;
 
-      if (after < before) {
-        fs.renameSync(fullPath + ".tmp", fullPath);
-        console.log(`Optimized ${file} → ${after} bytes`);
-      } else {
+      // Validate output
+      if (after < 500) {
+        console.log(`Skipping corrupted output for ${file}`);
         fs.unlinkSync(fullPath + ".tmp");
-        console.log(`Skipped ${file} (no size improvement)`);
+        continue;
       }
+
+      // Always overwrite original
+      fs.renameSync(fullPath + ".tmp", fullPath);
+      console.log(`Optimized ${file} → ${after} bytes`);
 
     } catch (err) {
       console.error("Skipping file due to error:", file);
