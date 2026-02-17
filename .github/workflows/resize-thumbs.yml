@@ -1,0 +1,33 @@
+name: Optimize Thumbnails
+
+on:
+  push:
+    paths:
+      - 'thumbs/**'
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Sharp
+        run: npm install sharp
+
+      - name: Resize and convert to WebP
+        run: node scripts/resize-thumbs.js
+
+      - name: Commit optimized thumbnails
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add thumbs/
+          git commit -m "Optimize thumbnails to WebP" || echo "No changes"
+          git push
