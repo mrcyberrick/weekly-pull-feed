@@ -3,37 +3,34 @@ name: Optimize Thumbnails
 on:
   push:
     paths:
-      - 'thumbs/**'
+      - [cite_start]'thumbs/**.raw' # Only trigger when a NEW uncompressed file arrives 
 
 jobs:
   optimize:
     runs-on: ubuntu-latest
+    # Prevents the action from running on its own commits
+    if: github.actor != 'github-actions[bot]' 
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Install ImageMagick
-        run: sudo apt-get update && sudo apt-get install -y imagemagick webp
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
-      - name: Resize & Convert to WebP thumbnails
-        run: |
-          for file in thumbs/*; do
-            echo "Optimizing $file"
-            convert "$file" \
-              -resize 300x300^ \
-              -gravity center \
-              -extent 300x300 \
-              -strip \
-              -quality 75 \
-              "optimized.webp"
-            mv optimized.webp "$file"
-          done
+      - name: Install dependencies
+        [cite_start]run: npm install sharp [cite: 19]
+
+      - name: Run Optimization Script
+        run: node scripts/resize-thumbs.js
 
       - name: Commit optimized images
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add thumbs/*
-          git commit -m "Auto optimize thumbnails" || echo "No changes"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add thumbs/*.webp
+          git rm thumbs/*.raw || echo "No .raw files to remove"
+          git commit -m "Auto-optimize thumbnails to 300px WebP" || echo "No changes"
           git push
