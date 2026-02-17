@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - 'thumbs/**'
+      
+permissions:
+  contents: write
 
 jobs:
   optimize:
