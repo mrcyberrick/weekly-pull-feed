@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'thumbs/**.raw'
-  workflow_dispatch: # Allows you to click "Run Workflow" manually to fix those 7 files
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -18,7 +18,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetches all history for a cleaner rebase
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -31,7 +31,7 @@ jobs:
       - name: Run Optimization Script
         run: node scripts/resize-thumbs.js
 
-    - name: Commit and Push with Retry
+      - name: Commit and Push with Retry
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -42,7 +42,7 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Fixing/Optimizing thumbnails"
             
-            # Attempt to push up to 5 times if a lock or race condition occurs
+            # Retry loop to handle the "cannot lock ref" and race conditions
             for i in {1..5}; do
               git fetch origin main
               git rebase origin/main
@@ -53,7 +53,7 @@ jobs:
               echo "Push failed, retrying in 5 seconds... (Attempt $i)"
               sleep 5
             done
-            exit 1 # Fail if all retries fail
+            exit 1
           else
             echo "No changes to commit"
           fi
