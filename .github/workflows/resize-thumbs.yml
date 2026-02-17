@@ -30,16 +30,24 @@ jobs:
       - name: Run Optimization Script
         run: node scripts/resize-thumbs.js
 
-      - name: Commit optimized images
+     - name: Commit optimized images
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Explicitly add webp and remove raw
           git add thumbs/*.webp
           git rm thumbs/*.raw || echo "No .raw files to remove"
+          
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Auto-optimize thumbnails"
-            git pull --rebase origin main
-            git push
+            
+            # Fetch and rebase to get the latest Apps Script changes (feed.xml, etc)
+            git fetch origin main
+            git rebase origin/main
+            
+            # Use force-with-lease to safely push the rebased commit
+            git push --force-with-lease origin main
           else
             echo "No changes to commit"
           fi
