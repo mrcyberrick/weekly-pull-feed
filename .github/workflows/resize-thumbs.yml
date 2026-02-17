@@ -3,16 +3,22 @@ name: Optimize Thumbnails
 on:
   push:
     paths:
-      - 'thumbs/**.raw'  # Line 5: Correctly indented trigger
+      - 'thumbs/**.raw'
+
+# ADD THIS SECTION:
+permissions:
+  contents: write
 
 jobs:
   optimize:
     runs-on: ubuntu-latest
     if: github.actor != 'github-actions[bot]'
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          # Use a personal access token if you have complex branch protections
+          token: ${{ secrets.GITHUB_TOKEN }} 
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
