@@ -6,6 +6,9 @@ on:
       - main
     paths-ignore:
       - 'thumbs/**'
+      - 'feed.xml'
+      - 'newsletter.html'
+      - 'preview.html'
 
 jobs:
   build:
