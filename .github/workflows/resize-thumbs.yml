@@ -36,16 +36,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
+          # 1. Stage everything (new webp files and deleted raw files)
           git add thumbs/*.webp
           git add -u thumbs/*.raw || echo "No .raw files to remove"
           
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Fixing/Optimizing thumbnails"
             
-            # Retry loop to handle the "cannot lock ref" and race conditions
+            # 2. Retry loop
             for i in {1..5}; do
+              # IMPORTANT: If a previous rebase failed, we need to clear the state
+              git rebase --abort || echo "No rebase in progress"
+              
               git fetch origin main
-              git rebase origin/main
+              
+              # Stash any local changes just in case, though commit should have handled it
+              git pull --rebase origin main
+              
               if git push origin main; then
                 echo "Push successful"
                 exit 0
