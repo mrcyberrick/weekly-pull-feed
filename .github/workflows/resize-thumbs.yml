@@ -33,10 +33,20 @@ jobs:
         run: node scripts/resize-thumbs.js
 
       # Commit optimized images back to repo
-      - name: Commit optimized thumbnails
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add thumbs/*
-          git diff --staged --quiet || git commit -m "Auto optimize thumbnails"
-          git push
+- name: Commit optimized thumbnails
+  run: |
+    git config user.name "github-actions"
+    git config user.email "actions@github.com"
+
+    # Pull latest changes first (fix push rejection)
+    git pull --rebase
+
+    # Stage optimized files
+    git add thumbs/*
+
+    # Commit only if changes exist
+    git diff --staged --quiet || git commit -m "Auto optimize thumbnails"
+
+    # Push back to repo
+    git push
+
