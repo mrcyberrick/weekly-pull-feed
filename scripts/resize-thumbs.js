@@ -8,25 +8,23 @@ const thumbsDir = path.join(__dirname, '..', 'thumbs');
   const files = fs.readdirSync(thumbsDir);
 
   for (const file of files) {
-    const fullPath = path.join(thumbsDir, file);
+    // Only process the "raw" uploads from Google Apps Script
+    if (!file.endsWith('.raw')) continue;
 
-    // Skip non-images
-    if (!/\.(jpg|jpeg|png|webp)$/i.test(file)) continue;
+    const inputPath = path.join(thumbsDir, file);
+    const outputPath = inputPath.replace('.raw', '.webp');
 
-    console.log("Optimizing:", file);
-
-    const outputPath = fullPath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+    console.log("Processing raw upload:", file);
 
     try {
-      await sharp(fullPath)
-        .resize({ width: 300 })     // resize to max width 300px
-        .webp({ quality: 80 })      // convert to WebP
+      await sharp(inputPath)
+        .resize(300) // Matches your THUMB_SIZE [cite: 1]
+        .webp({ quality: 75, effort: 6 }) // High compression effort
         .toFile(outputPath);
 
-      // Remove original file if extension changed
-      if (outputPath !== fullPath) {
-        fs.unlinkSync(fullPath);
-      }
+      // Delete the uncompressed .raw file
+      fs.unlinkSync(inputPath);
+      console.log("Optimized to:", path.basename(outputPath));
 
     } catch (err) {
       console.error("Failed to optimize:", file, err);
