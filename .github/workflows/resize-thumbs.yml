@@ -31,21 +31,29 @@ jobs:
       - name: Run Optimization Script
         run: node scripts/resize-thumbs.js
 
-      - name: Commit and Push with Rebase
+    - name: Commit and Push with Retry
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
           git add thumbs/*.webp
-          # Use git add for deletions too
           git add -u thumbs/*.raw || echo "No .raw files to remove"
           
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "Fixing/Optimizing thumbnails"
             
-            # Re-pull right before pushing to avoid the "fetch first" error
-            git pull --rebase origin main
-            git push origin main
+            # Attempt to push up to 5 times if a lock or race condition occurs
+            for i in {1..5}; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin main; then
+                echo "Push successful"
+                exit 0
+              fi
+              echo "Push failed, retrying in 5 seconds... (Attempt $i)"
+              sleep 5
+            done
+            exit 1 # Fail if all retries fail
           else
             echo "No changes to commit"
           fi
