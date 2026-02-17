@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'thumbs/**.raw'
+  workflow_dispatch: # Allows you to click "Run Workflow" manually to fix those 7 files
 
 permissions:
   contents: write
@@ -17,7 +18,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0 # Fetches all history for a cleaner rebase
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -30,24 +31,21 @@ jobs:
       - name: Run Optimization Script
         run: node scripts/resize-thumbs.js
 
-     - name: Commit optimized images
+      - name: Commit and Push with Rebase
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Explicitly add webp and remove raw
           git add thumbs/*.webp
-          git rm thumbs/*.raw || echo "No .raw files to remove"
+          # Use git add for deletions too
+          git add -u thumbs/*.raw || echo "No .raw files to remove"
           
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Auto-optimize thumbnails"
+            git commit -m "Fixing/Optimizing thumbnails"
             
-            # Fetch and rebase to get the latest Apps Script changes (feed.xml, etc)
-            git fetch origin main
-            git rebase origin/main
-            
-            # Use force-with-lease to safely push the rebased commit
-            git push --force-with-lease origin main
+            # Re-pull right before pushing to avoid the "fetch first" error
+            git pull --rebase origin main
+            git push origin main
           else
             echo "No changes to commit"
           fi
