@@ -3,7 +3,7 @@ name: Optimize Thumbnails
 on:
   push:
     paths:
-      - 'thumbs/**'
+      - 'newsletter.html'
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # IMPORTANT: allows pulling latest commits
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -29,13 +29,11 @@ jobs:
       - name: Optimize thumbnails
         run: node scripts/resize-thumbs.js
 
-      - name: Pull latest changes
-        run: git pull --rebase origin main
-
       - name: Commit optimized thumbnails
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add thumbs/
           git commit -m "Optimize thumbnails" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
