@@ -10,23 +10,19 @@ const thumbsDir = path.join(__dirname, '..', 'thumbs');
   for (const file of files) {
     const fullPath = path.join(thumbsDir, file);
 
-    // Skip non-images
-    if (!/\.(jpg|jpeg|png|webp)$/i.test(file)) continue;
+    // Only process image files
+    if (!/\.(jpg|jpeg|png)$/i.test(file)) continue;
 
     console.log("Optimizing:", file);
 
-    const outputPath = fullPath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-
     try {
+      // Overwrite the original .jpg with WebP content
       await sharp(fullPath)
-        .resize({ width: 300 })     // max width 300px
+        .resize({ width: 300 })     // resize to max width 300px
         .webp({ quality: 80 })      // convert to WebP
-        .toFile(outputPath);
+        .toFile(fullPath);          // overwrite original file
 
-      // Remove original file if extension changed
-      if (outputPath !== fullPath) {
-        fs.unlinkSync(fullPath);
-      }
+      console.log("Optimized:", file);
 
     } catch (err) {
       console.error("Failed to optimize:", file, err);
