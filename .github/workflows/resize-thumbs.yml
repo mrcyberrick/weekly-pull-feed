@@ -3,10 +3,7 @@ name: Optimize Thumbnails
 on:
   push:
     paths:
-      - 'newsletter.html'
-
-permissions:
-  contents: write
+      - 'thumbs/**'
 
 jobs:
   optimize:
@@ -15,25 +12,28 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick webp
 
-      - name: Install Sharp
-        run: npm install sharp
-
-      - name: Optimize thumbnails
-        run: node scripts/resize-thumbs.js
-
-      - name: Commit optimized thumbnails
+      - name: Resize & Convert to WebP thumbnails
         run: |
-          git config user.name "GitHub Actions"
+          for file in thumbs/*; do
+            echo "Optimizing $file"
+            convert "$file" \
+              -resize 300x300^ \
+              -gravity center \
+              -extent 300x300 \
+              -strip \
+              -quality 75 \
+              "optimized.webp"
+            mv optimized.webp "$file"
+          done
+
+      - name: Commit optimized images
+        run: |
+          git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add thumbs/
-          git commit -m "Optimize thumbnails" || echo "No changes to commit"
-          git pull --rebase origin main
+          git add thumbs/*
+          git commit -m "Auto optimize thumbnails" || echo "No changes"
           git push
