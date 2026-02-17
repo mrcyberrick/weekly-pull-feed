@@ -31,11 +31,23 @@ jobs:
       - name: Run Optimization Script
         run: node scripts/resize-thumbs.js
 
-      - name: Commit optimized images
+- name: Commit optimized images
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Add and commit the new files
           git add thumbs/*.webp
           git rm thumbs/*.raw || echo "No .raw files to remove"
-          git commit -m "Auto-optimize thumbnails" || echo "No changes"
-          git push
+          
+          # Only proceed if there are actual changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-optimize thumbnails"
+            
+            # Pull with rebase to integrate changes made by Apps Script while this was running
+            git pull --rebase origin main
+            
+            git push
+          fi
