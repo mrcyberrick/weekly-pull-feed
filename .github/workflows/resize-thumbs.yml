@@ -31,36 +31,32 @@ jobs:
       - name: Run Optimization Script
         run: node scripts/resize-thumbs.js
 
-      - name: Commit and Push with Retry
+    - name: Commit and Push with Retry
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # 1. Stage everything (new webp files and deleted raw files)
-          git add thumbs/*.webp
-          git add -u thumbs/*.raw || echo "No .raw files to remove"
+          # Stage EVERYTHING (all new webp files and all deleted raw files)
+          git add -A thumbs/
           
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Fixing/Optimizing thumbnails"
+            git commit -m "Automated thumbnail optimization"
             
-            # 2. Retry loop
+            # Retry loop for the push
             for i in {1..5}; do
-              # IMPORTANT: If a previous rebase failed, we need to clear the state
-              git rebase --abort || echo "No rebase in progress"
+              echo "Attempt $i to sync and push..."
               
-              git fetch origin main
-              
-              # Stash any local changes just in case, though commit should have handled it
-              git pull --rebase origin main
-              
-              if git push origin main; then
+              # Pull latest changes from Apps Script (like newsletter.html)
+              # and put our image commits on top
+              if git pull --rebase origin main && git push origin main; then
                 echo "Push successful"
                 exit 0
               fi
-              echo "Push failed, retrying in 5 seconds... (Attempt $i)"
+              
+              echo "Conflict detected, retrying in 5s..."
               sleep 5
             done
             exit 1
           else
-            echo "No changes to commit"
+            echo "No image changes to commit"
           fi
