@@ -1,15 +1,17 @@
 name: Optimize Thumbnails
 
+name: Optimize Thumbnails
+
 on:
   push:
     paths:
       - 'thumbs/**.raw'
   workflow_dispatch:
 
-# Prevents multiple runs from colliding during high-volume uploads
+# Allow the script to finish all uploads before processing
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true 
 
 permissions:
   contents: write
@@ -17,14 +19,13 @@ permissions:
 jobs:
   optimize:
     runs-on: ubuntu-latest
-    # Prevents the bot from triggering itself in an infinite loop
     if: github.actor != 'github-actions[bot]'
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+
+      - name: Wait for batch upload to settle
+        run: sleep 30 # Gives Apps Script time to finish the other 70 uploads
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,31 +36,18 @@ jobs:
         run: npm install sharp
 
       - name: Run Optimization Script
-        # This executes your custom node script to process the images
         run: node scripts/resize-thumbs.js
 
-      - name: Commit and Push with Retry
+      - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          # Stage new webp files and record the deletion of .raw files
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add thumbs/*.webp
-          git add -u thumbs/*.raw || echo "No .raw files to remove"
-          
+          git add -u thumbs/*.raw
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Automated thumbnail optimization"
-            
-            # Retry loop to handle push conflicts if Apps Script updates newsletter.html simultaneously
-            for i in {1..5}; do
-              echo "Push attempt $i..."
-              if git pull --rebase origin main && git push origin main; then
-                echo "Success"
-                exit 0
-              fi
-              sleep 5
-            done
-            exit 1
+            git commit -m "Optimize batch of thumbnails"
+            git pull --rebase origin main
+            git push origin main
           else
             echo "No changes to commit"
           fi
