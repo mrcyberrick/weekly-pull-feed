@@ -3,36 +3,32 @@ name: Optimize Thumbnails
 on:
   push:
     paths:
-      - 'thumbs/**.raw'
-  workflow_dispatch:
+      - 'thumbs/*.raw'  # Triggers when new .raw files arrive
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
-  contents: write
+  contents: write # REQUIRED to push the .webp files back to your repo
 
 jobs:
   optimize:
     runs-on: ubuntu-latest
-    if: github.actor != 'github-actions[bot]'
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Wait for batch upload to settle
-        run: sleep 30
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20'
 
-      - name: Install Sharp
+      - name: Install dependencies
         run: npm install sharp
+
+      - name: Settle Time
+        run: sleep 60 # Wait 1 minute for all 72 files to fully register in the FS
 
       - name: Run Optimization Script
         run: node scripts/resize-thumbs.js
@@ -42,12 +38,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Add new webp files and stage changes to raw files
+          # Only add webp files (the optimized results)
           git add thumbs/*.webp
-          git add -u thumbs/*.raw
           
           if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Optimize batch of thumbnails"
+            git commit -m "Automated thumbnail optimization"
             git pull --rebase origin main
             git push origin main
           else
