@@ -3,6 +3,7 @@ name: Deploy GitHub Pages
 on:
   push:
     paths:
+      - 'newsletter-email.html' # Triggers when newsletter is updated
       - 'newsletter.html'       # Triggers when newsletter is updated
       - 'thumbs/*.webp'         # Triggers when any thumbnail is added/removed
       - 'images/**'             # Triggers when hero or other images change
