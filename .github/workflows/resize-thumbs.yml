@@ -1,17 +1,14 @@
 name: Optimize Thumbnails
 
-name: Optimize Thumbnails
-
 on:
   push:
     paths:
       - 'thumbs/**.raw'
   workflow_dispatch:
 
-# Allow the script to finish all uploads before processing
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true 
+  cancel-in-progress: true # This is good, it waits for the last upload
 
 permissions:
   contents: write
@@ -19,35 +16,13 @@ permissions:
 jobs:
   optimize:
     runs-on: ubuntu-latest
+    # This prevents the bot from triggering its own loop
     if: github.actor != 'github-actions[bot]'
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Wait for batch upload to settle
-        run: sleep 30 # Gives Apps Script time to finish the other 70 uploads
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
         with:
-          node-version: 20
+          fetch-depth: 0
 
-      - name: Install Sharp
-        run: npm install sharp
-
-      - name: Run Optimization Script
-        run: node scripts/resize-thumbs.js
-
-      - name: Commit and Push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add thumbs/*.webp
-          git add -u thumbs/*.raw
-          if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "Optimize batch of thumbnails"
-            git pull --rebase origin main
-            git push origin main
-          else
-            echo "No changes to commit"
-          fi
+      - name: Settle Delay
+        run: sleep 30 # Wait 30 seconds for Apps Script to finish the rest of the batch
