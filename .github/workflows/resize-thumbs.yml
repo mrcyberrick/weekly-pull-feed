@@ -8,7 +8,7 @@ on:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true # This is good, it waits for the last upload
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -16,13 +16,40 @@ permissions:
 jobs:
   optimize:
     runs-on: ubuntu-latest
-    # This prevents the bot from triggering its own loop
     if: github.actor != 'github-actions[bot]'
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Settle Delay
-        run: sleep 30 # Wait 30 seconds for Apps Script to finish the rest of the batch
+      - name: Wait for batch upload to settle
+        run: sleep 30
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Sharp
+        run: npm install sharp
+
+      - name: Run Optimization Script
+        run: node scripts/resize-thumbs.js
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add new webp files and stage changes to raw files
+          git add thumbs/*.webp
+          git add -u thumbs/*.raw
+          
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "Optimize batch of thumbnails"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
