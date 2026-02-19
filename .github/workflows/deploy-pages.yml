@@ -3,12 +3,13 @@ name: Deploy GitHub Pages
 on:
   push:
     paths:
-      - 'newsletter-email.html' # Triggers when email template is updated
-      - 'newsletter.html'       # Triggers when newsletter is updated
-      - 'thumbs/*.webp'         # Triggers when any thumbnail is added/removed
-      - 'images/**'             # Triggers when hero or other images change
+      - 'newsletter.html'           # Triggers when browser newsletter is updated
+      - 'newsletter-email.html'     # Triggers when MailerLite template is updated
+      - 'rss.xml'                   # Triggers when RSS feed is updated
+      - 'thumbs/*.webp'             # Triggers when any thumbnail is added/removed
+      - 'images/**'                 # Triggers when hero or other images change
 
-  workflow_dispatch:            # Allows manual trigger from Actions tab
+  workflow_dispatch:                # Allows manual trigger from Actions tab
 
 permissions:
   contents: read
@@ -38,7 +39,7 @@ jobs:
       - name: Upload site to Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'            # Deploy entire repo root as the Pages site
+          path: '.'                 # Deploy entire repo root as the Pages site
 
       - name: Deploy to GitHub Pages
         id: deployment
