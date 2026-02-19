@@ -8,8 +8,8 @@
     <link>https://mrcyberrick.github.io/weekly-pull-feed/newsletter.html</link>
     <description>Weekly pull list of new releases with thumbnails and links to full-size cover images.</description>
     <language>en-us</language>
-    <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
-    <lastBuildDate>Thu, 19 Feb 2026 22:03:10 GMT</lastBuildDate>
+    <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
+    <lastBuildDate>Thu, 19 Feb 2026 22:08:55 GMT</lastBuildDate>
     <ttl>10080</ttl><!-- 10080 minutes = 1 week; hints to readers how often to check -->
 
     <!-- Canonical self-reference: required by Atom namespace, recommended by feed validators -->
@@ -36,7 +36,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621353500411</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -45,16 +45,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621353500411" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/58ea6ec79326226693a1457db2b95645.webp"
                alt="1776 #4"
                title="1776 #4"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">1776 #4</p>
+        <p>1776 #4</p>
       ]]></description>
     </item>
     <item>
@@ -69,7 +73,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621001502211</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -78,16 +82,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621001502211" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/710bac1f9dd3cb5b1ac1860af58327d8.webp"
                alt="AMAZING SPIDER-MAN #22"
                title="AMAZING SPIDER-MAN #22"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">AMAZING SPIDER-MAN #22</p>
+        <p>AMAZING SPIDER-MAN #22</p>
       ]]></description>
     </item>
     <item>
@@ -102,7 +110,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621001502251</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -111,16 +119,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621001502251" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/24491cd8f96ea7c06aaba9b73c69077c.webp"
                alt="AMAZING SPIDER-MAN #22 ARIO ANINDITO HELL&apos;S KITCHEN VARIANT"
                title="AMAZING SPIDER-MAN #22 ARIO ANINDITO HELL&apos;S KITCHEN VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">AMAZING SPIDER-MAN #22 ARIO ANINDITO HELL&apos;S KITCHEN VARIANT</p>
+        <p>AMAZING SPIDER-MAN #22 ARIO ANINDITO HELL&apos;S KITCHEN VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -135,7 +147,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225AC0477.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -144,16 +156,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225AC0477.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e0c73f037749eaac743a34f30b03d93c.webp"
                alt="ARCHIE COMICS DIGEST #4 SPRING BREAK"
                title="ARCHIE COMICS DIGEST #4 SPRING BREAK"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">ARCHIE COMICS DIGEST #4 SPRING BREAK</p>
+        <p>ARCHIE COMICS DIGEST #4 SPRING BREAK</p>
       ]]></description>
     </item>
     <item>
@@ -168,7 +184,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621387000111</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -177,16 +193,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621387000111" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/bd91b6854577f5d5705038da0cd93610.webp"
                alt="BLACK PANTHER 60TH ANNIVERSARY SPECIAL #1"
                title="BLACK PANTHER 60TH ANNIVERSARY SPECIAL #1"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">BLACK PANTHER 60TH ANNIVERSARY SPECIAL #1</p>
+        <p>BLACK PANTHER 60TH ANNIVERSARY SPECIAL #1</p>
       ]]></description>
     </item>
     <item>
@@ -201,7 +221,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621146300711</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -210,16 +230,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300711" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8b70ab92ac1de6891f54f7ae9682b523.webp"
                alt="CAPTAIN AMERICA #7"
                title="CAPTAIN AMERICA #7"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">CAPTAIN AMERICA #7</p>
+        <p>CAPTAIN AMERICA #7</p>
       ]]></description>
     </item>
     <item>
@@ -234,7 +258,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621146300731</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -243,16 +267,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300731" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/f8ca02992d07a91fd65a7161e67fb261.webp"
                alt="CAPTAIN AMERICA #7 CLAYTON CRAIN VARIANT"
                title="CAPTAIN AMERICA #7 CLAYTON CRAIN VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">CAPTAIN AMERICA #7 CLAYTON CRAIN VARIANT</p>
+        <p>CAPTAIN AMERICA #7 CLAYTON CRAIN VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -267,7 +295,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621268200711</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -276,16 +304,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621268200711" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b69a3ba1f338a9d478dc9c9f3bd6652b.webp"
                alt="CIVIL WAR #7 FACSIMILE EDITION"
                title="CIVIL WAR #7 FACSIMILE EDITION"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">CIVIL WAR #7 FACSIMILE EDITION</p>
+        <p>CIVIL WAR #7 FACSIMILE EDITION</p>
       ]]></description>
     </item>
     <item>
@@ -300,7 +332,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621268200721</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -309,16 +341,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621268200721" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3fc49ff2a5bc8a6907b599ff2097e088.webp"
                alt="CIVIL WAR #7 FACSIMILE EDITION MICHAEL TURNER FOIL VARIANT"
                title="CIVIL WAR #7 FACSIMILE EDITION MICHAEL TURNER FOIL VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">CIVIL WAR #7 FACSIMILE EDITION MICHAEL TURNER FOIL VARIANT</p>
+        <p>CIVIL WAR #7 FACSIMILE EDITION MICHAEL TURNER FOIL VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -333,7 +369,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621442600411</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -342,16 +378,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621442600411" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ea18f0413366d42dfab3f7ad133c6e44.webp"
                alt="DAREDEVIL/PUNISHER: THE DEVIL&apos;S TRIGGER #4"
                title="DAREDEVIL/PUNISHER: THE DEVIL&apos;S TRIGGER #4"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">DAREDEVIL/PUNISHER: THE DEVIL&apos;S TRIGGER #4</p>
+        <p>DAREDEVIL/PUNISHER: THE DEVIL&apos;S TRIGGER #4</p>
       ]]></description>
     </item>
     <item>
@@ -366,7 +406,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621442600421</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -375,16 +415,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621442600421" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/bfe03ae47cdec2245d405557ab804618.webp"
                alt="DAREDEVIL/PUNISHER: THE DEVIL&apos;S TRIGGER #4 DAVID NAKAYAMA COLOR BLOCK RED VARIANT"
                title="DAREDEVIL/PUNISHER: THE DEVIL&apos;S TRIGGER #4 DAVID NAKAYAMA COLOR BLOCK RED VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">DAREDEVIL/PUNISHER: THE DEVIL&apos;S TRIGGER #4 DAVID NAKAYAMA COLOR BLOCK RED VARIANT</p>
+        <p>DAREDEVIL/PUNISHER: THE DEVIL&apos;S TRIGGER #4 DAVID NAKAYAMA COLOR BLOCK RED VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -399,7 +443,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621359700111</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -408,16 +452,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621359700111" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8eb8d7d04c424f0e7846b68acfdda8ae.webp"
                alt="DEADLY HANDS OF K&apos;UN-LUN #1"
                title="DEADLY HANDS OF K&apos;UN-LUN #1"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">DEADLY HANDS OF K&apos;UN-LUN #1</p>
+        <p>DEADLY HANDS OF K&apos;UN-LUN #1</p>
       ]]></description>
     </item>
     <item>
@@ -432,7 +480,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621359700121</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -441,16 +489,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621359700121" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4ec52ac18f30c0703de232f386947115.webp"
                alt="DEADLY HANDS OF K&apos;UN-LUN #1 ADAM KUBERT VARIANT"
                title="DEADLY HANDS OF K&apos;UN-LUN #1 ADAM KUBERT VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">DEADLY HANDS OF K&apos;UN-LUN #1 ADAM KUBERT VARIANT</p>
+        <p>DEADLY HANDS OF K&apos;UN-LUN #1 ADAM KUBERT VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -465,7 +517,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621125800311</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -474,16 +526,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621125800311" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ff117b390477b3985a54a2295b7f08a5.webp"
                alt="DOCTOR STRANGE #3"
                title="DOCTOR STRANGE #3"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">DOCTOR STRANGE #3</p>
+        <p>DOCTOR STRANGE #3</p>
       ]]></description>
     </item>
     <item>
@@ -498,7 +554,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621125800321</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -507,16 +563,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621125800321" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/cd638a931c232badd3bbc7713202a70b.webp"
                alt="DOCTOR STRANGE #3 ALESSANDRO CAPPUCCIO BLACK PANTHER VARIANT"
                title="DOCTOR STRANGE #3 ALESSANDRO CAPPUCCIO BLACK PANTHER VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">DOCTOR STRANGE #3 ALESSANDRO CAPPUCCIO BLACK PANTHER VARIANT</p>
+        <p>DOCTOR STRANGE #3 ALESSANDRO CAPPUCCIO BLACK PANTHER VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -531,7 +591,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225TN1015.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -540,16 +600,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225TN1015.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/455106725ae4ee15c50f2aa58cfc8efc.webp"
                alt="DOCTOR WHO THE PRISON PARADOX #4 (OF 4) CVR A SUNGHAN YUNE VAR"
                title="DOCTOR WHO THE PRISON PARADOX #4 (OF 4) CVR A SUNGHAN YUNE VAR"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">DOCTOR WHO THE PRISON PARADOX #4 (OF 4) CVR A SUNGHAN YUNE VAR</p>
+        <p>DOCTOR WHO THE PRISON PARADOX #4 (OF 4) CVR A SUNGHAN YUNE VAR</p>
       ]]></description>
     </item>
     <item>
@@ -564,7 +628,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225TN1016.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -573,16 +637,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225TN1016.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3dd17d31ca0ee3739420dfda2eca4d02.webp"
                alt="DOCTOR WHO THE PRISON PARADOX #4 (OF 4) CVR B PHOTO VAR"
                title="DOCTOR WHO THE PRISON PARADOX #4 (OF 4) CVR B PHOTO VAR"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">DOCTOR WHO THE PRISON PARADOX #4 (OF 4) CVR B PHOTO VAR</p>
+        <p>DOCTOR WHO THE PRISON PARADOX #4 (OF 4) CVR B PHOTO VAR</p>
       ]]></description>
     </item>
     <item>
@@ -597,7 +665,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621382500211</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -606,16 +674,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621382500211" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0b0a471ad1097451d1d6f56e29aa7ca8.webp"
                alt="DUNGEONS OF DOOM #2"
                title="DUNGEONS OF DOOM #2"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">DUNGEONS OF DOOM #2</p>
+        <p>DUNGEONS OF DOOM #2</p>
       ]]></description>
     </item>
     <item>
@@ -630,7 +702,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621122700811</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -639,16 +711,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621122700811" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a5de2ddc9d6731d6a2e83564caf1479e.webp"
                alt="FANTASTIC FOUR #8"
                title="FANTASTIC FOUR #8"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">FANTASTIC FOUR #8</p>
+        <p>FANTASTIC FOUR #8</p>
       ]]></description>
     </item>
     <item>
@@ -663,7 +739,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621122700831</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -672,16 +748,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621122700831" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/03f5dd8fd09079425bdac335e0fdce55.webp"
                alt="FANTASTIC FOUR #8 DAVID NAKAYAMA COLOR BLOCK RED VARIANT"
                title="FANTASTIC FOUR #8 DAVID NAKAYAMA COLOR BLOCK RED VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">FANTASTIC FOUR #8 DAVID NAKAYAMA COLOR BLOCK RED VARIANT</p>
+        <p>FANTASTIC FOUR #8 DAVID NAKAYAMA COLOR BLOCK RED VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -696,7 +776,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621449500111</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -705,16 +785,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621449500111" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/77358bd2df0698e6e58be2b5adb2143a.webp"
                alt="GENERATION X-23 #1"
                title="GENERATION X-23 #1"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">GENERATION X-23 #1</p>
+        <p>GENERATION X-23 #1</p>
       ]]></description>
     </item>
     <item>
@@ -729,7 +813,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621449500151</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -738,16 +822,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621449500151" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/53e19a5a2393d9b92310738a812044ad.webp"
                alt="GENERATION X-23 #1 ELIZABETH TORQUE VARIANT"
                title="GENERATION X-23 #1 ELIZABETH TORQUE VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">GENERATION X-23 #1 ELIZABETH TORQUE VARIANT</p>
+        <p>GENERATION X-23 #1 ELIZABETH TORQUE VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -762,7 +850,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225IM0344.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -771,16 +859,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225IM0344.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0a1b644ef4809739b8305b6b18113db8.webp"
                alt="GI JOE #19 CVR A TOM REILLY"
                title="GI JOE #19 CVR A TOM REILLY"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">GI JOE #19 CVR A TOM REILLY</p>
+        <p>GI JOE #19 CVR A TOM REILLY</p>
       ]]></description>
     </item>
     <item>
@@ -795,7 +887,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225IM0345.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -804,16 +896,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225IM0345.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/d5bc35bc2483c3736a01acb32d0bc5cd.webp"
                alt="GI JOE #19 CVR B JOSHUA CASSARA &amp; ROMULO FAJARDO JR VAR"
                title="GI JOE #19 CVR B JOSHUA CASSARA &amp; ROMULO FAJARDO JR VAR"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">GI JOE #19 CVR B JOSHUA CASSARA &amp; ROMULO FAJARDO JR VAR</p>
+        <p>GI JOE #19 CVR B JOSHUA CASSARA &amp; ROMULO FAJARDO JR VAR</p>
       ]]></description>
     </item>
     <item>
@@ -828,7 +924,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225IM8043.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -837,16 +933,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225IM8043.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/default.webp"
                alt="INVINCIBLE UNIVERSE PROMO POSTER"
                title="INVINCIBLE UNIVERSE PROMO POSTER"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">INVINCIBLE UNIVERSE PROMO POSTER</p>
+        <p>INVINCIBLE UNIVERSE PROMO POSTER</p>
       ]]></description>
     </item>
     <item>
@@ -861,7 +961,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621572000111</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -870,16 +970,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621572000111" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5fc19a39c8bcec96928c0e69115a0448.webp"
                alt="IT&apos;S JEFF MEETS DAREDEVIL #1"
                title="IT&apos;S JEFF MEETS DAREDEVIL #1"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">IT&apos;S JEFF MEETS DAREDEVIL #1</p>
+        <p>IT&apos;S JEFF MEETS DAREDEVIL #1</p>
       ]]></description>
     </item>
     <item>
@@ -894,7 +998,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621572000121</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -903,16 +1007,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621572000121" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/fbd38c3502705bfb69d75f3d69dc8e36.webp"
                alt="IT&apos;S JEFF MEETS DAREDEVIL #1 DANIELE DI NICUOLO VARIANT"
                title="IT&apos;S JEFF MEETS DAREDEVIL #1 DANIELE DI NICUOLO VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">IT&apos;S JEFF MEETS DAREDEVIL #1 DANIELE DI NICUOLO VARIANT</p>
+        <p>IT&apos;S JEFF MEETS DAREDEVIL #1 DANIELE DI NICUOLO VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -927,7 +1035,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621388700211</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -936,16 +1044,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621388700211" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0eb1c52501d80732ea5946cc41f484fc.webp"
                alt="KNULL #2"
                title="KNULL #2"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">KNULL #2</p>
+        <p>KNULL #2</p>
       ]]></description>
     </item>
     <item>
@@ -960,7 +1072,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621388700221</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -969,16 +1081,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621388700221" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/061cbc3a2a37fb46a71f1bae146ed3a5.webp"
                alt="KNULL #2 ARIO ANINDITO HELL&apos;S KITCHEN VARIANT"
                title="KNULL #2 ARIO ANINDITO HELL&apos;S KITCHEN VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">KNULL #2 ARIO ANINDITO HELL&apos;S KITCHEN VARIANT</p>
+        <p>KNULL #2 ARIO ANINDITO HELL&apos;S KITCHEN VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -993,7 +1109,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/76156801399300311</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1002,16 +1118,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/76156801399300311" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0a51fdf47bce90d49bac2603722e9de9.webp"
                alt="Magic: The Gathering: Untold Stories--Elspeth #3 (CVR A) (Owen Gieni)"
                title="Magic: The Gathering: Untold Stories--Elspeth #3 (CVR A) (Owen Gieni)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Magic: The Gathering: Untold Stories--Elspeth #3 (CVR A) (Owen Gieni)</p>
+        <p>Magic: The Gathering: Untold Stories--Elspeth #3 (CVR A) (Owen Gieni)</p>
       ]]></description>
     </item>
     <item>
@@ -1026,7 +1146,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/76156801399300321</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1035,16 +1155,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/76156801399300321" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/dff8c57a2d41e142452d0f4f33849dcd.webp"
                alt="Magic: The Gathering: Untold Stories--Elspeth #3 (CVR B) (Tyler Crook)"
                title="Magic: The Gathering: Untold Stories--Elspeth #3 (CVR B) (Tyler Crook)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Magic: The Gathering: Untold Stories--Elspeth #3 (CVR B) (Tyler Crook)</p>
+        <p>Magic: The Gathering: Untold Stories--Elspeth #3 (CVR B) (Tyler Crook)</p>
       ]]></description>
     </item>
     <item>
@@ -1059,7 +1183,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE8193.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1068,16 +1192,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225DE8193.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/default.webp"
                alt="MUMMRA THE EVERLIVING #1 ASHCAN PROMO (FREE) (NET)"
                title="MUMMRA THE EVERLIVING #1 ASHCAN PROMO (FREE) (NET)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">MUMMRA THE EVERLIVING #1 ASHCAN PROMO (FREE) (NET)</p>
+        <p>MUMMRA THE EVERLIVING #1 ASHCAN PROMO (FREE) (NET)</p>
       ]]></description>
     </item>
     <item>
@@ -1092,7 +1220,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621145600911</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1101,16 +1229,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621145600911" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c7e4acdf72103e9868f29268ee1b0487.webp"
                alt="NEW AVENGERS #9"
                title="NEW AVENGERS #9"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">NEW AVENGERS #9</p>
+        <p>NEW AVENGERS #9</p>
       ]]></description>
     </item>
     <item>
@@ -1125,7 +1257,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621145600921</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1134,16 +1266,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621145600921" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c018ff40fc9807ac1db8bce5d131a20d.webp"
                alt="NEW AVENGERS #9 CHRIS CAMPANA VARIANT"
                title="NEW AVENGERS #9 CHRIS CAMPANA VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">NEW AVENGERS #9 CHRIS CAMPANA VARIANT</p>
+        <p>NEW AVENGERS #9 CHRIS CAMPANA VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -1158,7 +1294,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621391700211</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1167,16 +1303,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621391700211" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/f9212f2070728de9954c1bc37dd813ca.webp"
                alt="SAI: DIMENSIONAL RIVALS #2"
                title="SAI: DIMENSIONAL RIVALS #2"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">SAI: DIMENSIONAL RIVALS #2</p>
+        <p>SAI: DIMENSIONAL RIVALS #2</p>
       ]]></description>
     </item>
     <item>
@@ -1191,7 +1331,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225TN1009.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1200,16 +1340,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225TN1009.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e01861340728049ff373da0fbcf5c593.webp"
                alt="SAVAGE SWORD OF CONAN REFORGED #3 CVR B EARL NOREM VAR (MR)"
                title="SAVAGE SWORD OF CONAN REFORGED #3 CVR B EARL NOREM VAR (MR)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">SAVAGE SWORD OF CONAN REFORGED #3 CVR B EARL NOREM VAR (MR)</p>
+        <p>SAVAGE SWORD OF CONAN REFORGED #3 CVR B EARL NOREM VAR (MR)</p>
       ]]></description>
     </item>
     <item>
@@ -1224,7 +1368,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225TN1010.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1233,16 +1377,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225TN1010.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5639f1c44fceaf682babbb2eb056961f.webp"
                alt="SAVAGE SWORD OF CONAN REFORGED #3 CVR D EARL NOREM VIRGIN VAR (MR)"
                title="SAVAGE SWORD OF CONAN REFORGED #3 CVR D EARL NOREM VIRGIN VAR (MR)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">SAVAGE SWORD OF CONAN REFORGED #3 CVR D EARL NOREM VIRGIN VAR (MR)</p>
+        <p>SAVAGE SWORD OF CONAN REFORGED #3 CVR D EARL NOREM VIRGIN VAR (MR)</p>
       ]]></description>
     </item>
     <item>
@@ -1257,7 +1405,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403503200111</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1266,16 +1414,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403503200111" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b10a2e818772ea318991452cbd63e79d.webp"
                alt="Smile: For the Camera #1 Cover A (Patridge)"
                title="Smile: For the Camera #1 Cover A (Patridge)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Smile: For the Camera #1 Cover A (Patridge)</p>
+        <p>Smile: For the Camera #1 Cover A (Patridge)</p>
       ]]></description>
     </item>
     <item>
@@ -1290,7 +1442,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1125IM0355.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1299,16 +1451,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1125IM0355.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a52d166311f20613df1ed279c10bc77a.webp"
                alt="SPAWN RAT CITY #22 CVR A YILDIRAY CINAR"
                title="SPAWN RAT CITY #22 CVR A YILDIRAY CINAR"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">SPAWN RAT CITY #22 CVR A YILDIRAY CINAR</p>
+        <p>SPAWN RAT CITY #22 CVR A YILDIRAY CINAR</p>
       ]]></description>
     </item>
     <item>
@@ -1323,7 +1479,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1125IM0356.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1332,16 +1488,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1125IM0356.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e94fd68b4e938f56b3eab644f1c22ad3.webp"
                alt="SPAWN RAT CITY #22 CVR B VON RANDAL VAR"
                title="SPAWN RAT CITY #22 CVR B VON RANDAL VAR"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">SPAWN RAT CITY #22 CVR B VON RANDAL VAR</p>
+        <p>SPAWN RAT CITY #22 CVR B VON RANDAL VAR</p>
       ]]></description>
     </item>
     <item>
@@ -1356,7 +1516,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403458500511</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1365,16 +1525,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403458500511" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/20bc619afbcd313fddae5cadcc19a2b5.webp"
                alt="Star Trek: The Last Starship #5 Cover A (Francavilla)"
                title="Star Trek: The Last Starship #5 Cover A (Francavilla)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Star Trek: The Last Starship #5 Cover A (Francavilla)</p>
+        <p>Star Trek: The Last Starship #5 Cover A (Francavilla)</p>
       ]]></description>
     </item>
     <item>
@@ -1389,7 +1553,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403458500521</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1398,16 +1562,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403458500521" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ee4740ae9756b35191a2668e7b8c3cc9.webp"
                alt="Star Trek: The Last Starship #5 Variant B (Allred)"
                title="Star Trek: The Last Starship #5 Variant B (Allred)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Star Trek: The Last Starship #5 Variant B (Allred)</p>
+        <p>Star Trek: The Last Starship #5 Variant B (Allred)</p>
       ]]></description>
     </item>
     <item>
@@ -1422,7 +1590,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621004601011</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1431,16 +1599,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621004601011" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/1367b49ec17be64620efeb7b75bb48a6.webp"
                alt="STAR WARS #10"
                title="STAR WARS #10"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">STAR WARS #10</p>
+        <p>STAR WARS #10</p>
       ]]></description>
     </item>
     <item>
@@ -1455,7 +1627,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403459200511</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1464,16 +1636,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403459200511" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/88ba1d45c3a1d5a14e3a3375d68e9d0e.webp"
                alt="Starship Godzilla [Kai-Sei Era] #5 Cover A (Ono)"
                title="Starship Godzilla [Kai-Sei Era] #5 Cover A (Ono)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Starship Godzilla [Kai-Sei Era] #5 Cover A (Ono)</p>
+        <p>Starship Godzilla [Kai-Sei Era] #5 Cover A (Ono)</p>
       ]]></description>
     </item>
     <item>
@@ -1488,7 +1664,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403459200521</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1497,16 +1673,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403459200521" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/1249f19adc5b151a93e67d0c4d944138.webp"
                alt="Starship Godzilla [Kai-Sei Era] #5 Variant B (Gooch)"
                title="Starship Godzilla [Kai-Sei Era] #5 Variant B (Gooch)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Starship Godzilla [Kai-Sei Era] #5 Variant B (Gooch)</p>
+        <p>Starship Godzilla [Kai-Sei Era] #5 Variant B (Gooch)</p>
       ]]></description>
     </item>
     <item>
@@ -1521,7 +1701,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403460800511</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1530,16 +1710,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403460800511" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5eb8fe36ca4fe6b9acdd508839df78ba.webp"
                alt="Street Sharks #5 Cover A (Murphy)"
                title="Street Sharks #5 Cover A (Murphy)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Street Sharks #5 Cover A (Murphy)</p>
+        <p>Street Sharks #5 Cover A (Murphy)</p>
       ]]></description>
     </item>
     <item>
@@ -1554,7 +1738,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403460800521</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1563,16 +1747,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403460800521" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e77bd8c479811dab8c8f10e39fd3e990.webp"
                alt="Street Sharks #5 Variant B (Pe)"
                title="Street Sharks #5 Variant B (Pe)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Street Sharks #5 Variant B (Pe)</p>
+        <p>Street Sharks #5 Variant B (Pe)</p>
       ]]></description>
     </item>
     <item>
@@ -1587,7 +1775,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403471400511</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1596,16 +1784,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403471400511" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e62fa99a512b586b5a7076735a55cc11.webp"
                alt="Teenage Mutant Ninja Turtles: Battle Nexus #5 Cover A (Prasetya)"
                title="Teenage Mutant Ninja Turtles: Battle Nexus #5 Cover A (Prasetya)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Teenage Mutant Ninja Turtles: Battle Nexus #5 Cover A (Prasetya)</p>
+        <p>Teenage Mutant Ninja Turtles: Battle Nexus #5 Cover A (Prasetya)</p>
       ]]></description>
     </item>
     <item>
@@ -1620,7 +1812,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403471400521</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1629,16 +1821,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403471400521" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/679b76c84f85b5d0eda620b66e263bf0.webp"
                alt="Teenage Mutant Ninja Turtles: Battle Nexus #5 Variant B (Pe)"
                title="Teenage Mutant Ninja Turtles: Battle Nexus #5 Variant B (Pe)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Teenage Mutant Ninja Turtles: Battle Nexus #5 Variant B (Pe)</p>
+        <p>Teenage Mutant Ninja Turtles: Battle Nexus #5 Variant B (Pe)</p>
       ]]></description>
     </item>
     <item>
@@ -1653,7 +1849,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403471400531</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1662,16 +1858,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403471400531" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e27e1de3fab46b798fcacad52f242de6.webp"
                alt="Teenage Mutant Ninja Turtles: Battle Nexus #5 Variant C (Nieli &amp; Randolph)"
                title="Teenage Mutant Ninja Turtles: Battle Nexus #5 Variant C (Nieli &amp; Randolph)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Teenage Mutant Ninja Turtles: Battle Nexus #5 Variant C (Nieli &amp; Randolph)</p>
+        <p>Teenage Mutant Ninja Turtles: Battle Nexus #5 Variant C (Nieli &amp; Randolph)</p>
       ]]></description>
     </item>
     <item>
@@ -1686,7 +1886,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403435600511</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1695,16 +1895,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403435600511" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/43ab36012a69751f6f91b389522adcfc.webp"
                alt="Teenage Mutant Ninja Turtles: Shredder #5 Cover A (Santolouco)"
                title="Teenage Mutant Ninja Turtles: Shredder #5 Cover A (Santolouco)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Teenage Mutant Ninja Turtles: Shredder #5 Cover A (Santolouco)</p>
+        <p>Teenage Mutant Ninja Turtles: Shredder #5 Cover A (Santolouco)</p>
       ]]></description>
     </item>
     <item>
@@ -1719,7 +1923,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403435600521</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1728,16 +1932,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403435600521" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/31a666c18179704af19c5969132ecc9f.webp"
                alt="Teenage Mutant Ninja Turtles: Shredder #5 Variant B (Hannigan)"
                title="Teenage Mutant Ninja Turtles: Shredder #5 Variant B (Hannigan)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Teenage Mutant Ninja Turtles: Shredder #5 Variant B (Hannigan)</p>
+        <p>Teenage Mutant Ninja Turtles: Shredder #5 Variant B (Hannigan)</p>
       ]]></description>
     </item>
     <item>
@@ -1752,7 +1960,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403435600531</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1761,16 +1969,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403435600531" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/337dac2cbe44e52560c2082d794d58b2.webp"
                alt="Teenage Mutant Ninja Turtles: Shredder #5 Variant C (Kotian)"
                title="Teenage Mutant Ninja Turtles: Shredder #5 Variant C (Kotian)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">Teenage Mutant Ninja Turtles: Shredder #5 Variant C (Kotian)</p>
+        <p>Teenage Mutant Ninja Turtles: Shredder #5 Variant C (Kotian)</p>
       ]]></description>
     </item>
     <item>
@@ -1785,7 +1997,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE0681.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1794,16 +2006,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225DE0681.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/85478831a07eda678acd24c1817a25ed.webp"
                alt="TERMINATOR METAL #5 CVR A DECLAN SHALVEY"
                title="TERMINATOR METAL #5 CVR A DECLAN SHALVEY"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">TERMINATOR METAL #5 CVR A DECLAN SHALVEY</p>
+        <p>TERMINATOR METAL #5 CVR A DECLAN SHALVEY</p>
       ]]></description>
     </item>
     <item>
@@ -1818,7 +2034,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE0682.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1827,16 +2043,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225DE0682.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c0e8a2cdafb59aac78cdd39a4fffca3b.webp"
                alt="TERMINATOR METAL #5 CVR B BOB LAYTON VAR"
                title="TERMINATOR METAL #5 CVR B BOB LAYTON VAR"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">TERMINATOR METAL #5 CVR B BOB LAYTON VAR</p>
+        <p>TERMINATOR METAL #5 CVR B BOB LAYTON VAR</p>
       ]]></description>
     </item>
     <item>
@@ -1851,7 +2071,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE0701.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1860,16 +2080,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225DE0701.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/47f189887804402da998bacaab2c44ce.webp"
                alt="THUNDERCATS #24 CVR A LUCIO PARRILLO"
                title="THUNDERCATS #24 CVR A LUCIO PARRILLO"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">THUNDERCATS #24 CVR A LUCIO PARRILLO</p>
+        <p>THUNDERCATS #24 CVR A LUCIO PARRILLO</p>
       ]]></description>
     </item>
     <item>
@@ -1884,7 +2108,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE0702.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1893,16 +2117,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225DE0702.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/19d1dbe57a08ba4be1b60a8d8520e115.webp"
                alt="THUNDERCATS #24 CVR B DECLAN SHALVEY VAR"
                title="THUNDERCATS #24 CVR B DECLAN SHALVEY VAR"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">THUNDERCATS #24 CVR B DECLAN SHALVEY VAR</p>
+        <p>THUNDERCATS #24 CVR B DECLAN SHALVEY VAR</p>
       ]]></description>
     </item>
     <item>
@@ -1917,7 +2145,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE8194.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1926,16 +2154,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225DE8194.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/default.webp"
                alt="THUNDERCATS X SILVERHAWKS #1 ASHCAN PROMO (FREE) (NET)"
                title="THUNDERCATS X SILVERHAWKS #1 ASHCAN PROMO (FREE) (NET)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">THUNDERCATS X SILVERHAWKS #1 ASHCAN PROMO (FREE) (NET)</p>
+        <p>THUNDERCATS X SILVERHAWKS #1 ASHCAN PROMO (FREE) (NET)</p>
       ]]></description>
     </item>
     <item>
@@ -1950,7 +2182,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE8195.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1959,16 +2191,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225DE8195.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/default.webp"
                alt="THUNDERCATS X SILVERHAWKS THUNDERHAWKS #1 ASHCAN PROMO (FREE) (NET)"
                title="THUNDERCATS X SILVERHAWKS THUNDERHAWKS #1 ASHCAN PROMO (FREE) (NET)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">THUNDERCATS X SILVERHAWKS THUNDERHAWKS #1 ASHCAN PROMO (FREE) (NET)</p>
+        <p>THUNDERCATS X SILVERHAWKS THUNDERHAWKS #1 ASHCAN PROMO (FREE) (NET)</p>
       ]]></description>
     </item>
     <item>
@@ -1983,7 +2219,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620796102411</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -1992,16 +2228,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960620796102411" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/942f817cc4086676a53c4347deec065f.webp"
                alt="ULTIMATE SPIDER-MAN #24"
                title="ULTIMATE SPIDER-MAN #24"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">ULTIMATE SPIDER-MAN #24</p>
+        <p>ULTIMATE SPIDER-MAN #24</p>
       ]]></description>
     </item>
     <item>
@@ -2016,7 +2256,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620796102421</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2025,16 +2265,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960620796102421" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/61c76645c5769d29df6b7984ef792ad7.webp"
                alt="ULTIMATE SPIDER-MAN #24 DAVID MESSINA HEROES VARIANT"
                title="ULTIMATE SPIDER-MAN #24 DAVID MESSINA HEROES VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">ULTIMATE SPIDER-MAN #24 DAVID MESSINA HEROES VARIANT</p>
+        <p>ULTIMATE SPIDER-MAN #24 DAVID MESSINA HEROES VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -2049,7 +2293,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620796102441</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2058,16 +2302,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960620796102441" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9af1b21cb7f3fd4257def5001add9e50.webp"
                alt="ULTIMATE SPIDER-MAN #24 ELIZABETH TORQUE VARIANT"
                title="ULTIMATE SPIDER-MAN #24 ELIZABETH TORQUE VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">ULTIMATE SPIDER-MAN #24 ELIZABETH TORQUE VARIANT</p>
+        <p>ULTIMATE SPIDER-MAN #24 ELIZABETH TORQUE VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -2082,7 +2330,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620917002411</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2091,16 +2339,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960620917002411" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8d6f3742e71c0eed43784f4d48107a09.webp"
                alt="UNCANNY X-MEN #24"
                title="UNCANNY X-MEN #24"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">UNCANNY X-MEN #24</p>
+        <p>UNCANNY X-MEN #24</p>
       ]]></description>
     </item>
     <item>
@@ -2115,7 +2367,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE0746.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2124,16 +2376,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225DE0746.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e8589e2b90c010c0b7bb0d91115b8771.webp"
                alt="VAMPIRELLA ARMAGEDDON #8 CVR A FRANCESCO MATTINA"
                title="VAMPIRELLA ARMAGEDDON #8 CVR A FRANCESCO MATTINA"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">VAMPIRELLA ARMAGEDDON #8 CVR A FRANCESCO MATTINA</p>
+        <p>VAMPIRELLA ARMAGEDDON #8 CVR A FRANCESCO MATTINA</p>
       ]]></description>
     </item>
     <item>
@@ -2148,7 +2404,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE0747.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2157,16 +2413,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225DE0747.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b6528f3e1ee65f3ff9163e9c738d9379.webp"
                alt="VAMPIRELLA ARMAGEDDON #8 CVR B LEIRIX LI VAR"
                title="VAMPIRELLA ARMAGEDDON #8 CVR B LEIRIX LI VAR"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">VAMPIRELLA ARMAGEDDON #8 CVR B LEIRIX LI VAR</p>
+        <p>VAMPIRELLA ARMAGEDDON #8 CVR B LEIRIX LI VAR</p>
       ]]></description>
     </item>
     <item>
@@ -2181,7 +2441,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225IM0430.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2190,16 +2450,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225IM0430.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ec0904d5e742cd6baaa7c150bfd4cc1f.webp"
                alt="WALKING DEAD DELUXE #131 CVR A DAVID FINCH &amp; DAVE MCCAIG (MR)"
                title="WALKING DEAD DELUXE #131 CVR A DAVID FINCH &amp; DAVE MCCAIG (MR)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">WALKING DEAD DELUXE #131 CVR A DAVID FINCH &amp; DAVE MCCAIG (MR)</p>
+        <p>WALKING DEAD DELUXE #131 CVR A DAVID FINCH &amp; DAVE MCCAIG (MR)</p>
       ]]></description>
     </item>
     <item>
@@ -2214,7 +2478,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225IM0431.jpg</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2223,16 +2487,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225IM0431.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/db303a913eb9b5eeb5cba1e35a3bdeb4.webp"
                alt="WALKING DEAD DELUXE #131 CVR B CHARLIE ADLARD &amp; DAVE MCCAIG VAR (MR)"
                title="WALKING DEAD DELUXE #131 CVR B CHARLIE ADLARD &amp; DAVE MCCAIG VAR (MR)"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">WALKING DEAD DELUXE #131 CVR B CHARLIE ADLARD &amp; DAVE MCCAIG VAR (MR)</p>
+        <p>WALKING DEAD DELUXE #131 CVR B CHARLIE ADLARD &amp; DAVE MCCAIG VAR (MR)</p>
       ]]></description>
     </item>
     <item>
@@ -2247,7 +2515,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620841801611</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2256,16 +2524,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960620841801611" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/04daffb11bf97997f46379b7f4ae4301.webp"
                alt="WOLVERINE #16"
                title="WOLVERINE #16"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">WOLVERINE #16</p>
+        <p>WOLVERINE #16</p>
       ]]></description>
     </item>
     <item>
@@ -2280,7 +2552,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620841801621</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2289,16 +2561,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960620841801621" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4a007a6db17b9003c539de1d20110fdf.webp"
                alt="WOLVERINE #16 DAMION SCOTT VARIANT"
                title="WOLVERINE #16 DAMION SCOTT VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">WOLVERINE #16 DAMION SCOTT VARIANT</p>
+        <p>WOLVERINE #16 DAMION SCOTT VARIANT</p>
       ]]></description>
     </item>
     <item>
@@ -2313,7 +2589,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621562100111</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2322,16 +2598,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621562100111" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/aa1e5a0bcce257f2a1a2597fd93b1de1.webp"
                alt="WOLVERINE: WEAPONS OF ARMAGEDDON #1"
                title="WOLVERINE: WEAPONS OF ARMAGEDDON #1"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">WOLVERINE: WEAPONS OF ARMAGEDDON #1</p>
+        <p>WOLVERINE: WEAPONS OF ARMAGEDDON #1</p>
       ]]></description>
     </item>
     <item>
@@ -2346,7 +2626,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620920002511</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2355,16 +2635,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960620920002511" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/098fa5b38dec29cb36d597700847ee68.webp"
                alt="X-MEN #25"
                title="X-MEN #25"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">X-MEN #25</p>
+        <p>X-MEN #25</p>
       ]]></description>
     </item>
     <item>
@@ -2379,7 +2663,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620920002521</guid>
 
       <!-- pubDate marks when this feed was generated -->
-      <pubDate>Thu, 19 Feb 2026 22:03:10 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 22:08:55 GMT</pubDate>
 
       <!-- Enclosure: RSS standard for media attachments.
            Feed readers use this to display the thumbnail inline.
@@ -2388,16 +2672,20 @@
 
       <!-- Description: HTML fallback for feed readers that render
            description content. Shows the thumbnail as a clickable
-           image linking back to the original full-size source. -->
+           image linking back to the original full-size source.
+           Note: style attributes avoided here per RSS best practices ?
+           width/height HTML attributes are used instead for safe
+           cross-reader compatibility. -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960620920002521" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/421691bb5c87e2a889f8ade3da880f8f.webp"
                alt="X-MEN #25 DAVID NAKAYAMA COLOR BLOCK RED VARIANT"
                title="X-MEN #25 DAVID NAKAYAMA COLOR BLOCK RED VARIANT"
                width="300"
-               style="display:block;max-width:100%;height:auto;border-radius:3px;">
+               height="300"
+               border="0">
         </a>
-        <p style="font-family:Arial,sans-serif;font-size:13px;margin:8px 0 0;">X-MEN #25 DAVID NAKAYAMA COLOR BLOCK RED VARIANT</p>
+        <p>X-MEN #25 DAVID NAKAYAMA COLOR BLOCK RED VARIANT</p>
       ]]></description>
     </item>
   </channel>
