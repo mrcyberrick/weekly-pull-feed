@@ -9,8 +9,8 @@
     <link>https://mrcyberrick.github.io/weekly-pull-feed/newsletter.html</link>
     <description>Weekly pull list of new releases with thumbnails and links to full-size cover images.</description>
     <language>en-us</language>
-    <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
-    <lastBuildDate>Fri, 10 Apr 2026 16:49:22 GMT</lastBuildDate>
+    <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
+    <lastBuildDate>Fri, 10 Apr 2026 20:39:30 GMT</lastBuildDate>
     <ttl>10080</ttl><!-- 10080 minutes = 1 week; hints to readers how often to check -->
 
     <!-- Canonical self-reference: required by Atom namespace, recommended by feed validators -->
@@ -37,7 +37,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621502700211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -71,51 +71,6 @@
       ]]></description>
     </item>
     <item>
-      <title>BATMAN WONDER WOMAN THE TRUTH PROMO POSTER</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0226DC8458.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226DC8458.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0226DC8458.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0226DC8458.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/default.webp"
-               alt="BATMAN WONDER WOMAN THE TRUTH PROMO POSTER"
-               title="BATMAN WONDER WOMAN THE TRUTH PROMO POSTER"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>BATMAN WONDER WOMAN THE TRUTH PROMO POSTER is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
       <title>GI JOE #21 CVR A TOM REILLY</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -127,7 +82,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM0393.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -172,7 +127,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM0394.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -217,7 +172,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621494500311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -262,7 +217,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621494500321</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -307,7 +262,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0325IM323.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -352,7 +307,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0325IM324.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -386,51 +341,6 @@
       ]]></description>
     </item>
     <item>
-      <title>IF DESTRUCTION BE OUR LOT #1 FIVE DOLLAR BILL PROMO</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0226IM8440.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM8440.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0226IM8440.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0226IM8440.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/default.webp"
-               alt="IF DESTRUCTION BE OUR LOT #1 FIVE DOLLAR BILL PROMO"
-               title="IF DESTRUCTION BE OUR LOT #1 FIVE DOLLAR BILL PROMO"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>IF DESTRUCTION BE OUR LOT #1 FIVE DOLLAR BILL PROMO is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
       <title>IMPERIAL GUARDIANS #2</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -442,7 +352,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621101200211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -487,7 +397,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621101200241</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -532,7 +442,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621362700411</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -577,7 +487,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621362700421</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -622,7 +532,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621452500311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -667,7 +577,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621452500331</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -701,51 +611,6 @@
       ]]></description>
     </item>
     <item>
-      <title>NEXT LEVEL WAVE 2 PROMO POSTER</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0226DC8459.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226DC8459.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0226DC8459.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0226DC8459.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/default.webp"
-               alt="NEXT LEVEL WAVE 2 PROMO POSTER"
-               title="NEXT LEVEL WAVE 2 PROMO POSTER"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>NEXT LEVEL WAVE 2 PROMO POSTER is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
       <title>PLANET OF THE APES VS. FANTASTIC FOUR #3</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -757,7 +622,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621389400311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -802,7 +667,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621389400351</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -847,7 +712,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621389400321</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -892,7 +757,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621485300111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -937,7 +802,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621485300121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -982,7 +847,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403503200211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1027,7 +892,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403516200111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1072,7 +937,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0126IM0400.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1117,7 +982,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0126IM0401.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1162,7 +1027,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225IM0272.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1207,7 +1072,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225IM0273.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1252,7 +1117,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621599700111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1297,7 +1162,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403522300111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1342,7 +1207,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403522300121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1387,7 +1252,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621445700311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1432,7 +1297,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621445700321</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1477,7 +1342,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403464600511</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1522,7 +1387,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403464600521</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1567,7 +1432,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403435600711</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1612,7 +1477,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621050301611</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1657,7 +1522,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621050301631</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1702,7 +1567,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621330625711</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1747,7 +1612,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621330625741</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1792,7 +1657,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621443300211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1837,7 +1702,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621443300221</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 10 Apr 2026 16:49:22 GMT</pubDate>
+      <pubDate>Fri, 10 Apr 2026 20:39:30 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
