@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weekly Previews</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap');
+
     /*
      * MOBILE OVERRIDE
      * On screens under 480px, each .col cell expands to full width,
      * stacking the 3-column layout into a single column.
-     * This media query is respected by Apple Mail, Gmail app (iOS/Android),
-     * Samsung Mail, and MailerLite's preview renderer.
+     * Respected by Apple Mail, Gmail app (iOS/Android), Samsung Mail,
+     * and MailerLite's preview renderer.
      * Outlook desktop ignores media queries but renders the 3-col
      * table layout correctly at full width regardless.
      */
@@ -25,18 +27,70 @@
         width: 80% !important;
         max-width: 280px !important;
       }
+      .promo-feat {
+        display: block !important;
+        width: 100% !important;
+      }
     }
+
+    /* Promo collapse animation */
+    #promo-section {
+      transition: max-height 0.45s cubic-bezier(.4,0,.2,1),
+                  opacity 0.35s ease,
+                  padding 0.35s ease;
+      max-height: 600px;
+      overflow: hidden;
+    }
+    #promo-section.dismissed {
+      max-height: 0 !important;
+      opacity: 0;
+      padding: 0 !important;
+    }
+
+    /* Re-open tab shown after promo is dismissed */
+    #promo-tab {
+      display: none;
+      cursor: pointer;
+      background: #e8321c;
+      color: #fff;
+      font-family: 'Barlow Condensed', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 9px 20px;
+      border: none;
+      width: 100%;
+      max-width: 640px;
+    }
+    #promo-tab.visible { display: block; }
+    #promo-close:hover { background: rgba(255,255,255,0.15) !important; }
+    .feat-icon-wrap { transition: transform 0.2s ease; }
+    .feat-item:hover .feat-icon-wrap { transform: scale(1.08); }
   </style>
 </head>
-<body style="margin:0;padding:0;background-color:#f4f4f4;font-family:Arial,sans-serif;">
+<body style="margin:0;padding:0;background-color:#0f0f0f;font-family:'Barlow',Arial,sans-serif;">
 
-  <!-- Outer wrapper table ? centers content and sets max width -->
+  <!-- Re-open tab: hidden until promo is dismissed -->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-         style="background-color:#f4f4f4;">
+         style="background-color:#0f0f0f;">
+    <tr>
+      <td align="center">
+        <button id="promo-tab" onclick="reopenPromo()">
+          &#9650; &nbsp; Reserve Your Comics &mdash; Ask About Pull List
+        </button>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Outer wrapper table -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+         style="background-color:#0f0f0f;">
     <tr>
       <td align="center" style="padding:20px 10px;">
 
-        <!-- Inner content table ? 640px max width -->
+        <!-- Inner content table: 640px max width -->
         <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0"
                style="max-width:640px;width:100%;background-color:#ffffff;border-radius:6px;
                       overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
@@ -51,18 +105,299 @@
             </td>
           </tr>
 
-          <!-- HERO IMAGE -->
+          <!-- HERO IMAGE ? linked to store website -->
           <tr>
             <td style="line-height:0;font-size:0;padding:0;">
-              <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/hero.jpg"
-                   alt="Weekly Previews"
-                   width="640"
-                   style="display:block;width:100%;max-width:640px;height:auto;border:0;">
+              <a href="http://rjbookstop.com" target="_blank" rel="noopener noreferrer"
+                 style="display:block;line-height:0;font-size:0;border:0;">
+                <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/hero.jpg"
+                     alt="Weekly Previews"
+                     width="640"
+                     style="display:block;width:100%;max-width:640px;height:auto;border:0;">
+              </a>
             </td>
           </tr>
 
+          <!-- ??????????????????????????????????????????????? -->
+          <!-- ???  PULL LIST PROMO ? newsletter.html only ??? -->
+          <!-- ??????????????????????????????????????????????? -->
+          <tr>
+            <td id="promo-section" style="background:#111118;padding:0;">
+
+              <!-- Promo label bar with dismiss button -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="background:#e8321c;padding:10px 28px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td>
+                          <div style="font-family:'Barlow Condensed',Arial,sans-serif;
+                                      font-size:11px;font-weight:700;
+                                      color:rgba(255,255,255,0.85);
+                                      letter-spacing:0.18em;text-transform:uppercase;">
+                            From the shop
+                          </div>
+                          <div style="font-family:'Barlow Condensed',Arial,sans-serif;
+                                      font-size:20px;font-weight:900;color:#fff;
+                                      letter-spacing:0.06em;text-transform:uppercase;
+                                      line-height:1.1;margin-top:2px;">
+                            PULL<span style="opacity:0.7;">LIST</span>
+                            &nbsp;&middot;&nbsp;
+                            <span style="font-weight:500;font-size:16px;">
+                              Never miss an issue again
+                            </span>
+                          </div>
+                        </td>
+                        <td style="text-align:right;vertical-align:top;">
+                          <button id="promo-close"
+                                  onclick="dismissPromo()"
+                                  style="background:rgba(0,0,0,0.2);
+                                         border:1px solid rgba(255,255,255,0.25);
+                                         color:#fff;
+                                         font-family:'Barlow Condensed',Arial,sans-serif;
+                                         font-size:11px;letter-spacing:0.12em;
+                                         text-transform:uppercase;padding:5px 12px;
+                                         border-radius:3px;cursor:pointer;
+                                         font-weight:700;white-space:nowrap;">
+                            Dismiss &#x2715;
+                          </button>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Feature columns: 3 left, 2 right + CTA -->
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:20px 22px 4px;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+
+                        <!-- LEFT: features 1?3 -->
+                        <td class="promo-feat"
+                            style="width:50%;vertical-align:top;padding-right:10px;">
+
+                          <!-- Feature 1 -->
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                 border="0" style="margin-bottom:14px;" class="feat-item">
+                            <tr>
+                              <td style="width:34px;vertical-align:top;padding-right:12px;">
+                                <div class="feat-icon-wrap"
+                                     style="width:32px;height:32px;background:#e8321c14;
+                                            border:1px solid #e8321c44;border-radius:4px;
+                                            display:table-cell;text-align:center;vertical-align:middle;">
+                                  <svg width="16" height="16" fill="none" stroke="#e8321c"
+                                       stroke-width="2" viewBox="0 0 24 24"
+                                       style="vertical-align:middle;">
+                                    <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0
+                                             002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2
+                                             0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2
+                                             4-4"/>
+                                  </svg>
+                                </div>
+                              </td>
+                              <td style="vertical-align:top;">
+                                <div style="font-family:'Barlow Condensed',Arial,sans-serif;
+                                            font-size:13px;font-weight:700;color:#f0ece4;
+                                            letter-spacing:0.04em;text-transform:uppercase;
+                                            margin-bottom:2px;">
+                                  Your list, always up to date
+                                </div>
+                                <div style="font-family:'Barlow',Arial,sans-serif;
+                                            font-size:11.5px;color:#666;line-height:1.5;">
+                                  Browse the full monthly catalog and reserve what you
+                                  want &mdash; any time, any device.
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <!-- Feature 2 -->
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                 border="0" style="margin-bottom:14px;" class="feat-item">
+                            <tr>
+                              <td style="width:34px;vertical-align:top;padding-right:12px;">
+                                <div class="feat-icon-wrap"
+                                     style="width:32px;height:32px;background:#3b82f614;
+                                            border:1px solid #3b82f644;border-radius:4px;
+                                            display:table-cell;text-align:center;vertical-align:middle;">
+                                  <svg width="16" height="16" fill="none" stroke="#3b82f6"
+                                       stroke-width="2" viewBox="0 0 24 24"
+                                       style="vertical-align:middle;">
+                                    <path d="M15 17h5l-1.405-1.405A2.032 2.032 0
+                                             0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2
+                                             2 0 10-4 0v.341C7.67 6.165 6 8.388 6
+                                             11v3.159c0 .538-.214 1.055-.595
+                                             1.436L4 17h5m6 0v1a3 3 0 11-6
+                                             0v-1m6 0H9"/>
+                                  </svg>
+                                </div>
+                              </td>
+                              <td style="vertical-align:top;">
+                                <div style="font-family:'Barlow Condensed',Arial,sans-serif;
+                                            font-size:13px;font-weight:700;color:#f0ece4;
+                                            letter-spacing:0.04em;text-transform:uppercase;
+                                            margin-bottom:2px;">
+                                  Auto-reserve your series
+                                </div>
+                                <div style="font-family:'Barlow',Arial,sans-serif;
+                                            font-size:11.5px;color:#666;line-height:1.5;">
+                                  Subscribe once &mdash; automatically added to your
+                                  pull list every month.
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <!-- Feature 3 -->
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                 border="0" class="feat-item">
+                            <tr>
+                              <td style="width:34px;vertical-align:top;padding-right:12px;">
+                                <div class="feat-icon-wrap"
+                                     style="width:32px;height:32px;background:#22c55e14;
+                                            border:1px solid #22c55e44;border-radius:4px;
+                                            display:table-cell;text-align:center;vertical-align:middle;">
+                                  <svg width="16" height="16" fill="none" stroke="#22c55e"
+                                       stroke-width="2" viewBox="0 0 24 24"
+                                       style="vertical-align:middle;">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                  </svg>
+                                </div>
+                              </td>
+                              <td style="vertical-align:top;">
+                                <div style="font-family:'Barlow Condensed',Arial,sans-serif;
+                                            font-size:13px;font-weight:700;color:#f0ece4;
+                                            letter-spacing:0.04em;text-transform:uppercase;
+                                            margin-bottom:2px;">
+                                  Know what&rsquo;s arriving
+                                </div>
+                                <div style="font-family:'Barlow',Arial,sans-serif;
+                                            font-size:11.5px;color:#666;line-height:1.5;">
+                                  Reserved titles grouped by arrival date &mdash; always
+                                  know what&rsquo;s coming Wednesday.
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+
+                        </td>
+
+                        <!-- RIGHT: features 4?5 + CTA -->
+                        <td class="promo-feat"
+                            style="width:50%;vertical-align:top;padding-left:10px;
+                                   border-left:1px solid #1e1e2a;">
+
+                          <!-- Feature 4 -->
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                 border="0" style="margin-bottom:14px;" class="feat-item">
+                            <tr>
+                              <td style="width:34px;vertical-align:top;padding-right:12px;">
+                                <div class="feat-icon-wrap"
+                                     style="width:32px;height:32px;background:#a855f714;
+                                            border:1px solid #a855f744;border-radius:4px;
+                                            display:table-cell;text-align:center;vertical-align:middle;">
+                                  <svg width="16" height="16" fill="none" stroke="#a855f7"
+                                       stroke-width="2" viewBox="0 0 24 24"
+                                       style="vertical-align:middle;">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21
+                                             8M5 19h14a2 2 0 002-2V7a2 2 0
+                                             00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                  </svg>
+                                </div>
+                              </td>
+                              <td style="vertical-align:top;">
+                                <div style="font-family:'Barlow Condensed',Arial,sans-serif;
+                                            font-size:13px;font-weight:700;color:#f0ece4;
+                                            letter-spacing:0.04em;text-transform:uppercase;
+                                            margin-bottom:2px;">
+                                  Your list in your inbox
+                                </div>
+                                <div style="font-family:'Barlow',Arial,sans-serif;
+                                            font-size:11.5px;color:#666;line-height:1.5;">
+                                  Email yourself a confirmation of your pull list &mdash;
+                                  a personal record ready for pickup.
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <!-- Feature 5 -->
+                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                 border="0" style="margin-bottom:18px;" class="feat-item">
+                            <tr>
+                              <td style="width:34px;vertical-align:top;padding-right:12px;">
+                                <div class="feat-icon-wrap"
+                                     style="width:32px;height:32px;background:#f59e0b14;
+                                            border:1px solid #f59e0b44;border-radius:4px;
+                                            display:table-cell;text-align:center;vertical-align:middle;">
+                                  <svg width="16" height="16" fill="none" stroke="#f59e0b"
+                                       stroke-width="2" viewBox="0 0 24 24"
+                                       style="vertical-align:middle;">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                  </svg>
+                                </div>
+                              </td>
+                              <td style="vertical-align:top;">
+                                <div style="font-family:'Barlow Condensed',Arial,sans-serif;
+                                            font-size:13px;font-weight:700;color:#f0ece4;
+                                            letter-spacing:0.04em;text-transform:uppercase;
+                                            margin-bottom:2px;">
+                                  Discover what you&rsquo;ll love
+                                </div>
+                                <div style="font-family:'Barlow',Arial,sans-serif;
+                                            font-size:11.5px;color:#666;line-height:1.5;">
+                                  Personalized recommendations surface new titles from
+                                  series you already enjoy.
+                                </div>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <!-- CTA block -->
+                          <div style="background:#e8321c;border-radius:4px;
+                                      padding:13px 16px;text-align:center;">
+                            <div style="font-family:'Barlow Condensed',Arial,sans-serif;
+                                        font-size:14px;font-weight:900;color:#fff;
+                                        letter-spacing:0.1em;text-transform:uppercase;">
+                              Ask Us About Online Reservations
+                            </div>
+                            <div style="font-family:'Barlow',Arial,sans-serif;
+                                        font-size:11px;color:rgba(255,255,255,0.72);
+                                        margin-top:4px;">
+                              Speak with a staff member today
+                            </div>
+                            <div style="font-family:'Barlow',Arial,sans-serif;
+                                        font-size:11px;color:rgba(255,255,255,0.5);
+                                        margin-top:6px;letter-spacing:0.04em;">
+                              973-586-9182 &nbsp;&middot;&nbsp; 40 W Main St, Rockaway NJ
+                            </div>
+                          </div>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Bottom separator -->
+              <div style="height:1px;
+                          background:linear-gradient(90deg,transparent,#e8321c55,transparent);
+                          margin:16px 0 0;">
+              </div>
+
+            </td>
+          </tr>
+          <!-- ??? END PROMO ??? -->
+
           <!-- THUMBNAIL GRID -->
-          <!-- Nested table provides the 3-column layout -->
           <tr>
             <td style="padding:12px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -735,7 +1070,7 @@
           <tr>
             <td style="background-color:#1a1a2e;color:#aaaaaa;text-align:center;
                        font-size:11px;padding:12px 20px;font-family:Arial,sans-serif;">
-              Generated by Weekly Previews &bull; April 18, 2026
+              Generated by Weekly Previews &bull; April 19, 2026
             </td>
           </tr>
 
@@ -746,6 +1081,26 @@
     </tr>
   </table>
   <!-- End outer wrapper table -->
+
+  <script>
+    function dismissPromo() {
+      var s = document.getElementById('promo-section');
+      var t = document.getElementById('promo-tab');
+      s.classList.add('dismissed');
+      setTimeout(function() {
+        s.style.display = 'none';
+        t.classList.add('visible');
+      }, 450);
+    }
+    function reopenPromo() {
+      var s = document.getElementById('promo-section');
+      var t = document.getElementById('promo-tab');
+      s.style.display = '';
+      t.classList.remove('visible');
+      // Brief delay lets display:block settle before animating
+      setTimeout(function() { s.classList.remove('dismissed'); }, 10);
+    }
+  </script>
 
 </body>
 </html>
