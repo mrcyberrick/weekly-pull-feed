@@ -1,6 +1,5 @@
 
 <style type="text/css">
-  /* Mobile: stack columns to single column on small screens */
   @media only screen and (max-width: 480px) {
     .ml-col {
       display: block !important;
@@ -18,38 +17,72 @@
     }
   }
 </style>
-
+ 
 <!-- Weekly Pull Feed Newsletter ? MailerLite HTML Block -->
 <!-- Paste this entire snippet into a MailerLite HTML content block -->
-
+ 
 <!-- Outer wrapper -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-       style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+       style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;
+              background-color:#181818;">
   <tr>
     <td align="center" style="padding:0;">
-
-      <!-- Inner content table: 600px wide for email standard -->
+ 
+      <!-- Inner content table: 600px for email standard -->
       <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
-             style="max-width:600px;width:100%;border-collapse:collapse;
+             style="max-width:600px;width:100%;
+                    border-collapse:collapse;
                     mso-table-lspace:0pt;mso-table-rspace:0pt;
-                    background-color:#ffffff;">
-
+                    background-color:#181818;
+                    border:1px solid #2e2e2e;">
+ 
         <!-- TITLE BAR -->
+        <!-- bg-elevated (#222) lifts off bg-card (#181818) body -->
         <tr>
-          <td style="background-color:#1a1a2e;color:#ffffff;text-align:center;
-                     padding:18px 20px;font-size:22px;font-weight:bold;
-                     letter-spacing:1px;text-transform:uppercase;
-                     font-family:Arial,Helvetica,sans-serif;
-                     mso-padding-alt:18px 20px;">
-            Weekly Previews
+          <td style="background-color:#222222;
+                     border-bottom:3px solid #e8321c;
+                     text-align:center;
+                     padding:20px 24px;
+                     mso-padding-alt:20px 24px;">
+            <div style="font-family:'Bebas Neue',Georgia,serif;
+                        font-size:26px;
+                        letter-spacing:4px;
+                        text-transform:uppercase;
+                        color:#f0ece4;
+                        line-height:1;
+                        mso-line-height-rule:exactly;">
+              <!--[if mso]>
+              <span style="font-family:Georgia,serif;font-size:26px;
+                           letter-spacing:4px;color:#f0ece4;">
+                PULLLIST &mdash; Weekly Previews
+              </span>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              PULL<span style="color:#e8321c;">LIST</span>
+              &nbsp;&mdash;&nbsp;Weekly Previews
+              <!--<![endif]-->
+            </div>
+            <div style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                        font-size:11px;
+                        color:#5a5755;
+                        letter-spacing:2px;
+                        text-transform:uppercase;
+                        margin-top:6px;
+                        mso-line-height-rule:exactly;">
+              Ray &amp; Judy&rsquo;s Book Stop &nbsp;&middot;&nbsp; April 20, 2026
+            </div>
           </td>
         </tr>
-
+ 
         <!-- HERO IMAGE -->
         <tr>
-          <td class="ml-hero" style="line-height:0;font-size:0;padding:0;mso-line-height-rule:exactly;">
+          <td class="ml-hero"
+              style="line-height:0;font-size:0;padding:0;
+                     border-bottom:1px solid #2e2e2e;
+                     mso-line-height-rule:exactly;">
             <!--[if mso]>
-            <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+            <table role="presentation" width="600" cellpadding="0"
+                   cellspacing="0" border="0">
             <tr><td width="600">
             <![endif]-->
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/hero.jpg"
@@ -61,888 +94,1203 @@
             <!--[if mso]></td></tr></table><![endif]-->
           </td>
         </tr>
-
-        <!-- THUMBNAIL GRID -->
+ 
+        <!-- SECTION LABEL -->
+        <!-- bg-elevated (#222) frames transition into the grid -->
         <tr>
-          <td style="padding:12px;background-color:#ffffff;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                   style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+          <td style="background-color:#222222;
+                     border-top:1px solid #2e2e2e;
+                     border-bottom:1px solid #2e2e2e;
+                     padding:10px 16px;
+                     mso-padding-alt:10px 16px;">
+            <div style="font-family:'Bebas Neue',Georgia,serif;
+                        font-size:13px;
+                        letter-spacing:3px;
+                        text-transform:uppercase;
+                        color:#5a5755;
+                        mso-line-height-rule:exactly;">
+              This Week&rsquo;s Releases
+            </div>
+          </td>
+        </tr>
+ 
+        <!-- THUMBNAIL GRID -->
+        <!-- bg-card (#181818) ? consistent card surface -->
+        <tr>
+          <td style="padding:12px;background-color:#181818;
+                     mso-padding-alt:12px;">
+            <table role="presentation" width="100%" cellpadding="0"
+                   cellspacing="0" border="0"
+                   style="border-collapse:collapse;
+                          mso-table-lspace:0pt;mso-table-rspace:0pt;">
               <tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621001502711" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/120804ba076f7574fee8dfa0cb9f18b2.webp"
                  alt="AMAZING SPIDER-MAN #27 [DS]"
                  title="AMAZING SPIDER-MAN #27 [DS]"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">AMAZING SPIDER-MAN #27 [DS]</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              AMAZING SPIDER-MAN #27 [DS]
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621001502751" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/fb5459508dd1e035769db52d0f9862bf.webp"
                  alt="AMAZING SPIDER-MAN #27 DAVID MESSINA ULTIMATE FAREWELL VARIANT [DS]"
                  title="AMAZING SPIDER-MAN #27 DAVID MESSINA ULTIMATE FAREWELL VARIANT [DS]"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">AMAZING SPIDER-MAN #27 DAVID MESSINA ULTIMATE FAREWELL VARIANT [DS]</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              AMAZING SPIDER-MAN #27 DAVID MESSINA ULTIMATE FAREWELL VARIANT [DS]
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621577500111" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/715e04cc4bb1db990a0b8de0133e4d9d.webp"
                  alt="AMAZING SPIDER-MAN: SPIDER-VERSITY #1"
                  title="AMAZING SPIDER-MAN: SPIDER-VERSITY #1"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">AMAZING SPIDER-MAN: SPIDER-VERSITY #1</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              AMAZING SPIDER-MAN: SPIDER-VERSITY #1
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621577500141" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/87089430627743d638b31250077d229f.webp"
                  alt="AMAZING SPIDER-MAN: SPIDER-VERSITY #1 JUAN FRIGERI ULTIMATE FAREWELL VARIANT"
                  title="AMAZING SPIDER-MAN: SPIDER-VERSITY #1 JUAN FRIGERI ULTIMATE FAREWELL VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">AMAZING SPIDER-MAN: SPIDER-VERSITY #1 JUAN FRIGERI ULTIMATE FAREWELL VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              AMAZING SPIDER-MAN: SPIDER-VERSITY #1 JUAN FRIGERI ULTIMATE FAREWELL VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621577500151" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8d6835e00e39c9e797e6d229f3f2c4d9.webp"
                  alt="AMAZING SPIDER-MAN: SPIDER-VERSITY #1 ROSE BESCH VARIANT"
                  title="AMAZING SPIDER-MAN: SPIDER-VERSITY #1 ROSE BESCH VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">AMAZING SPIDER-MAN: SPIDER-VERSITY #1 ROSE BESCH VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              AMAZING SPIDER-MAN: SPIDER-VERSITY #1 ROSE BESCH VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300911" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c6e24afbee798f7fe07bbf37f9ce2bc5.webp"
                  alt="CAPTAIN AMERICA #9"
                  title="CAPTAIN AMERICA #9"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">CAPTAIN AMERICA #9</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              CAPTAIN AMERICA #9
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300941" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e3bd4e69f99b0581d57a253c08df833e.webp"
                  alt="CAPTAIN AMERICA #9 MARK BAGLEY APRIL POOL'S DAY VARIANT"
                  title="CAPTAIN AMERICA #9 MARK BAGLEY APRIL POOL'S DAY VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">CAPTAIN AMERICA #9 MARK BAGLEY APRIL POOL'S DAY VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              CAPTAIN AMERICA #9 MARK BAGLEY APRIL POOL'S DAY VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300931" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4fd992dcb1806af3a77ec432388bd655.webp"
                  alt="CAPTAIN AMERICA #9 PHIL NOTO ULTIMATE FAREWELL VARIANT"
                  title="CAPTAIN AMERICA #9 PHIL NOTO ULTIMATE FAREWELL VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">CAPTAIN AMERICA #9 PHIL NOTO ULTIMATE FAREWELL VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              CAPTAIN AMERICA #9 PHIL NOTO ULTIMATE FAREWELL VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621385600311" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7a9797031c7340692dc16dc3a31231d8.webp"
                  alt="CYCLOPS #3"
                  title="CYCLOPS #3"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">CYCLOPS #3</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              CYCLOPS #3
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621385600321" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8eba54ed8aba3ff138ee5ce77f53e2f1.webp"
                  alt="CYCLOPS #3 ALESSANDRO CAPPUCCIO AGENTS OF S.H.I.E.L.D. VARIANT"
                  title="CYCLOPS #3 ALESSANDRO CAPPUCCIO AGENTS OF S.H.I.E.L.D. VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">CYCLOPS #3 ALESSANDRO CAPPUCCIO AGENTS OF S.H.I.E.L.D. VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              CYCLOPS #3 ALESSANDRO CAPPUCCIO AGENTS OF S.H.I.E.L.D. VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621385600331" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ea7bfaffdef55ececdbf9483b9fca67c.webp"
                  alt="CYCLOPS #3 BEN HARVEY CYCLOPS VARIANT"
                  title="CYCLOPS #3 BEN HARVEY CYCLOPS VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">CYCLOPS #3 BEN HARVEY CYCLOPS VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              CYCLOPS #3 BEN HARVEY CYCLOPS VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://media.lunardistribution.com/images/covers/large/1225DE0580.jpg" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/59b5aeb1ea03cc84356d6471fa1acee6.webp"
                  alt="DUCKTALES #12 CVR A IVAN BIGARELLA"
                  title="DUCKTALES #12 CVR A IVAN BIGARELLA"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">DUCKTALES #12 CVR A IVAN BIGARELLA</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              DUCKTALES #12 CVR A IVAN BIGARELLA
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://media.lunardistribution.com/images/covers/large/1225DE0581.jpg" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c3f79bbcc334b2c728400dc86b135a8c.webp"
                  alt="DUCKTALES #12 CVR B FRANCESCO TOMASELLI VAR"
                  title="DUCKTALES #12 CVR B FRANCESCO TOMASELLI VAR"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">DUCKTALES #12 CVR B FRANCESCO TOMASELLI VAR</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              DUCKTALES #12 CVR B FRANCESCO TOMASELLI VAR
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621455600511" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/62364a876d5d0d9c27401436995cc9ff.webp"
                  alt="HULK: SMASH EVERYTHING #5"
                  title="HULK: SMASH EVERYTHING #5"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">HULK: SMASH EVERYTHING #5</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              HULK: SMASH EVERYTHING #5
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621455600521" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ac70224712abe8c0b6becb35d3da7ccd.webp"
                  alt="HULK: SMASH EVERYTHING #5 LUKE ROSS VARIANT"
                  title="HULK: SMASH EVERYTHING #5 LUKE ROSS VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">HULK: SMASH EVERYTHING #5 LUKE ROSS VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              HULK: SMASH EVERYTHING #5 LUKE ROSS VARIANT
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621361000611" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/75d1ec6318bc4de5ed3ab482482021e0.webp"
                  alt="INFERNAL HULK #6"
                  title="INFERNAL HULK #6"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">INFERNAL HULK #6</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              INFERNAL HULK #6
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621361000631" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ee5798f93f2d52ee10d5de2ae258ce45.webp"
                  alt="INFERNAL HULK #6 DAVIDE PARATORE VARIANT"
                  title="INFERNAL HULK #6 DAVIDE PARATORE VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">INFERNAL HULK #6 DAVIDE PARATORE VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              INFERNAL HULK #6 DAVIDE PARATORE VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621496900311" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5319af65380a887eee131104a1fe2803.webp"
                  alt="MARC SPECTOR: MOON KNIGHT #3"
                  title="MARC SPECTOR: MOON KNIGHT #3"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARC SPECTOR: MOON KNIGHT #3</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARC SPECTOR: MOON KNIGHT #3
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621496900331" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/d7aa1647155ac46a60873c18c4db2b34.webp"
                  alt="MARC SPECTOR: MOON KNIGHT #3 ALESSANDRO CAPPUCCIO ULTIMATE FAREWELL VARIANT"
                  title="MARC SPECTOR: MOON KNIGHT #3 ALESSANDRO CAPPUCCIO ULTIMATE FAREWELL VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARC SPECTOR: MOON KNIGHT #3 ALESSANDRO CAPPUCCIO ULTIMATE FAREWELL VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARC SPECTOR: MOON KNIGHT #3 ALESSANDRO CAPPUCCIO ULTIMATE FAREWELL VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500111" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/bef1d1b711ee7b32c851d634916d9d21.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500141" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9eb6e5bd1f7aca468904eedcb097ab1d.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ADAM HUGHES VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ADAM HUGHES VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ADAM HUGHES VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ADAM HUGHES VARIANT
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500117" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/fcc713ba6736fc6b01e5b4c85b1ac867.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 BLANK COVER VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 BLANK COVER VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 BLANK COVER VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 BLANK COVER VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500120" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5cec0772955a1d0b0c39e590ed2577b1.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 DAVID MARQUEZ HOMAGE VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 DAVID MARQUEZ HOMAGE VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 DAVID MARQUEZ HOMAGE VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 DAVID MARQUEZ HOMAGE VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500133" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a43550904f14edb3c78abd9368e5f376.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 E.M. GIST VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 E.M. GIST VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 E.M. GIST VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 E.M. GIST VARIANT
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500119" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8f75f968ae61812815998d7d1088383d.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ERIK LARSEN VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ERIK LARSEN VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ERIK LARSEN VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ERIK LARSEN VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500130" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e7f27034ae808c4cd475cfe0a70da8d8.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GARY FRANK VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GARY FRANK VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GARY FRANK VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GARY FRANK VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500126" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b670c1ed8ad6593fb9d32f482d8d9676.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GREG CAPULLO VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GREG CAPULLO VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GREG CAPULLO VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GREG CAPULLO VARIANT
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500125" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ec577a2cf8f2cf5579eea59169540508.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 HUMBERTO RAMOS VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 HUMBERTO RAMOS VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 HUMBERTO RAMOS VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 HUMBERTO RAMOS VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500121" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5ab28d7ab7b3766b51e71e1ab54ba6fa.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 IVAN TALAVERA VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 IVAN TALAVERA VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 IVAN TALAVERA VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 IVAN TALAVERA VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500118" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ce06d14cf6b7ca90e5a7d0b6a6c9a5ed.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 KAARE ANDREWS WRAPAROUND VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 KAARE ANDREWS WRAPAROUND VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 KAARE ANDREWS WRAPAROUND VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 KAARE ANDREWS WRAPAROUND VARIANT
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500151" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/6e3e8c3848b6311dbf7712b6478482f3.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 LOGO MASHUP VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 LOGO MASHUP VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 LOGO MASHUP VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 LOGO MASHUP VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500127" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/78a9ac9f7c437db95192a7907570f7ca.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARCOS MARTIN VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARCOS MARTIN VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARCOS MARTIN VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARCOS MARTIN VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500131" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7290423573aa1c66798a725805b5e722.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARK BAGLEY FOIL VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARK BAGLEY FOIL VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARK BAGLEY FOIL VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARK BAGLEY FOIL VARIANT
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500171" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7c49f97d91d3f29db2fed291bd2873fe.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 PEACH MOMOKO VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 PEACH MOMOKO VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 PEACH MOMOKO VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 PEACH MOMOKO VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500128" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0086cd0abf926ea58554374246d95f39.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RUSSELL DAUTERMAN VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RUSSELL DAUTERMAN VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RUSSELL DAUTERMAN VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RUSSELL DAUTERMAN VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500181" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8ca6928cf0832e8f5b5dce72d3df9b95.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RYAN STEGMAN VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RYAN STEGMAN VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RYAN STEGMAN VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RYAN STEGMAN VARIANT
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500122" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/6c57b73f3e80e5793e3adccfee72bb12.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SANFORD GREENE HOMAGE VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SANFORD GREENE HOMAGE VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SANFORD GREENE HOMAGE VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SANFORD GREENE HOMAGE VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500161" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b7a717aca239586c389ddfe3ae513db3.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SARA PICHELLI VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SARA PICHELLI VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SARA PICHELLI VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SARA PICHELLI VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500191" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/85bf576d78c11a967f054717f5f02df6.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SKOTTIE YOUNG VIRGIN VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SKOTTIE YOUNG VIRGIN VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SKOTTIE YOUNG VIRGIN VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SKOTTIE YOUNG VIRGIN VARIANT
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500123" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/6f0d9dbc4a9635c90f4f3600c56fb58e.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 WALT SIMONSON VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 WALT SIMONSON VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 WALT SIMONSON VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 WALT SIMONSON VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://media.lunardistribution.com/images/covers/large/0226MA0882.jpg" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a2534e85e23cc6427fc925aa81b2301c.webp"
                  alt="PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR A FEDERICO SABBATINI"
                  title="PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR A FEDERICO SABBATINI"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR A FEDERICO SABBATINI</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR A FEDERICO SABBATINI
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://media.lunardistribution.com/images/covers/large/0226MA0883.jpg" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0b85cf88e82c60f8d5b331247bc3d0f8.webp"
                  alt="PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR B FREDDIE WILLIAMS II ANDREW DALHOUSE VAR"
                  title="PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR B FREDDIE WILLIAMS II ANDREW DALHOUSE VAR"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR B FREDDIE WILLIAMS II ANDREW DALHOUSE VAR</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR B FREDDIE WILLIAMS II ANDREW DALHOUSE VAR
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621444000411" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/00ffa9e05e4b01363b535d47472f7ae0.webp"
                  alt="ROGUE #4"
                  title="ROGUE #4"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">ROGUE #4</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              ROGUE #4
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621444000431" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4ff0f777989e53806f4001146e6bc7ce.webp"
                  alt="ROGUE #4 ELENA CASAGRANDE VARIANT"
                  title="ROGUE #4 ELENA CASAGRANDE VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">ROGUE #4 ELENA CASAGRANDE VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              ROGUE #4 ELENA CASAGRANDE VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://media.lunardistribution.com/images/covers/large/0226TN1075.jpg" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/f4258a8c117625b4e98a7a9ec15bc340.webp"
                  alt="SAVAGE SWORD OF CONAN REFORGED #4 CVR A ROBERTO DE LA TORRE (MR)"
                  title="SAVAGE SWORD OF CONAN REFORGED #4 CVR A ROBERTO DE LA TORRE (MR)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">SAVAGE SWORD OF CONAN REFORGED #4 CVR A ROBERTO DE LA TORRE (MR)</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              SAVAGE SWORD OF CONAN REFORGED #4 CVR A ROBERTO DE LA TORRE (MR)
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://media.lunardistribution.com/images/covers/large/0226TN1076.jpg" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/97872b6df9db441c4f2a2d5d542d578c.webp"
                  alt="SAVAGE SWORD OF CONAN REFORGED #4 CVR B NEAL ADAMS VAR (MR)"
                  title="SAVAGE SWORD OF CONAN REFORGED #4 CVR B NEAL ADAMS VAR (MR)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">SAVAGE SWORD OF CONAN REFORGED #4 CVR B NEAL ADAMS VAR (MR)</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              SAVAGE SWORD OF CONAN REFORGED #4 CVR B NEAL ADAMS VAR (MR)
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621514000211" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5909f7e4f5545d28542cc99902da8c59.webp"
                  alt="SENTRY #2"
                  title="SENTRY #2"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">SENTRY #2</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              SENTRY #2
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621514000231" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/602201f5bb218b382bc904eb328ba374.webp"
                  alt="SENTRY #2 ALESSANDRO CAPPUCCIO VARIANT"
                  title="SENTRY #2 ALESSANDRO CAPPUCCIO VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">SENTRY #2 ALESSANDRO CAPPUCCIO VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              SENTRY #2 ALESSANDRO CAPPUCCIO VARIANT
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621514000221" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9a90b96537c66a0fe6e739a96873889d.webp"
                  alt="SENTRY #2 GUISEPPE CAMUNCOLI VARIANT"
                  title="SENTRY #2 GUISEPPE CAMUNCOLI VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">SENTRY #2 GUISEPPE CAMUNCOLI VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              SENTRY #2 GUISEPPE CAMUNCOLI VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/82771401521808611" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0cabbce7f263da4a2d9abe0ba7487ed7.webp"
                  alt="Sonic the Hedgehog #86 Cover A (Rothlisberger)"
                  title="Sonic the Hedgehog #86 Cover A (Rothlisberger)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">Sonic the Hedgehog #86 Cover A (Rothlisberger)</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              Sonic the Hedgehog #86 Cover A (Rothlisberger)
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621179100511" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9dd8823febc78ccbe0be5f9711e1f652.webp"
                  alt="SORCERER SUPREME #5"
                  title="SORCERER SUPREME #5"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">SORCERER SUPREME #5</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              SORCERER SUPREME #5
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621179100531" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/706dc445c1d0bf62e663113738085d9a.webp"
                  alt="SORCERER SUPREME #5 FANYANG VARIANT"
                  title="SORCERER SUPREME #5 FANYANG VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">SORCERER SUPREME #5 FANYANG VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              SORCERER SUPREME #5 FANYANG VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621600000111" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3cdd4cf8b59f5e8819a99d5080bffd7f.webp"
                  alt="SPIDER-MAN NOIR #1 FACSIMILE EDITION"
                  title="SPIDER-MAN NOIR #1 FACSIMILE EDITION"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">SPIDER-MAN NOIR #1 FACSIMILE EDITION</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              SPIDER-MAN NOIR #1 FACSIMILE EDITION
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621593500111" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/579fca8664312e5d883b5a6cab82ac84.webp"
                  alt="STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1"
                  title="STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621593500151" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/66f373c44decc3ff7d877e1f8e27203a.webp"
                  alt="STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1 E.M. GIST MANDALORIAN & GROGU VARIANT"
                  title="STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1 E.M. GIST MANDALORIAN & GROGU VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1 E.M. GIST MANDALORIAN & GROGU VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1 E.M. GIST MANDALORIAN & GROGU VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/82771403150803611" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/1e7a5eb84147f2f19b25243aec54e55e.webp"
                  alt="Teenage Mutant Ninja Turtles: Saturday Morning Adventures #36 Cover A (Schoening)"
                  title="Teenage Mutant Ninja Turtles: Saturday Morning Adventures #36 Cover A (Schoening)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">Teenage Mutant Ninja Turtles: Saturday Morning Adventures #36 Cover A (Schoening)</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              Teenage Mutant Ninja Turtles: Saturday Morning Adventures #36 Cover A (Schoening)
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/82771403502500211" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b8f25d7376381a105b264f20cea38eae.webp"
                  alt="The Rocketeer: The Island #2 Cover A (Edgar)"
                  title="The Rocketeer: The Island #2 Cover A (Edgar)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">The Rocketeer: The Island #2 Cover A (Edgar)</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              The Rocketeer: The Island #2 Cover A (Edgar)
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/82771403502500221" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7227f6066a231b55413f4d5117a03e5e.webp"
                  alt="The Rocketeer: The Island #2 Variant B (Stevens)"
                  title="The Rocketeer: The Island #2 Variant B (Stevens)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">The Rocketeer: The Island #2 Variant B (Stevens)</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              The Rocketeer: The Island #2 Variant B (Stevens)
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://media.lunardistribution.com/images/covers/large/0226IM0470.jpg" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/2faf3536090715e8eca73788999a713d.webp"
                  alt="UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR A MARTIN SIMMONDS"
                  title="UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR A MARTIN SIMMONDS"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR A MARTIN SIMMONDS</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR A MARTIN SIMMONDS
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://media.lunardistribution.com/images/covers/large/0226IM0471.jpg" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8de74faae1dc0e21a0ea117eadf1c7f4.webp"
                  alt="UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR B JULIAN TOTINO TEDESCO VAR"
                  title="UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR B JULIAN TOTINO TEDESCO VAR"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR B JULIAN TOTINO TEDESCO VAR</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR B JULIAN TOTINO TEDESCO VAR
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/76156801508900211" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0474d314f97f42565fb3cd48c2882f07.webp"
                  alt="Usagi Yojimbo: Kaito '84 #2 (CVR A) (Jared Cullum)"
                  title="Usagi Yojimbo: Kaito '84 #2 (CVR A) (Jared Cullum)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">Usagi Yojimbo: Kaito '84 #2 (CVR A) (Jared Cullum)</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              Usagi Yojimbo: Kaito '84 #2 (CVR A) (Jared Cullum)
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/76156801508900221" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a20d2501898b97ee81d5883a88e17149.webp"
                  alt="Usagi Yojimbo: Kaito '84 #2 (CVR B) (Stan Sakai)"
                  title="Usagi Yojimbo: Kaito '84 #2 (CVR B) (Stan Sakai)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">Usagi Yojimbo: Kaito '84 #2 (CVR B) (Stan Sakai)</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              Usagi Yojimbo: Kaito '84 #2 (CVR B) (Stan Sakai)
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/76156801508900231" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/154536f2f6f2a6b58edb28a470e8e578.webp"
                  alt="Usagi Yojimbo: Kaito '84 #2 (CVR C) (Kevin Eastman)"
                  title="Usagi Yojimbo: Kaito '84 #2 (CVR C) (Kevin Eastman)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">Usagi Yojimbo: Kaito '84 #2 (CVR C) (Kevin Eastman)</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              Usagi Yojimbo: Kaito '84 #2 (CVR C) (Kevin Eastman)
+            </p>
           </a>
         </td></tr><tr>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621448800311" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4e605e1da8568402513c5bc81b338f82.webp"
                  alt="WADE WILSON: DEADPOOL #3"
                  title="WADE WILSON: DEADPOOL #3"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">WADE WILSON: DEADPOOL #3</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              WADE WILSON: DEADPOOL #3
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960621448800321" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/d7e0b443c3e46d03d3ea9c85c34ab991.webp"
                  alt="WADE WILSON: DEADPOOL #3 GEOFF SHAW AGENTS OF S.H.I.E.L.D. VARIANT"
                  title="WADE WILSON: DEADPOOL #3 GEOFF SHAW AGENTS OF S.H.I.E.L.D. VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">WADE WILSON: DEADPOOL #3 GEOFF SHAW AGENTS OF S.H.I.E.L.D. VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              WADE WILSON: DEADPOOL #3 GEOFF SHAW AGENTS OF S.H.I.E.L.D. VARIANT
+            </p>
           </a>
         </td>
-        <td class="ml-col" style="width:33%;padding:8px;text-align:center;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">
+        <td class="ml-col" style="width:33%;padding:8px;text-align:center;
+                                   vertical-align:top;">
           <a href="https://images.penguinrandomhouse.com/cover/d/75960620841801911" target="_blank" rel="noopener noreferrer"
-             style="text-decoration:none;display:block;color:#333333;">
+             style="text-decoration:none;display:block;color:#9a9390;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/28cad09fd4d869054714010bf02780c9.webp"
                  alt="WOLVERINE #19"
                  title="WOLVERINE #19"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;
-                        border-radius:3px;border:0;outline:none;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;
-                      color:#444444;font-family:Arial,Helvetica,sans-serif;">WOLVERINE #19</p>
+                 style="display:block;margin:0 auto;max-width:100%;
+                        height:auto;border-radius:4px;border:0;outline:none;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;
+                      font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;">
+              WOLVERINE #19
+            </p>
           </a>
         </td></tr>
             </table>
           </td>
         </tr>
-
+ 
         <!-- FOOTER -->
+        <!-- bg-elevated (#222) mirrors title bar for end-cap symmetry -->
         <tr>
-          <td style="background-color:#1a1a2e;color:#aaaaaa;text-align:center;
-                     font-size:11px;padding:12px 20px;
-                     font-family:Arial,Helvetica,sans-serif;
-                     mso-padding-alt:12px 20px;">
-            Generated by Weekly Previews &bull; April 19, 2026
+          <td style="background-color:#222222;
+                     border-top:1px solid #2e2e2e;
+                     text-align:center;
+                     padding:14px 20px;
+                     mso-padding-alt:14px 20px;">
+            <div style="font-family:'Bebas Neue',Georgia,serif;
+                        font-size:14px;
+                        letter-spacing:3px;
+                        text-transform:uppercase;
+                        color:#f0ece4;
+                        margin-bottom:4px;
+                        mso-line-height-rule:exactly;">
+              <!--[if mso]>
+              <span style="font-family:Georgia,serif;font-size:14px;
+                           letter-spacing:3px;color:#f0ece4;">
+                PULLLIST &middot; Ray &amp; Judy's Book Stop
+              </span>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              PULL<span style="color:#e8321c;">LIST</span>
+              &nbsp;&middot;&nbsp; Ray &amp; Judy&rsquo;s Book Stop
+              <!--<![endif]-->
+            </div>
+            <div style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                        font-size:11px;
+                        color:#5a5755;
+                        letter-spacing:1px;
+                        mso-line-height-rule:exactly;">
+              Generated by Weekly Previews &bull; April 20, 2026
+              &nbsp;&middot;&nbsp; 973-586-9182
+              &nbsp;&middot;&nbsp; 40 W Main St, Rockaway NJ
+            </div>
           </td>
         </tr>
-
+ 
       </table>
       <!-- End inner content table -->
-
+ 
     </td>
   </tr>
 </table>
