@@ -4,17 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weekly Previews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap');
-
     /*
      * MOBILE OVERRIDE
-     * On screens under 480px, each .col cell expands to full width,
+     * On screens under 480px each .col cell expands to full width,
      * stacking the 3-column layout into a single column.
-     * Respected by Apple Mail, Gmail app (iOS/Android), Samsung Mail,
-     * and MailerLite's preview renderer.
-     * Outlook desktop ignores media queries but renders the 3-col
-     * table layout correctly at full width regardless.
      */
     @media only screen and (max-width: 480px) {
       .col {
@@ -30,135 +28,171 @@
       .promo-feat {
         display: block !important;
         width: 100% !important;
+        border-left: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
       }
     }
-
-    /* Promo collapse animation */
+ 
+    /* Promo collapse / expand */
     #promo-section {
-      transition: max-height 0.45s cubic-bezier(.4,0,.2,1),
-                  opacity 0.35s ease,
-                  padding 0.35s ease;
-      max-height: 600px;
+      transition: max-height 0.45s cubic-bezier(.4,0,.2,1), opacity 0.35s ease;
+      max-height: 700px;
       overflow: hidden;
     }
     #promo-section.dismissed {
       max-height: 0 !important;
       opacity: 0;
-      padding: 0 !important;
     }
-
-    /* Re-open tab shown after promo is dismissed */
+ 
+    /* Re-open tab */
     #promo-tab {
       display: none;
       cursor: pointer;
       background: #e8321c;
-      color: #fff;
-      font-family: 'Barlow Condensed', Arial, sans-serif;
-      font-weight: 700;
-      font-size: 13px;
-      letter-spacing: 0.1em;
+      color: #f0ece4;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 15px;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       text-align: center;
-      padding: 9px 20px;
+      padding: 10px 20px;
       border: none;
       width: 100%;
       max-width: 640px;
+      transition: background 0.18s ease;
     }
+    #promo-tab:hover   { background: #ff4a30; }
     #promo-tab.visible { display: block; }
-    #promo-close:hover { background: rgba(255,255,255,0.15) !important; }
-    .feat-icon-wrap { transition: transform 0.2s ease; }
-    .feat-item:hover .feat-icon-wrap { transform: scale(1.08); }
+ 
+    /* Dismiss hover */
+    #promo-close { transition: all 0.18s ease; }
+    #promo-close:hover {
+      background: rgba(255,74,48,0.25) !important;
+      border-color: rgba(240,236,228,0.45) !important;
+    }
+ 
+    .feat-icon-wrap { transition: transform 0.18s ease; }
+    .feat-item:hover .feat-icon-wrap { transform: scale(1.1); }
   </style>
 </head>
-<body style="margin:0;padding:0;background-color:#0f0f0f;font-family:'Barlow',Arial,sans-serif;">
-
+<body style="margin:0;padding:0;background-color:#0f0f0f;
+             font-family:'IBM Plex Sans',Arial,sans-serif;
+             font-size:16px;line-height:1.6;color:#f0ece4;">
+ 
   <!-- Re-open tab: hidden until promo is dismissed -->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
          style="background-color:#0f0f0f;">
     <tr>
       <td align="center">
         <button id="promo-tab" onclick="reopenPromo()">
-          &#9650; &nbsp; Reserve Your Comics &mdash; Ask About Pull List
+          &#9650;&nbsp; Reserve Your Comics &mdash; Ask About Pull List
         </button>
       </td>
     </tr>
   </table>
-
-  <!-- Outer wrapper table -->
+ 
+  <!-- Outer wrapper -->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
          style="background-color:#0f0f0f;">
     <tr>
       <td align="center" style="padding:20px 10px;">
-
+ 
         <!-- Inner content table: 640px max width -->
         <table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0"
-               style="max-width:640px;width:100%;background-color:#ffffff;border-radius:6px;
-                      overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-
-          <!-- TITLE BAR -->
+               style="max-width:640px;width:100%;
+                      background-color:#181818;
+                      border:1px solid #2e2e2e;
+                      border-radius:8px;
+                      overflow:hidden;
+                      box-shadow:0 4px 24px rgba(0,0,0,0.5);">
+ 
+          <!-- ??? TITLE BAR ??? -->
+          <!-- bg-elevated (#222) lifts off bg-card (#181818) body -->
           <tr>
-            <td style="background-color:#1a1a2e;color:#ffffff;text-align:center;
-                       padding:18px 20px;font-size:22px;font-weight:bold;
-                       letter-spacing:1px;text-transform:uppercase;
-                       font-family:Arial,sans-serif;">
-              Weekly Previews
+            <td style="background-color:#222222;
+                       border-bottom:1px solid #2e2e2e;
+                       text-align:center;
+                       padding:20px 24px;">
+              <div style="font-family:'Bebas Neue',sans-serif;
+                          font-size:28px;letter-spacing:0.12em;
+                          text-transform:uppercase;color:#f0ece4;line-height:1;">
+                PULL<span style="color:#e8321c;">LIST</span>
+                &nbsp;&mdash;&nbsp;Weekly Previews
+              </div>
+              <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                          font-size:11px;color:#5a5755;
+                          letter-spacing:0.1em;text-transform:uppercase;
+                          margin-top:5px;">
+                Ray &amp; Judy&rsquo;s Book Stop &nbsp;&middot;&nbsp; April 19, 2026
+              </div>
             </td>
           </tr>
-
-          <!-- HERO IMAGE ? linked to store website -->
+ 
+          <!-- ??? HERO IMAGE ? links to store ??? -->
           <tr>
-            <td style="line-height:0;font-size:0;padding:0;">
+            <td style="line-height:0;font-size:0;padding:0;
+                       border-bottom:1px solid #2e2e2e;">
               <a href="http://rjbookstop.com" target="_blank" rel="noopener noreferrer"
                  style="display:block;line-height:0;font-size:0;border:0;">
                 <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/hero.jpg"
                      alt="Weekly Previews"
                      width="640"
-                     style="display:block;width:100%;max-width:640px;height:auto;border:0;">
+                     style="display:block;width:100%;max-width:640px;
+                            height:auto;border:0;">
               </a>
             </td>
           </tr>
-
-          <!-- ??????????????????????????????????????????????? -->
-          <!-- ???  PULL LIST PROMO ? newsletter.html only ??? -->
-          <!-- ??????????????????????????????????????????????? -->
+ 
+          <!-- ?????????????????????????????????????????????????? -->
+          <!-- ???  PULL LIST PROMO ? newsletter.html only   ??? -->
+          <!-- ?????????????????????????????????????????????????? -->
           <tr>
-            <td id="promo-section" style="background:#111118;padding:0;">
-
-              <!-- Promo label bar with dismiss button -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <td id="promo-section"
+                style="background-color:#181818;
+                       border-bottom:1px solid #2e2e2e;
+                       padding:0;">
+ 
+              <!-- Promo label bar -->
+              <table role="presentation" width="100%" cellpadding="0"
+                     cellspacing="0" border="0">
                 <tr>
-                  <td style="background:#e8321c;padding:10px 28px;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <td style="background-color:#e8321c;padding:12px 28px;">
+                    <table role="presentation" width="100%" cellpadding="0"
+                           cellspacing="0" border="0">
                       <tr>
-                        <td>
-                          <div style="font-family:'Barlow Condensed',Arial,sans-serif;
-                                      font-size:11px;font-weight:700;
-                                      color:rgba(255,255,255,0.85);
-                                      letter-spacing:0.18em;text-transform:uppercase;">
+                        <td style="vertical-align:middle;">
+                          <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                                      font-size:10px;font-weight:600;
+                                      color:rgba(240,236,228,0.7);
+                                      letter-spacing:0.2em;text-transform:uppercase;
+                                      margin-bottom:3px;">
                             From the shop
                           </div>
-                          <div style="font-family:'Barlow Condensed',Arial,sans-serif;
-                                      font-size:20px;font-weight:900;color:#fff;
-                                      letter-spacing:0.06em;text-transform:uppercase;
-                                      line-height:1.1;margin-top:2px;">
-                            PULL<span style="opacity:0.7;">LIST</span>
-                            &nbsp;&middot;&nbsp;
-                            <span style="font-weight:500;font-size:16px;">
+                          <div style="font-family:'Bebas Neue',sans-serif;
+                                      font-size:22px;letter-spacing:0.1em;
+                                      color:#f0ece4;line-height:1;
+                                      text-transform:uppercase;">
+                            PULLLIST &nbsp;&middot;&nbsp;
+                            <span style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                                         font-size:15px;font-weight:500;
+                                         letter-spacing:0.01em;text-transform:none;">
                               Never miss an issue again
                             </span>
                           </div>
                         </td>
-                        <td style="text-align:right;vertical-align:top;">
+                        <td style="text-align:right;vertical-align:middle;
+                                   padding-left:16px;">
                           <button id="promo-close"
                                   onclick="dismissPromo()"
                                   style="background:rgba(0,0,0,0.2);
-                                         border:1px solid rgba(255,255,255,0.25);
-                                         color:#fff;
-                                         font-family:'Barlow Condensed',Arial,sans-serif;
-                                         font-size:11px;letter-spacing:0.12em;
-                                         text-transform:uppercase;padding:5px 12px;
-                                         border-radius:3px;cursor:pointer;
-                                         font-weight:700;white-space:nowrap;">
+                                         border:1px solid rgba(240,236,228,0.3);
+                                         color:#f0ece4;
+                                         font-family:'IBM Plex Sans',Arial,sans-serif;
+                                         font-size:11px;font-weight:600;
+                                         letter-spacing:0.1em;text-transform:uppercase;
+                                         padding:6px 14px;border-radius:4px;
+                                         cursor:pointer;white-space:nowrap;">
                             Dismiss &#x2715;
                           </button>
                         </td>
@@ -167,921 +201,1306 @@
                   </td>
                 </tr>
               </table>
-
-              <!-- Feature columns: 3 left, 2 right + CTA -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+ 
+              <!-- Feature columns -->
+              <table role="presentation" width="100%" cellpadding="0"
+                     cellspacing="0" border="0">
                 <tr>
-                  <td style="padding:20px 22px 4px;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <td style="padding:22px 24px 20px;">
+                    <table role="presentation" width="100%" cellpadding="0"
+                           cellspacing="0" border="0">
                       <tr>
-
+ 
                         <!-- LEFT: features 1?3 -->
                         <td class="promo-feat"
-                            style="width:50%;vertical-align:top;padding-right:10px;">
-
+                            style="width:50%;vertical-align:top;padding-right:20px;">
+ 
                           <!-- Feature 1 -->
-                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
-                                 border="0" style="margin-bottom:14px;" class="feat-item">
+                          <table role="presentation" width="100%" cellpadding="0"
+                                 cellspacing="0" border="0"
+                                 style="margin-bottom:16px;" class="feat-item">
                             <tr>
-                              <td style="width:34px;vertical-align:top;padding-right:12px;">
+                              <td style="width:36px;vertical-align:top;padding-right:12px;">
                                 <div class="feat-icon-wrap"
-                                     style="width:32px;height:32px;background:#e8321c14;
-                                            border:1px solid #e8321c44;border-radius:4px;
-                                            display:table-cell;text-align:center;vertical-align:middle;">
-                                  <svg width="16" height="16" fill="none" stroke="#e8321c"
-                                       stroke-width="2" viewBox="0 0 24 24"
-                                       style="vertical-align:middle;">
+                                     style="width:34px;height:34px;
+                                            background:rgba(232,50,28,0.15);
+                                            border:1px solid rgba(232,50,28,0.3);
+                                            border-radius:4px;display:table-cell;
+                                            text-align:center;vertical-align:middle;">
+                                  <svg width="16" height="16" fill="none"
+                                       stroke="#e8321c" stroke-width="2"
+                                       viewBox="0 0 24 24" style="vertical-align:middle;">
                                     <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0
                                              002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2
-                                             0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2
-                                             4-4"/>
+                                             0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2
+                                             2 4-4"/>
                                   </svg>
                                 </div>
                               </td>
                               <td style="vertical-align:top;">
-                                <div style="font-family:'Barlow Condensed',Arial,sans-serif;
-                                            font-size:13px;font-weight:700;color:#f0ece4;
-                                            letter-spacing:0.04em;text-transform:uppercase;
-                                            margin-bottom:2px;">
+                                <div style="font-family:'Bebas Neue',sans-serif;
+                                            font-size:15px;letter-spacing:0.08em;
+                                            color:#f0ece4;margin-bottom:3px;
+                                            text-transform:uppercase;">
                                   Your list, always up to date
                                 </div>
-                                <div style="font-family:'Barlow',Arial,sans-serif;
-                                            font-size:11.5px;color:#666;line-height:1.5;">
+                                <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                                            font-size:12px;color:#9a9390;line-height:1.5;">
                                   Browse the full monthly catalog and reserve what you
                                   want &mdash; any time, any device.
                                 </div>
                               </td>
                             </tr>
                           </table>
-
+ 
                           <!-- Feature 2 -->
-                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
-                                 border="0" style="margin-bottom:14px;" class="feat-item">
+                          <table role="presentation" width="100%" cellpadding="0"
+                                 cellspacing="0" border="0"
+                                 style="margin-bottom:16px;" class="feat-item">
                             <tr>
-                              <td style="width:34px;vertical-align:top;padding-right:12px;">
+                              <td style="width:36px;vertical-align:top;padding-right:12px;">
                                 <div class="feat-icon-wrap"
-                                     style="width:32px;height:32px;background:#3b82f614;
-                                            border:1px solid #3b82f644;border-radius:4px;
-                                            display:table-cell;text-align:center;vertical-align:middle;">
-                                  <svg width="16" height="16" fill="none" stroke="#3b82f6"
-                                       stroke-width="2" viewBox="0 0 24 24"
-                                       style="vertical-align:middle;">
-                                    <path d="M15 17h5l-1.405-1.405A2.032 2.032 0
-                                             0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2
-                                             2 0 10-4 0v.341C7.67 6.165 6 8.388 6
-                                             11v3.159c0 .538-.214 1.055-.595
-                                             1.436L4 17h5m6 0v1a3 3 0 11-6
-                                             0v-1m6 0H9"/>
+                                     style="width:34px;height:34px;
+                                            background:rgba(59,130,246,0.15);
+                                            border:1px solid rgba(59,130,246,0.3);
+                                            border-radius:4px;display:table-cell;
+                                            text-align:center;vertical-align:middle;">
+                                  <svg width="16" height="16" fill="none"
+                                       stroke="#3b82f6" stroke-width="2"
+                                       viewBox="0 0 24 24" style="vertical-align:middle;">
+                                    <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118
+                                             14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0
+                                             10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0
+                                             .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3
+                                             0 11-6 0v-1m6 0H9"/>
                                   </svg>
                                 </div>
                               </td>
                               <td style="vertical-align:top;">
-                                <div style="font-family:'Barlow Condensed',Arial,sans-serif;
-                                            font-size:13px;font-weight:700;color:#f0ece4;
-                                            letter-spacing:0.04em;text-transform:uppercase;
-                                            margin-bottom:2px;">
+                                <div style="font-family:'Bebas Neue',sans-serif;
+                                            font-size:15px;letter-spacing:0.08em;
+                                            color:#f0ece4;margin-bottom:3px;
+                                            text-transform:uppercase;">
                                   Auto-reserve your series
                                 </div>
-                                <div style="font-family:'Barlow',Arial,sans-serif;
-                                            font-size:11.5px;color:#666;line-height:1.5;">
+                                <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                                            font-size:12px;color:#9a9390;line-height:1.5;">
                                   Subscribe once &mdash; automatically added to your
                                   pull list every month.
                                 </div>
                               </td>
                             </tr>
                           </table>
-
+ 
                           <!-- Feature 3 -->
-                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
-                                 border="0" class="feat-item">
+                          <table role="presentation" width="100%" cellpadding="0"
+                                 cellspacing="0" border="0" class="feat-item">
                             <tr>
-                              <td style="width:34px;vertical-align:top;padding-right:12px;">
+                              <td style="width:36px;vertical-align:top;padding-right:12px;">
                                 <div class="feat-icon-wrap"
-                                     style="width:32px;height:32px;background:#22c55e14;
-                                            border:1px solid #22c55e44;border-radius:4px;
-                                            display:table-cell;text-align:center;vertical-align:middle;">
-                                  <svg width="16" height="16" fill="none" stroke="#22c55e"
-                                       stroke-width="2" viewBox="0 0 24 24"
-                                       style="vertical-align:middle;">
+                                     style="width:34px;height:34px;
+                                            background:rgba(34,197,94,0.15);
+                                            border:1px solid rgba(34,197,94,0.3);
+                                            border-radius:4px;display:table-cell;
+                                            text-align:center;vertical-align:middle;">
+                                  <svg width="16" height="16" fill="none"
+                                       stroke="#22c55e" stroke-width="2"
+                                       viewBox="0 0 24 24" style="vertical-align:middle;">
                                     <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
                                     <line x1="16" y1="2" x2="16" y2="6"/>
-                                    <line x1="8" y1="2" x2="8" y2="6"/>
-                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                    <line x1="8"  y1="2" x2="8"  y2="6"/>
+                                    <line x1="3"  y1="10" x2="21" y2="10"/>
                                   </svg>
                                 </div>
                               </td>
                               <td style="vertical-align:top;">
-                                <div style="font-family:'Barlow Condensed',Arial,sans-serif;
-                                            font-size:13px;font-weight:700;color:#f0ece4;
-                                            letter-spacing:0.04em;text-transform:uppercase;
-                                            margin-bottom:2px;">
+                                <div style="font-family:'Bebas Neue',sans-serif;
+                                            font-size:15px;letter-spacing:0.08em;
+                                            color:#f0ece4;margin-bottom:3px;
+                                            text-transform:uppercase;">
                                   Know what&rsquo;s arriving
                                 </div>
-                                <div style="font-family:'Barlow',Arial,sans-serif;
-                                            font-size:11.5px;color:#666;line-height:1.5;">
+                                <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                                            font-size:12px;color:#9a9390;line-height:1.5;">
                                   Reserved titles grouped by arrival date &mdash; always
                                   know what&rsquo;s coming Wednesday.
                                 </div>
                               </td>
                             </tr>
                           </table>
-
+ 
                         </td>
-
+ 
                         <!-- RIGHT: features 4?5 + CTA -->
+                        <!-- border-accent (#444) for stronger column rule -->
                         <td class="promo-feat"
-                            style="width:50%;vertical-align:top;padding-left:10px;
-                                   border-left:1px solid #1e1e2a;">
-
+                            style="width:50%;vertical-align:top;
+                                   padding-left:20px;
+                                   border-left:1px solid #444;">
+ 
                           <!-- Feature 4 -->
-                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
-                                 border="0" style="margin-bottom:14px;" class="feat-item">
+                          <table role="presentation" width="100%" cellpadding="0"
+                                 cellspacing="0" border="0"
+                                 style="margin-bottom:16px;" class="feat-item">
                             <tr>
-                              <td style="width:34px;vertical-align:top;padding-right:12px;">
+                              <td style="width:36px;vertical-align:top;padding-right:12px;">
                                 <div class="feat-icon-wrap"
-                                     style="width:32px;height:32px;background:#a855f714;
-                                            border:1px solid #a855f744;border-radius:4px;
-                                            display:table-cell;text-align:center;vertical-align:middle;">
-                                  <svg width="16" height="16" fill="none" stroke="#a855f7"
-                                       stroke-width="2" viewBox="0 0 24 24"
-                                       style="vertical-align:middle;">
-                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21
-                                             8M5 19h14a2 2 0 002-2V7a2 2 0
-                                             00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                     style="width:34px;height:34px;
+                                            background:rgba(168,85,247,0.15);
+                                            border:1px solid rgba(168,85,247,0.3);
+                                            border-radius:4px;display:table-cell;
+                                            text-align:center;vertical-align:middle;">
+                                  <svg width="16" height="16" fill="none"
+                                       stroke="#a855f7" stroke-width="2"
+                                       viewBox="0 0 24 24" style="vertical-align:middle;">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2
+                                             2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2
+                                             2v10a2 2 0 002 2z"/>
                                   </svg>
                                 </div>
                               </td>
                               <td style="vertical-align:top;">
-                                <div style="font-family:'Barlow Condensed',Arial,sans-serif;
-                                            font-size:13px;font-weight:700;color:#f0ece4;
-                                            letter-spacing:0.04em;text-transform:uppercase;
-                                            margin-bottom:2px;">
+                                <div style="font-family:'Bebas Neue',sans-serif;
+                                            font-size:15px;letter-spacing:0.08em;
+                                            color:#f0ece4;margin-bottom:3px;
+                                            text-transform:uppercase;">
                                   Your list in your inbox
                                 </div>
-                                <div style="font-family:'Barlow',Arial,sans-serif;
-                                            font-size:11.5px;color:#666;line-height:1.5;">
-                                  Email yourself a confirmation of your pull list &mdash;
-                                  a personal record ready for pickup.
+                                <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                                            font-size:12px;color:#9a9390;line-height:1.5;">
+                                  Email yourself a full confirmation &mdash; a personal
+                                  record ready for pickup.
                                 </div>
                               </td>
                             </tr>
                           </table>
-
+ 
                           <!-- Feature 5 -->
-                          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
-                                 border="0" style="margin-bottom:18px;" class="feat-item">
+                          <table role="presentation" width="100%" cellpadding="0"
+                                 cellspacing="0" border="0"
+                                 style="margin-bottom:20px;" class="feat-item">
                             <tr>
-                              <td style="width:34px;vertical-align:top;padding-right:12px;">
+                              <td style="width:36px;vertical-align:top;padding-right:12px;">
                                 <div class="feat-icon-wrap"
-                                     style="width:32px;height:32px;background:#f59e0b14;
-                                            border:1px solid #f59e0b44;border-radius:4px;
-                                            display:table-cell;text-align:center;vertical-align:middle;">
-                                  <svg width="16" height="16" fill="none" stroke="#f59e0b"
-                                       stroke-width="2" viewBox="0 0 24 24"
-                                       style="vertical-align:middle;">
+                                     style="width:34px;height:34px;
+                                            background:rgba(245,158,11,0.15);
+                                            border:1px solid rgba(245,158,11,0.3);
+                                            border-radius:4px;display:table-cell;
+                                            text-align:center;vertical-align:middle;">
+                                  <svg width="16" height="16" fill="none"
+                                       stroke="#f59e0b" stroke-width="2"
+                                       viewBox="0 0 24 24" style="vertical-align:middle;">
                                     <circle cx="11" cy="11" r="8"/>
                                     <path d="m21 21-4.35-4.35"/>
                                   </svg>
                                 </div>
                               </td>
                               <td style="vertical-align:top;">
-                                <div style="font-family:'Barlow Condensed',Arial,sans-serif;
-                                            font-size:13px;font-weight:700;color:#f0ece4;
-                                            letter-spacing:0.04em;text-transform:uppercase;
-                                            margin-bottom:2px;">
+                                <div style="font-family:'Bebas Neue',sans-serif;
+                                            font-size:15px;letter-spacing:0.08em;
+                                            color:#f0ece4;margin-bottom:3px;
+                                            text-transform:uppercase;">
                                   Discover what you&rsquo;ll love
                                 </div>
-                                <div style="font-family:'Barlow',Arial,sans-serif;
-                                            font-size:11.5px;color:#666;line-height:1.5;">
-                                  Personalized recommendations surface new titles from
-                                  series you already enjoy.
+                                <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                                            font-size:12px;color:#9a9390;line-height:1.5;">
+                                  Personalized recommendations surface new titles
+                                  from series you already enjoy.
                                 </div>
                               </td>
                             </tr>
                           </table>
-
+ 
                           <!-- CTA block -->
-                          <div style="background:#e8321c;border-radius:4px;
-                                      padding:13px 16px;text-align:center;">
-                            <div style="font-family:'Barlow Condensed',Arial,sans-serif;
-                                        font-size:14px;font-weight:900;color:#fff;
-                                        letter-spacing:0.1em;text-transform:uppercase;">
+                          <!-- bg-elevated lifts off promo bg-card -->
+                          <div style="background:#222222;
+                                      border:1px solid #2e2e2e;
+                                      border-radius:8px;
+                                      padding:16px;text-align:center;">
+                            <div style="font-family:'Bebas Neue',sans-serif;
+                                        font-size:16px;letter-spacing:0.1em;
+                                        color:#f0ece4;text-transform:uppercase;
+                                        margin-bottom:4px;">
                               Ask Us About Online Reservations
                             </div>
-                            <div style="font-family:'Barlow',Arial,sans-serif;
-                                        font-size:11px;color:rgba(255,255,255,0.72);
-                                        margin-top:4px;">
+                            <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                                        font-size:11px;color:#9a9390;margin-bottom:10px;">
                               Speak with a staff member today
                             </div>
-                            <div style="font-family:'Barlow',Arial,sans-serif;
-                                        font-size:11px;color:rgba(255,255,255,0.5);
-                                        margin-top:6px;letter-spacing:0.04em;">
-                              973-586-9182 &nbsp;&middot;&nbsp; 40 W Main St, Rockaway NJ
+                            <div style="display:inline-block;background:#e8321c;
+                                        border-radius:4px;padding:8px 18px;">
+                              <span style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                                           font-size:12px;font-weight:600;
+                                           color:#f0ece4;letter-spacing:0.04em;">
+                                973-586-9182
+                              </span>
+                              <span style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                                           font-size:11px;
+                                           color:rgba(240,236,228,0.65);
+                                           margin-left:8px;">
+                                40 W Main St, Rockaway NJ
+                              </span>
                             </div>
                           </div>
-
+ 
                         </td>
                       </tr>
                     </table>
                   </td>
                 </tr>
               </table>
-
-              <!-- Bottom separator -->
-              <div style="height:1px;
-                          background:linear-gradient(90deg,transparent,#e8321c55,transparent);
-                          margin:16px 0 0;">
-              </div>
-
+ 
             </td>
           </tr>
           <!-- ??? END PROMO ??? -->
-
-          <!-- THUMBNAIL GRID -->
+ 
+          <!-- SECTION LABEL -->
+          <!-- bg-elevated (#222) frames transition into the grid -->
           <tr>
-            <td style="padding:12px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <td style="background-color:#222222;
+                       border-top:1px solid #2e2e2e;
+                       border-bottom:1px solid #2e2e2e;
+                       padding:10px 16px;">
+              <div style="font-family:'Bebas Neue',sans-serif;
+                          font-size:13px;letter-spacing:0.18em;
+                          text-transform:uppercase;color:#5a5755;">
+                This Week&rsquo;s Releases
+              </div>
+            </td>
+          </tr>
+ 
+          <!-- THUMBNAIL GRID -->
+          <!-- bg-card (#181818) ? same card surface as promo section -->
+          <tr>
+            <td style="padding:12px;background-color:#181818;">
+              <table role="presentation" width="100%" cellpadding="0"
+                     cellspacing="0" border="0">
                 <tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621001502711" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621001502711" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/120804ba076f7574fee8dfa0cb9f18b2.webp"
                  alt="AMAZING SPIDER-MAN #27 [DS]"
                  title="AMAZING SPIDER-MAN #27 [DS]"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">AMAZING SPIDER-MAN #27 [DS]</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              AMAZING SPIDER-MAN #27 [DS]
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621001502751" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621001502751" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/fb5459508dd1e035769db52d0f9862bf.webp"
                  alt="AMAZING SPIDER-MAN #27 DAVID MESSINA ULTIMATE FAREWELL VARIANT [DS]"
                  title="AMAZING SPIDER-MAN #27 DAVID MESSINA ULTIMATE FAREWELL VARIANT [DS]"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">AMAZING SPIDER-MAN #27 DAVID MESSINA ULTIMATE FAREWELL VARIANT [DS]</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              AMAZING SPIDER-MAN #27 DAVID MESSINA ULTIMATE FAREWELL VARIANT [DS]
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621577500111" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621577500111" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/715e04cc4bb1db990a0b8de0133e4d9d.webp"
                  alt="AMAZING SPIDER-MAN: SPIDER-VERSITY #1"
                  title="AMAZING SPIDER-MAN: SPIDER-VERSITY #1"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">AMAZING SPIDER-MAN: SPIDER-VERSITY #1</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              AMAZING SPIDER-MAN: SPIDER-VERSITY #1
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621577500141" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621577500141" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/87089430627743d638b31250077d229f.webp"
                  alt="AMAZING SPIDER-MAN: SPIDER-VERSITY #1 JUAN FRIGERI ULTIMATE FAREWELL VARIANT"
                  title="AMAZING SPIDER-MAN: SPIDER-VERSITY #1 JUAN FRIGERI ULTIMATE FAREWELL VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">AMAZING SPIDER-MAN: SPIDER-VERSITY #1 JUAN FRIGERI ULTIMATE FAREWELL VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              AMAZING SPIDER-MAN: SPIDER-VERSITY #1 JUAN FRIGERI ULTIMATE FAREWELL VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621577500151" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621577500151" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8d6835e00e39c9e797e6d229f3f2c4d9.webp"
                  alt="AMAZING SPIDER-MAN: SPIDER-VERSITY #1 ROSE BESCH VARIANT"
                  title="AMAZING SPIDER-MAN: SPIDER-VERSITY #1 ROSE BESCH VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">AMAZING SPIDER-MAN: SPIDER-VERSITY #1 ROSE BESCH VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              AMAZING SPIDER-MAN: SPIDER-VERSITY #1 ROSE BESCH VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300911" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300911" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c6e24afbee798f7fe07bbf37f9ce2bc5.webp"
                  alt="CAPTAIN AMERICA #9"
                  title="CAPTAIN AMERICA #9"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">CAPTAIN AMERICA #9</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              CAPTAIN AMERICA #9
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300941" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300941" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e3bd4e69f99b0581d57a253c08df833e.webp"
                  alt="CAPTAIN AMERICA #9 MARK BAGLEY APRIL POOL'S DAY VARIANT"
                  title="CAPTAIN AMERICA #9 MARK BAGLEY APRIL POOL'S DAY VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">CAPTAIN AMERICA #9 MARK BAGLEY APRIL POOL'S DAY VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              CAPTAIN AMERICA #9 MARK BAGLEY APRIL POOL'S DAY VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300931" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621146300931" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4fd992dcb1806af3a77ec432388bd655.webp"
                  alt="CAPTAIN AMERICA #9 PHIL NOTO ULTIMATE FAREWELL VARIANT"
                  title="CAPTAIN AMERICA #9 PHIL NOTO ULTIMATE FAREWELL VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">CAPTAIN AMERICA #9 PHIL NOTO ULTIMATE FAREWELL VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              CAPTAIN AMERICA #9 PHIL NOTO ULTIMATE FAREWELL VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621385600311" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621385600311" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7a9797031c7340692dc16dc3a31231d8.webp"
                  alt="CYCLOPS #3"
                  title="CYCLOPS #3"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">CYCLOPS #3</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              CYCLOPS #3
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621385600321" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621385600321" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8eba54ed8aba3ff138ee5ce77f53e2f1.webp"
                  alt="CYCLOPS #3 ALESSANDRO CAPPUCCIO AGENTS OF S.H.I.E.L.D. VARIANT"
                  title="CYCLOPS #3 ALESSANDRO CAPPUCCIO AGENTS OF S.H.I.E.L.D. VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">CYCLOPS #3 ALESSANDRO CAPPUCCIO AGENTS OF S.H.I.E.L.D. VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              CYCLOPS #3 ALESSANDRO CAPPUCCIO AGENTS OF S.H.I.E.L.D. VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621385600331" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621385600331" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ea7bfaffdef55ececdbf9483b9fca67c.webp"
                  alt="CYCLOPS #3 BEN HARVEY CYCLOPS VARIANT"
                  title="CYCLOPS #3 BEN HARVEY CYCLOPS VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">CYCLOPS #3 BEN HARVEY CYCLOPS VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              CYCLOPS #3 BEN HARVEY CYCLOPS VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://media.lunardistribution.com/images/covers/large/1225DE0580.jpg" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://media.lunardistribution.com/images/covers/large/1225DE0580.jpg" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/59b5aeb1ea03cc84356d6471fa1acee6.webp"
                  alt="DUCKTALES #12 CVR A IVAN BIGARELLA"
                  title="DUCKTALES #12 CVR A IVAN BIGARELLA"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">DUCKTALES #12 CVR A IVAN BIGARELLA</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              DUCKTALES #12 CVR A IVAN BIGARELLA
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://media.lunardistribution.com/images/covers/large/1225DE0581.jpg" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://media.lunardistribution.com/images/covers/large/1225DE0581.jpg" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c3f79bbcc334b2c728400dc86b135a8c.webp"
                  alt="DUCKTALES #12 CVR B FRANCESCO TOMASELLI VAR"
                  title="DUCKTALES #12 CVR B FRANCESCO TOMASELLI VAR"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">DUCKTALES #12 CVR B FRANCESCO TOMASELLI VAR</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              DUCKTALES #12 CVR B FRANCESCO TOMASELLI VAR
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621455600511" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621455600511" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/62364a876d5d0d9c27401436995cc9ff.webp"
                  alt="HULK: SMASH EVERYTHING #5"
                  title="HULK: SMASH EVERYTHING #5"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">HULK: SMASH EVERYTHING #5</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              HULK: SMASH EVERYTHING #5
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621455600521" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621455600521" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ac70224712abe8c0b6becb35d3da7ccd.webp"
                  alt="HULK: SMASH EVERYTHING #5 LUKE ROSS VARIANT"
                  title="HULK: SMASH EVERYTHING #5 LUKE ROSS VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">HULK: SMASH EVERYTHING #5 LUKE ROSS VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              HULK: SMASH EVERYTHING #5 LUKE ROSS VARIANT
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621361000611" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621361000611" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/75d1ec6318bc4de5ed3ab482482021e0.webp"
                  alt="INFERNAL HULK #6"
                  title="INFERNAL HULK #6"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">INFERNAL HULK #6</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              INFERNAL HULK #6
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621361000631" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621361000631" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ee5798f93f2d52ee10d5de2ae258ce45.webp"
                  alt="INFERNAL HULK #6 DAVIDE PARATORE VARIANT"
                  title="INFERNAL HULK #6 DAVIDE PARATORE VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">INFERNAL HULK #6 DAVIDE PARATORE VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              INFERNAL HULK #6 DAVIDE PARATORE VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621496900311" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621496900311" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5319af65380a887eee131104a1fe2803.webp"
                  alt="MARC SPECTOR: MOON KNIGHT #3"
                  title="MARC SPECTOR: MOON KNIGHT #3"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARC SPECTOR: MOON KNIGHT #3</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARC SPECTOR: MOON KNIGHT #3
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621496900331" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621496900331" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/d7aa1647155ac46a60873c18c4db2b34.webp"
                  alt="MARC SPECTOR: MOON KNIGHT #3 ALESSANDRO CAPPUCCIO ULTIMATE FAREWELL VARIANT"
                  title="MARC SPECTOR: MOON KNIGHT #3 ALESSANDRO CAPPUCCIO ULTIMATE FAREWELL VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARC SPECTOR: MOON KNIGHT #3 ALESSANDRO CAPPUCCIO ULTIMATE FAREWELL VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARC SPECTOR: MOON KNIGHT #3 ALESSANDRO CAPPUCCIO ULTIMATE FAREWELL VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500111" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500111" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/bef1d1b711ee7b32c851d634916d9d21.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500141" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500141" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9eb6e5bd1f7aca468904eedcb097ab1d.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ADAM HUGHES VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ADAM HUGHES VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ADAM HUGHES VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ADAM HUGHES VARIANT
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500117" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500117" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/fcc713ba6736fc6b01e5b4c85b1ac867.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 BLANK COVER VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 BLANK COVER VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 BLANK COVER VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 BLANK COVER VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500120" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500120" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5cec0772955a1d0b0c39e590ed2577b1.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 DAVID MARQUEZ HOMAGE VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 DAVID MARQUEZ HOMAGE VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 DAVID MARQUEZ HOMAGE VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 DAVID MARQUEZ HOMAGE VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500133" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500133" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a43550904f14edb3c78abd9368e5f376.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 E.M. GIST VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 E.M. GIST VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 E.M. GIST VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 E.M. GIST VARIANT
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500119" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500119" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8f75f968ae61812815998d7d1088383d.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ERIK LARSEN VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ERIK LARSEN VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ERIK LARSEN VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 ERIK LARSEN VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500130" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500130" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e7f27034ae808c4cd475cfe0a70da8d8.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GARY FRANK VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GARY FRANK VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GARY FRANK VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GARY FRANK VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500126" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500126" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b670c1ed8ad6593fb9d32f482d8d9676.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GREG CAPULLO VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GREG CAPULLO VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GREG CAPULLO VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 GREG CAPULLO VARIANT
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500125" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500125" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ec577a2cf8f2cf5579eea59169540508.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 HUMBERTO RAMOS VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 HUMBERTO RAMOS VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 HUMBERTO RAMOS VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 HUMBERTO RAMOS VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500121" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500121" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5ab28d7ab7b3766b51e71e1ab54ba6fa.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 IVAN TALAVERA VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 IVAN TALAVERA VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 IVAN TALAVERA VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 IVAN TALAVERA VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500118" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500118" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ce06d14cf6b7ca90e5a7d0b6a6c9a5ed.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 KAARE ANDREWS WRAPAROUND VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 KAARE ANDREWS WRAPAROUND VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 KAARE ANDREWS WRAPAROUND VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 KAARE ANDREWS WRAPAROUND VARIANT
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500151" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500151" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/6e3e8c3848b6311dbf7712b6478482f3.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 LOGO MASHUP VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 LOGO MASHUP VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 LOGO MASHUP VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 LOGO MASHUP VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500127" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500127" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/78a9ac9f7c437db95192a7907570f7ca.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARCOS MARTIN VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARCOS MARTIN VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARCOS MARTIN VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARCOS MARTIN VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500131" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500131" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7290423573aa1c66798a725805b5e722.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARK BAGLEY FOIL VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARK BAGLEY FOIL VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARK BAGLEY FOIL VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 MARK BAGLEY FOIL VARIANT
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500171" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500171" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7c49f97d91d3f29db2fed291bd2873fe.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 PEACH MOMOKO VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 PEACH MOMOKO VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 PEACH MOMOKO VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 PEACH MOMOKO VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500128" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500128" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0086cd0abf926ea58554374246d95f39.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RUSSELL DAUTERMAN VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RUSSELL DAUTERMAN VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RUSSELL DAUTERMAN VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RUSSELL DAUTERMAN VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500181" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500181" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8ca6928cf0832e8f5b5dce72d3df9b95.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RYAN STEGMAN VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RYAN STEGMAN VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RYAN STEGMAN VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 RYAN STEGMAN VARIANT
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500122" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500122" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/6c57b73f3e80e5793e3adccfee72bb12.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SANFORD GREENE HOMAGE VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SANFORD GREENE HOMAGE VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SANFORD GREENE HOMAGE VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SANFORD GREENE HOMAGE VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500161" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500161" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b7a717aca239586c389ddfe3ae513db3.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SARA PICHELLI VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SARA PICHELLI VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SARA PICHELLI VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SARA PICHELLI VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500191" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500191" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/85bf576d78c11a967f054717f5f02df6.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SKOTTIE YOUNG VIRGIN VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SKOTTIE YOUNG VIRGIN VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SKOTTIE YOUNG VIRGIN VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 SKOTTIE YOUNG VIRGIN VARIANT
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500123" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621395500123" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/6f0d9dbc4a9635c90f4f3600c56fb58e.webp"
                  alt="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 WALT SIMONSON VARIANT"
                  title="MARVEL/DC: SPIDER-MAN/SUPERMAN #1 WALT SIMONSON VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">MARVEL/DC: SPIDER-MAN/SUPERMAN #1 WALT SIMONSON VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              MARVEL/DC: SPIDER-MAN/SUPERMAN #1 WALT SIMONSON VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://media.lunardistribution.com/images/covers/large/0226MA0882.jpg" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://media.lunardistribution.com/images/covers/large/0226MA0882.jpg" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a2534e85e23cc6427fc925aa81b2301c.webp"
                  alt="PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR A FEDERICO SABBATINI"
                  title="PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR A FEDERICO SABBATINI"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR A FEDERICO SABBATINI</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR A FEDERICO SABBATINI
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://media.lunardistribution.com/images/covers/large/0226MA0883.jpg" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://media.lunardistribution.com/images/covers/large/0226MA0883.jpg" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0b85cf88e82c60f8d5b331247bc3d0f8.webp"
                  alt="PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR B FREDDIE WILLIAMS II ANDREW DALHOUSE VAR"
                  title="PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR B FREDDIE WILLIAMS II ANDREW DALHOUSE VAR"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR B FREDDIE WILLIAMS II ANDREW DALHOUSE VAR</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              PHANTOM VS THE SKY BAND #1 (ONE SHOT) CVR B FREDDIE WILLIAMS II ANDREW DALHOUSE VAR
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621444000411" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621444000411" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/00ffa9e05e4b01363b535d47472f7ae0.webp"
                  alt="ROGUE #4"
                  title="ROGUE #4"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">ROGUE #4</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              ROGUE #4
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621444000431" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621444000431" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4ff0f777989e53806f4001146e6bc7ce.webp"
                  alt="ROGUE #4 ELENA CASAGRANDE VARIANT"
                  title="ROGUE #4 ELENA CASAGRANDE VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">ROGUE #4 ELENA CASAGRANDE VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              ROGUE #4 ELENA CASAGRANDE VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://media.lunardistribution.com/images/covers/large/0226TN1075.jpg" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://media.lunardistribution.com/images/covers/large/0226TN1075.jpg" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/f4258a8c117625b4e98a7a9ec15bc340.webp"
                  alt="SAVAGE SWORD OF CONAN REFORGED #4 CVR A ROBERTO DE LA TORRE (MR)"
                  title="SAVAGE SWORD OF CONAN REFORGED #4 CVR A ROBERTO DE LA TORRE (MR)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">SAVAGE SWORD OF CONAN REFORGED #4 CVR A ROBERTO DE LA TORRE (MR)</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              SAVAGE SWORD OF CONAN REFORGED #4 CVR A ROBERTO DE LA TORRE (MR)
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://media.lunardistribution.com/images/covers/large/0226TN1076.jpg" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://media.lunardistribution.com/images/covers/large/0226TN1076.jpg" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/97872b6df9db441c4f2a2d5d542d578c.webp"
                  alt="SAVAGE SWORD OF CONAN REFORGED #4 CVR B NEAL ADAMS VAR (MR)"
                  title="SAVAGE SWORD OF CONAN REFORGED #4 CVR B NEAL ADAMS VAR (MR)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">SAVAGE SWORD OF CONAN REFORGED #4 CVR B NEAL ADAMS VAR (MR)</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              SAVAGE SWORD OF CONAN REFORGED #4 CVR B NEAL ADAMS VAR (MR)
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621514000211" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621514000211" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5909f7e4f5545d28542cc99902da8c59.webp"
                  alt="SENTRY #2"
                  title="SENTRY #2"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">SENTRY #2</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              SENTRY #2
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621514000231" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621514000231" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/602201f5bb218b382bc904eb328ba374.webp"
                  alt="SENTRY #2 ALESSANDRO CAPPUCCIO VARIANT"
                  title="SENTRY #2 ALESSANDRO CAPPUCCIO VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">SENTRY #2 ALESSANDRO CAPPUCCIO VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              SENTRY #2 ALESSANDRO CAPPUCCIO VARIANT
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621514000221" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621514000221" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9a90b96537c66a0fe6e739a96873889d.webp"
                  alt="SENTRY #2 GUISEPPE CAMUNCOLI VARIANT"
                  title="SENTRY #2 GUISEPPE CAMUNCOLI VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">SENTRY #2 GUISEPPE CAMUNCOLI VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              SENTRY #2 GUISEPPE CAMUNCOLI VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/82771401521808611" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/82771401521808611" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0cabbce7f263da4a2d9abe0ba7487ed7.webp"
                  alt="Sonic the Hedgehog #86 Cover A (Rothlisberger)"
                  title="Sonic the Hedgehog #86 Cover A (Rothlisberger)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">Sonic the Hedgehog #86 Cover A (Rothlisberger)</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              Sonic the Hedgehog #86 Cover A (Rothlisberger)
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621179100511" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621179100511" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9dd8823febc78ccbe0be5f9711e1f652.webp"
                  alt="SORCERER SUPREME #5"
                  title="SORCERER SUPREME #5"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">SORCERER SUPREME #5</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              SORCERER SUPREME #5
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621179100531" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621179100531" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/706dc445c1d0bf62e663113738085d9a.webp"
                  alt="SORCERER SUPREME #5 FANYANG VARIANT"
                  title="SORCERER SUPREME #5 FANYANG VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">SORCERER SUPREME #5 FANYANG VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              SORCERER SUPREME #5 FANYANG VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621600000111" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621600000111" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3cdd4cf8b59f5e8819a99d5080bffd7f.webp"
                  alt="SPIDER-MAN NOIR #1 FACSIMILE EDITION"
                  title="SPIDER-MAN NOIR #1 FACSIMILE EDITION"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">SPIDER-MAN NOIR #1 FACSIMILE EDITION</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              SPIDER-MAN NOIR #1 FACSIMILE EDITION
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621593500111" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621593500111" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/579fca8664312e5d883b5a6cab82ac84.webp"
                  alt="STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1"
                  title="STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621593500151" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621593500151" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/66f373c44decc3ff7d877e1f8e27203a.webp"
                  alt="STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1 E.M. GIST MANDALORIAN & GROGU VARIANT"
                  title="STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1 E.M. GIST MANDALORIAN & GROGU VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1 E.M. GIST MANDALORIAN & GROGU VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              STAR WARS: GALAXY'S EDGE - ECHOES OF THE EMPIRE #1 E.M. GIST MANDALORIAN & GROGU VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/82771403150803611" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/82771403150803611" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/1e7a5eb84147f2f19b25243aec54e55e.webp"
                  alt="Teenage Mutant Ninja Turtles: Saturday Morning Adventures #36 Cover A (Schoening)"
                  title="Teenage Mutant Ninja Turtles: Saturday Morning Adventures #36 Cover A (Schoening)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">Teenage Mutant Ninja Turtles: Saturday Morning Adventures #36 Cover A (Schoening)</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              Teenage Mutant Ninja Turtles: Saturday Morning Adventures #36 Cover A (Schoening)
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/82771403502500211" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/82771403502500211" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b8f25d7376381a105b264f20cea38eae.webp"
                  alt="The Rocketeer: The Island #2 Cover A (Edgar)"
                  title="The Rocketeer: The Island #2 Cover A (Edgar)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">The Rocketeer: The Island #2 Cover A (Edgar)</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              The Rocketeer: The Island #2 Cover A (Edgar)
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/82771403502500221" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/82771403502500221" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7227f6066a231b55413f4d5117a03e5e.webp"
                  alt="The Rocketeer: The Island #2 Variant B (Stevens)"
                  title="The Rocketeer: The Island #2 Variant B (Stevens)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">The Rocketeer: The Island #2 Variant B (Stevens)</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              The Rocketeer: The Island #2 Variant B (Stevens)
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://media.lunardistribution.com/images/covers/large/0226IM0470.jpg" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://media.lunardistribution.com/images/covers/large/0226IM0470.jpg" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/2faf3536090715e8eca73788999a713d.webp"
                  alt="UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR A MARTIN SIMMONDS"
                  title="UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR A MARTIN SIMMONDS"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR A MARTIN SIMMONDS</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR A MARTIN SIMMONDS
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://media.lunardistribution.com/images/covers/large/0226IM0471.jpg" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://media.lunardistribution.com/images/covers/large/0226IM0471.jpg" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8de74faae1dc0e21a0ea117eadf1c7f4.webp"
                  alt="UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR B JULIAN TOTINO TEDESCO VAR"
                  title="UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR B JULIAN TOTINO TEDESCO VAR"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR B JULIAN TOTINO TEDESCO VAR</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              UNIVERSAL MONSTERS PHANTOM OF THE OPERA #3 (OF 4) CVR B JULIAN TOTINO TEDESCO VAR
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/76156801508900211" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/76156801508900211" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0474d314f97f42565fb3cd48c2882f07.webp"
                  alt="Usagi Yojimbo: Kaito '84 #2 (CVR A) (Jared Cullum)"
                  title="Usagi Yojimbo: Kaito '84 #2 (CVR A) (Jared Cullum)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">Usagi Yojimbo: Kaito '84 #2 (CVR A) (Jared Cullum)</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              Usagi Yojimbo: Kaito '84 #2 (CVR A) (Jared Cullum)
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/76156801508900221" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/76156801508900221" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a20d2501898b97ee81d5883a88e17149.webp"
                  alt="Usagi Yojimbo: Kaito '84 #2 (CVR B) (Stan Sakai)"
                  title="Usagi Yojimbo: Kaito '84 #2 (CVR B) (Stan Sakai)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">Usagi Yojimbo: Kaito '84 #2 (CVR B) (Stan Sakai)</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              Usagi Yojimbo: Kaito '84 #2 (CVR B) (Stan Sakai)
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/76156801508900231" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/76156801508900231" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/154536f2f6f2a6b58edb28a470e8e578.webp"
                  alt="Usagi Yojimbo: Kaito '84 #2 (CVR C) (Kevin Eastman)"
                  title="Usagi Yojimbo: Kaito '84 #2 (CVR C) (Kevin Eastman)"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">Usagi Yojimbo: Kaito '84 #2 (CVR C) (Kevin Eastman)</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              Usagi Yojimbo: Kaito '84 #2 (CVR C) (Kevin Eastman)
+            </p>
           </a>
         </td></tr><tr>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621448800311" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621448800311" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4e605e1da8568402513c5bc81b338f82.webp"
                  alt="WADE WILSON: DEADPOOL #3"
                  title="WADE WILSON: DEADPOOL #3"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">WADE WILSON: DEADPOOL #3</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              WADE WILSON: DEADPOOL #3
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960621448800321" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960621448800321" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/d7e0b443c3e46d03d3ea9c85c34ab991.webp"
                  alt="WADE WILSON: DEADPOOL #3 GEOFF SHAW AGENTS OF S.H.I.E.L.D. VARIANT"
                  title="WADE WILSON: DEADPOOL #3 GEOFF SHAW AGENTS OF S.H.I.E.L.D. VARIANT"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">WADE WILSON: DEADPOOL #3 GEOFF SHAW AGENTS OF S.H.I.E.L.D. VARIANT</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              WADE WILSON: DEADPOOL #3 GEOFF SHAW AGENTS OF S.H.I.E.L.D. VARIANT
+            </p>
           </a>
         </td>
         <td class="col" style="width:33%;padding:8px;text-align:center;vertical-align:top;">
-          <a href="https://images.penguinrandomhouse.com/cover/d/75960620841801911" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:block;">
+          <a href="https://images.penguinrandomhouse.com/cover/d/75960620841801911" target="_blank" rel="noopener noreferrer"
+             style="text-decoration:none;display:block;">
             <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/28cad09fd4d869054714010bf02780c9.webp"
                  alt="WOLVERINE #19"
                  title="WOLVERINE #19"
                  width="170"
-                 style="display:block;margin:0 auto;max-width:100%;height:auto;border-radius:3px;border:0;">
-            <p style="margin:6px 0 0;font-size:11px;line-height:1.4;color:#444;font-family:Arial,sans-serif;">WOLVERINE #19</p>
+                 style="display:block;margin:0 auto;max-width:100%;height:auto;
+                        border-radius:4px;border:0;">
+            <p style="margin:6px 0 0;font-size:11px;line-height:1.5;
+                      color:#9a9390;font-family:'IBM Plex Sans',Arial,sans-serif;">
+              WOLVERINE #19
+            </p>
           </a>
         </td></tr>
               </table>
             </td>
           </tr>
-
+ 
           <!-- FOOTER -->
+          <!-- bg-elevated (#222) mirrors title bar for end-cap symmetry -->
           <tr>
-            <td style="background-color:#1a1a2e;color:#aaaaaa;text-align:center;
-                       font-size:11px;padding:12px 20px;font-family:Arial,sans-serif;">
-              Generated by Weekly Previews &bull; April 19, 2026
+            <td style="background-color:#222222;
+                       border-top:1px solid #2e2e2e;
+                       text-align:center;
+                       padding:14px 20px;">
+              <div style="font-family:'Bebas Neue',sans-serif;
+                          font-size:14px;letter-spacing:0.1em;
+                          color:#f0ece4;text-transform:uppercase;
+                          margin-bottom:4px;">
+                PULL<span style="color:#e8321c;">LIST</span>
+                &nbsp;&middot;&nbsp; Ray &amp; Judy&rsquo;s Book Stop
+              </div>
+              <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                          font-size:11px;color:#5a5755;letter-spacing:0.04em;">
+                Generated by Weekly Previews &bull; April 19, 2026
+                &nbsp;&middot;&nbsp; 973-586-9182
+                &nbsp;&middot;&nbsp; 40 W Main St, Rockaway NJ
+              </div>
             </td>
           </tr>
-
+ 
         </table>
         <!-- End inner content table -->
-
+ 
       </td>
     </tr>
   </table>
-  <!-- End outer wrapper table -->
-
+  <!-- End outer wrapper -->
+ 
   <script>
     function dismissPromo() {
       var s = document.getElementById('promo-section');
@@ -1097,10 +1516,9 @@
       var t = document.getElementById('promo-tab');
       s.style.display = '';
       t.classList.remove('visible');
-      // Brief delay lets display:block settle before animating
       setTimeout(function() { s.classList.remove('dismissed'); }, 10);
     }
   </script>
-
+ 
 </body>
 </html>
