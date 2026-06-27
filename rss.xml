@@ -9,8 +9,8 @@
     <link>https://mrcyberrick.github.io/weekly-pull-feed/newsletter.html</link>
     <description>Weekly pull list of new releases with thumbnails and links to full-size cover images.</description>
     <language>en-us</language>
-    <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-    <lastBuildDate>Sat, 27 Jun 2026 01:08:21 GMT</lastBuildDate>
+    <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+    <lastBuildDate>Sat, 27 Jun 2026 15:30:28 GMT</lastBuildDate>
     <ttl>10080</ttl><!-- 10080 minutes = 1 week; hints to readers how often to check -->
 
     <!-- Canonical self-reference: required by Atom namespace, recommended by feed validators -->
@@ -26,18 +26,18 @@
     </image>
     
     <item>
-      <title>ABSOLUTE CATWOMAN #2 (OF 6) CVR A BENGAL</title>
+      <title>ABSOLUTE GREEN LANTERN #16 CVR A JAHNOY LINDSAY</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526DC0021.jpg</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0526DC0043.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates.
            Using the original URL ensures the same item is never
            shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0021.jpg</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0043.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -51,7 +51,7 @@
            Our compressed thumbnails are 300px so we use the source
            image here instead, reserving thumbs for description only.
            length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0021.jpg" type="image/jpeg" length="0"/>
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0043.jpg" type="image/jpeg" length="0"/>
 
       <!-- description: Flipboard requires 300+ characters for good
            layout rendering. Includes thumbnail img for feed readers
@@ -59,105 +59,15 @@
            to meet the character threshold. Style attributes omitted
            per RSS best practices ? HTML attributes used instead. -->
       <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526DC0021.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a63f167ae9b55959c5203f245764deda.webp"
-               alt="ABSOLUTE CATWOMAN #2 (OF 6) CVR A BENGAL"
-               title="ABSOLUTE CATWOMAN #2 (OF 6) CVR A BENGAL"
+        <a href="https://media.lunardistribution.com/images/covers/large/0526DC0043.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/f5bd68bc92cd76c4aec163c4e3427063.webp"
+               alt="ABSOLUTE GREEN LANTERN #16 CVR A JAHNOY LINDSAY"
+               title="ABSOLUTE GREEN LANTERN #16 CVR A JAHNOY LINDSAY"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>ABSOLUTE CATWOMAN #2 (OF 6) CVR A BENGAL is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
-      <title>ALTERED STATES WARLORDS #2 CVR A JOSEPH MICHAEL LINSNER</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526DE0666.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0666.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0666.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526DE0666.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/f21363e27e8cc94191837589afb1211d.webp"
-               alt="ALTERED STATES WARLORDS #2 CVR A JOSEPH MICHAEL LINSNER"
-               title="ALTERED STATES WARLORDS #2 CVR A JOSEPH MICHAEL LINSNER"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>ALTERED STATES WARLORDS #2 CVR A JOSEPH MICHAEL LINSNER is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
-      <title>ALTERED STATES WARLORDS #2 CVR D COSPLAY JACKIE GOEHNER VAR</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526DE0669.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0669.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0669.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526DE0669.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/53965ec17ed397aa289b117011cfecb8.webp"
-               alt="ALTERED STATES WARLORDS #2 CVR D COSPLAY JACKIE GOEHNER VAR"
-               title="ALTERED STATES WARLORDS #2 CVR D COSPLAY JACKIE GOEHNER VAR"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>ALTERED STATES WARLORDS #2 CVR D COSPLAY JACKIE GOEHNER VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>ABSOLUTE GREEN LANTERN #16 CVR A JAHNOY LINDSAY is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
@@ -172,7 +82,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621001503211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -217,7 +127,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621001503231</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -251,6 +161,141 @@
       ]]></description>
     </item>
     <item>
+      <title>ARCHIE COMICS CELEBRATES AMERICAS 250TH (ONE SHOT) CVR B STAN GOLDBERG LIFE WITH ARCHIE RETRO FULL ART VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526AC0546.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526AC0546.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526AC0546.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526AC0546.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/74b3212833ca0012d9600702c4662918.webp"
+               alt="ARCHIE COMICS CELEBRATES AMERICAS 250TH (ONE SHOT) CVR B STAN GOLDBERG LIFE WITH ARCHIE RETRO FULL ART VAR"
+               title="ARCHIE COMICS CELEBRATES AMERICAS 250TH (ONE SHOT) CVR B STAN GOLDBERG LIFE WITH ARCHIE RETRO FULL ART VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>ARCHIE COMICS CELEBRATES AMERICAS 250TH (ONE SHOT) CVR B STAN GOLDBERG LIFE WITH ARCHIE RETRO FULL ART VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>AVENGERS JLA #2 (OF 4) FACSIMILE EDITION CVR A GEORGE PEREZ</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0426DC0192.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0426DC0192.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0426DC0192.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0426DC0192.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7fa4448da3162d7a813d734247a13307.webp"
+               alt="AVENGERS JLA #2 (OF 4) FACSIMILE EDITION CVR A GEORGE PEREZ"
+               title="AVENGERS JLA #2 (OF 4) FACSIMILE EDITION CVR A GEORGE PEREZ"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>AVENGERS JLA #2 (OF 4) FACSIMILE EDITION CVR A GEORGE PEREZ is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>BATGIRL #21 CVR A DAVID TALASKI</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526DC0097.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0097.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0097.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526DC0097.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/76840ce7782643c351d14872cd673967.webp"
+               alt="BATGIRL #21 CVR A DAVID TALASKI"
+               title="BATGIRL #21 CVR A DAVID TALASKI"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>BATGIRL #21 CVR A DAVID TALASKI is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
       <title>CHALLENGES OF DOOM: MR. FANTASTIC #1</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -262,7 +307,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621606200111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -296,18 +341,18 @@
       ]]></description>
     </item>
     <item>
-      <title>CLAYFACE CELEBRITY DIRT #1 (OF 6) CVR A FRAN GALAN</title>
+      <title>DICK TRACY #18 CVR A GERALDO BORGES MARK ENGLERT</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526DC0048.jpg</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0426MA0834.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates.
            Using the original URL ensures the same item is never
            shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0048.jpg</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0426MA0834.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -321,7 +366,7 @@
            Our compressed thumbnails are 300px so we use the source
            image here instead, reserving thumbs for description only.
            length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0048.jpg" type="image/jpeg" length="0"/>
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0426MA0834.jpg" type="image/jpeg" length="0"/>
 
       <!-- description: Flipboard requires 300+ characters for good
            layout rendering. Includes thumbnail img for feed readers
@@ -329,30 +374,30 @@
            to meet the character threshold. Style attributes omitted
            per RSS best practices ? HTML attributes used instead. -->
       <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526DC0048.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/91631bf893de8e16a6632955eac54bc9.webp"
-               alt="CLAYFACE CELEBRITY DIRT #1 (OF 6) CVR A FRAN GALAN"
-               title="CLAYFACE CELEBRITY DIRT #1 (OF 6) CVR A FRAN GALAN"
+        <a href="https://media.lunardistribution.com/images/covers/large/0426MA0834.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/589790504a88e0700c5c3f0b3fb2362b.webp"
+               alt="DICK TRACY #18 CVR A GERALDO BORGES MARK ENGLERT"
+               title="DICK TRACY #18 CVR A GERALDO BORGES MARK ENGLERT"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>CLAYFACE CELEBRITY DIRT #1 (OF 6) CVR A FRAN GALAN is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>DICK TRACY #18 CVR A GERALDO BORGES MARK ENGLERT is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>CLAYFACE CELEBRITY DIRT #1 (OF 6) CVR C DAVE JOHNSON CARD STOCK VAR</title>
+      <title>DICK TRACY #18 CVR B GREG SMALLWOOD VAR</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526DC0050.jpg</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0426MA0835.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates.
            Using the original URL ensures the same item is never
            shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0050.jpg</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0426MA0835.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -366,7 +411,7 @@
            Our compressed thumbnails are 300px so we use the source
            image here instead, reserving thumbs for description only.
            length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0050.jpg" type="image/jpeg" length="0"/>
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0426MA0835.jpg" type="image/jpeg" length="0"/>
 
       <!-- description: Flipboard requires 300+ characters for good
            layout rendering. Includes thumbnail img for feed readers
@@ -374,105 +419,15 @@
            to meet the character threshold. Style attributes omitted
            per RSS best practices ? HTML attributes used instead. -->
       <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526DC0050.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/13477afd27da27d7fa2fdcec33270bad.webp"
-               alt="CLAYFACE CELEBRITY DIRT #1 (OF 6) CVR C DAVE JOHNSON CARD STOCK VAR"
-               title="CLAYFACE CELEBRITY DIRT #1 (OF 6) CVR C DAVE JOHNSON CARD STOCK VAR"
+        <a href="https://media.lunardistribution.com/images/covers/large/0426MA0835.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/49c0f8d17168eee32c68bf754ff06d5e.webp"
+               alt="DICK TRACY #18 CVR B GREG SMALLWOOD VAR"
+               title="DICK TRACY #18 CVR B GREG SMALLWOOD VAR"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>CLAYFACE CELEBRITY DIRT #1 (OF 6) CVR C DAVE JOHNSON CARD STOCK VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
-      <title>CONAN AND DRAGONERO #3 (OF 7) CVR A MAX VON FAFNER (MR)</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526TN1260.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526TN1260.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526TN1260.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526TN1260.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/37e6aecac6c35944e1032d5379f6e07d.webp"
-               alt="CONAN AND DRAGONERO #3 (OF 7) CVR A MAX VON FAFNER (MR)"
-               title="CONAN AND DRAGONERO #3 (OF 7) CVR A MAX VON FAFNER (MR)"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>CONAN AND DRAGONERO #3 (OF 7) CVR A MAX VON FAFNER (MR) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
-      <title>CONAN THE BARBARIAN #32 CVR D NICK PERCIVAL FOIL VAR (MR)</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0426TN1102.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0426TN1102.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0426TN1102.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0426TN1102.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ce190e4c4499f0d5390ecf57b3808033.webp"
-               alt="CONAN THE BARBARIAN #32 CVR D NICK PERCIVAL FOIL VAR (MR)"
-               title="CONAN THE BARBARIAN #32 CVR D NICK PERCIVAL FOIL VAR (MR)"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>CONAN THE BARBARIAN #32 CVR D NICK PERCIVAL FOIL VAR (MR) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>DICK TRACY #18 CVR B GREG SMALLWOOD VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
@@ -487,7 +442,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621125800811</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -521,51 +476,6 @@
       ]]></description>
     </item>
     <item>
-      <title>EMPEROR AQUAMAN #19 CVR A JOHN TIMMS</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526DC0143.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0143.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0143.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526DC0143.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/6e07f633a2a4083c4f3513e711bec9c8.webp"
-               alt="EMPEROR AQUAMAN #19 CVR A JOHN TIMMS"
-               title="EMPEROR AQUAMAN #19 CVR A JOHN TIMMS"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>EMPEROR AQUAMAN #19 CVR A JOHN TIMMS is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
       <title>FANTASTIC FOUR #13</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -577,7 +487,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621122701311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -622,7 +532,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621122701321</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -656,186 +566,6 @@
       ]]></description>
     </item>
     <item>
-      <title>FIRE AND ICE DARKWOLF #1 CVR A DAN PANOSIAN</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526DE0737.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0737.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0737.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526DE0737.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4f46989359f894312ce8237b9a96d9f6.webp"
-               alt="FIRE AND ICE DARKWOLF #1 CVR A DAN PANOSIAN"
-               title="FIRE AND ICE DARKWOLF #1 CVR A DAN PANOSIAN"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>FIRE AND ICE DARKWOLF #1 CVR A DAN PANOSIAN is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
-      <title>FLASH GORDON THE MOVIE ADAPTATION TP</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526MA0928.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526MA0928.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526MA0928.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526MA0928.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e084db21577405e2c65c81ce2284202c.webp"
-               alt="FLASH GORDON THE MOVIE ADAPTATION TP"
-               title="FLASH GORDON THE MOVIE ADAPTATION TP"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>FLASH GORDON THE MOVIE ADAPTATION TP is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
-      <title>FURY OF FIRESTORM #4 (OF 8) CVR A RAFAEL DE LATORRE</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526DC0064.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0064.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0064.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526DC0064.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3275260edcba5835e68496fe342ed10d.webp"
-               alt="FURY OF FIRESTORM #4 (OF 8) CVR A RAFAEL DE LATORRE"
-               title="FURY OF FIRESTORM #4 (OF 8) CVR A RAFAEL DE LATORRE"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>FURY OF FIRESTORM #4 (OF 8) CVR A RAFAEL DE LATORRE is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
-      <title>GI JOE A REAL AMERICAN HERO #330 CVR A LEE WEEKS &amp; DAVE STEWART</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526IM0357.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526IM0357.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526IM0357.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526IM0357.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/092f33c8ed0c2a80c292c710b9b07618.webp"
-               alt="GI JOE A REAL AMERICAN HERO #330 CVR A LEE WEEKS &amp; DAVE STEWART"
-               title="GI JOE A REAL AMERICAN HERO #330 CVR A LEE WEEKS &amp; DAVE STEWART"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>GI JOE A REAL AMERICAN HERO #330 CVR A LEE WEEKS &amp; DAVE STEWART is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
       <title>Godzilla [Kai-Sei Era] #12 Cover A (Prasetya)</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -847,7 +577,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403433201211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -892,7 +622,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403433201221</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -926,51 +656,6 @@
       ]]></description>
     </item>
     <item>
-      <title>GREEN LANTERN #49 FACSIMILE EDITION CVR C DARRYL BANKS FOIL VAR</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526DC0206.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0206.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0206.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526DC0206.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c3ffb80a8680d4e9b589748591b88a1e.webp"
-               alt="GREEN LANTERN #49 FACSIMILE EDITION CVR C DARRYL BANKS FOIL VAR"
-               title="GREEN LANTERN #49 FACSIMILE EDITION CVR C DARRYL BANKS FOIL VAR"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>GREEN LANTERN #49 FACSIMILE EDITION CVR C DARRYL BANKS FOIL VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
       <title>IRON MAN #7</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -982,7 +667,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621491400711</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1027,7 +712,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621491400751</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1061,6 +746,96 @@
       ]]></description>
     </item>
     <item>
+      <title>JSA #21 CVR A PETE WOODS</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526DC0141.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0141.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0141.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526DC0141.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/2ab8a53705cf6917462d5258e761c5c7.webp"
+               alt="JSA #21 CVR A PETE WOODS"
+               title="JSA #21 CVR A PETE WOODS"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>JSA #21 CVR A PETE WOODS is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>LION KING #4 CVR A EDWIN GALMON</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/1225DE0623.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE0623.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/1225DE0623.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/1225DE0623.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a547c225a5e2203b7f3dce2d1203cd71.webp"
+               alt="LION KING #4 CVR A EDWIN GALMON"
+               title="LION KING #4 CVR A EDWIN GALMON"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>LION KING #4 CVR A EDWIN GALMON is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
       <title>MARVEL SWIMSUIT SPECIAL: BRAND NEW BEACH DAY #1 AKA VARIANT</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -1072,7 +847,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621474700151</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1117,7 +892,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621474700141</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1151,51 +926,6 @@
       ]]></description>
     </item>
     <item>
-      <title>MASK #2 CVR A PYE PARR</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526IM0401.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526IM0401.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
-      <category>Comics</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526IM0401.jpg" type="image/jpeg" length="0"/>
-
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
-      <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526IM0401.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/844f96a037d801c90362f76b0350ce99.webp"
-               alt="MASK #2 CVR A PYE PARR"
-               title="MASK #2 CVR A PYE PARR"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>MASK #2 CVR A PYE PARR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
       <title>MORTAL THOR #12</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -1207,7 +937,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621284201211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1252,7 +982,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621516400611</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1286,6 +1016,456 @@
       ]]></description>
     </item>
     <item>
+      <title>RED SONJA NOIR THE PLUNDER AND THE PRINCESS #1 (ONE SHOT) CVR A LESLEY LEIRIX LI VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526DE0775.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0775.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0775.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526DE0775.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/955fcb1820e5c953bd06f5d6dbbb1972.webp"
+               alt="RED SONJA NOIR THE PLUNDER AND THE PRINCESS #1 (ONE SHOT) CVR A LESLEY LEIRIX LI VAR"
+               title="RED SONJA NOIR THE PLUNDER AND THE PRINCESS #1 (ONE SHOT) CVR A LESLEY LEIRIX LI VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>RED SONJA NOIR THE PLUNDER AND THE PRINCESS #1 (ONE SHOT) CVR A LESLEY LEIRIX LI VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>RED SONJA NOIR THE PLUNDER AND THE PRINCESS #1 (ONE SHOT) CVR C COSPLAY MOLLY STEWART VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526DE0777.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0777.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0777.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526DE0777.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/dea042a9e9826f9e0ab1104b5fbb34e7.webp"
+               alt="RED SONJA NOIR THE PLUNDER AND THE PRINCESS #1 (ONE SHOT) CVR C COSPLAY MOLLY STEWART VAR"
+               title="RED SONJA NOIR THE PLUNDER AND THE PRINCESS #1 (ONE SHOT) CVR C COSPLAY MOLLY STEWART VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>RED SONJA NOIR THE PLUNDER AND THE PRINCESS #1 (ONE SHOT) CVR C COSPLAY MOLLY STEWART VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>RED SONJA SHE DEVIL WITH A SWORD #3 CVR A STUART SAYGER</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526DE0783.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0783.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0783.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526DE0783.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/46b4be3d3115cab1898b359740aa44bf.webp"
+               alt="RED SONJA SHE DEVIL WITH A SWORD #3 CVR A STUART SAYGER"
+               title="RED SONJA SHE DEVIL WITH A SWORD #3 CVR A STUART SAYGER"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>RED SONJA SHE DEVIL WITH A SWORD #3 CVR A STUART SAYGER is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>RED SONJA SHE DEVIL WITH A SWORD #3 CVR B LUCIO PARRILLO VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526DE0784.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0784.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0784.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526DE0784.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/d1cff53dcb107ff7b59347152b712c02.webp"
+               alt="RED SONJA SHE DEVIL WITH A SWORD #3 CVR B LUCIO PARRILLO VAR"
+               title="RED SONJA SHE DEVIL WITH A SWORD #3 CVR B LUCIO PARRILLO VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>RED SONJA SHE DEVIL WITH A SWORD #3 CVR B LUCIO PARRILLO VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>RED SONJA SHE DEVIL WITH A SWORD #3 CVR C JOSEPH MICHAEL LINSNER VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526DE0785.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0785.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0785.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526DE0785.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c5d35877611f727b3ad55e57c21177d9.webp"
+               alt="RED SONJA SHE DEVIL WITH A SWORD #3 CVR C JOSEPH MICHAEL LINSNER VAR"
+               title="RED SONJA SHE DEVIL WITH A SWORD #3 CVR C JOSEPH MICHAEL LINSNER VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>RED SONJA SHE DEVIL WITH A SWORD #3 CVR C JOSEPH MICHAEL LINSNER VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>RED SONJA SHE DEVIL WITH A SWORD #3 CVR E COSPLAY MEGAN RANDOM VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526DE0787.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0787.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0787.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526DE0787.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/23e778a0cebcdb1f23bc9c1d9b75fd8f.webp"
+               alt="RED SONJA SHE DEVIL WITH A SWORD #3 CVR E COSPLAY MEGAN RANDOM VAR"
+               title="RED SONJA SHE DEVIL WITH A SWORD #3 CVR E COSPLAY MEGAN RANDOM VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>RED SONJA SHE DEVIL WITH A SWORD #3 CVR E COSPLAY MEGAN RANDOM VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>SPAWN #377 CVR A MIRKO COLAK</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0226IM0452.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM0452.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0226IM0452.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0226IM0452.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/585d2b669522fbee68e2adf77c082bdc.webp"
+               alt="SPAWN #377 CVR A MIRKO COLAK"
+               title="SPAWN #377 CVR A MIRKO COLAK"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>SPAWN #377 CVR A MIRKO COLAK is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>SPAWN #377 CVR B CHRIS CAMPANA VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0226IM0453.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM0453.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0226IM0453.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0226IM0453.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3bce97f1adfc4a01d54d522dd06bfc10.webp"
+               alt="SPAWN #377 CVR B CHRIS CAMPANA VAR"
+               title="SPAWN #377 CVR B CHRIS CAMPANA VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>SPAWN #377 CVR B CHRIS CAMPANA VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>SPAWN SCORCHED #52 CVR A IG GUARA</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0226IM0444.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM0444.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0226IM0444.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0226IM0444.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c03a368bfc8413637e8d60dbb209b6bb.webp"
+               alt="SPAWN SCORCHED #52 CVR A IG GUARA"
+               title="SPAWN SCORCHED #52 CVR A IG GUARA"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>SPAWN SCORCHED #52 CVR A IG GUARA is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>SPAWN SCORCHED #52 CVR B IG GUARA B&amp;W VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0226IM0445.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM0445.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0226IM0445.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0226IM0445.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/15a7ba7f5133dd238065c26c1abf1c1f.webp"
+               alt="SPAWN SCORCHED #52 CVR B IG GUARA B&amp;W VAR"
+               title="SPAWN SCORCHED #52 CVR B IG GUARA B&amp;W VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>SPAWN SCORCHED #52 CVR B IG GUARA B&amp;W VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
       <title>STAR WARS: ROGUE ONE - SAW GERRERA #1</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -1297,7 +1477,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621535500111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1331,6 +1511,96 @@
       ]]></description>
     </item>
     <item>
+      <title>STUART FAILS TO SAVE THE UNIVERSE PROMO POSTER</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0426DC8264.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0426DC8264.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0426DC8264.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0426DC8264.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/default.webp"
+               alt="STUART FAILS TO SAVE THE UNIVERSE PROMO POSTER"
+               title="STUART FAILS TO SAVE THE UNIVERSE PROMO POSTER"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>STUART FAILS TO SAVE THE UNIVERSE PROMO POSTER is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>THE TRANSFORMERS THE MOVIE 40TH ANNIVERSARY EDITION #2 (OF 3) CVR A NICK ROCHE &amp; JOSH BURCHAM</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526IM0444.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates.
+           Using the original URL ensures the same item is never
+           shown as new twice in a subscriber's feed reader. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526IM0444.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems
+           route items to relevant reader interests -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL.
+           Flipboard requires the smallest dimension to be 500px+.
+           Our compressed thumbnails are 300px so we use the source
+           image here instead, reserving thumbs for description only.
+           length="0" is acceptable when file size is unknown. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526IM0444.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: Flipboard requires 300+ characters for good
+           layout rendering. Includes thumbnail img for feed readers
+           that render HTML descriptions, followed by descriptive text
+           to meet the character threshold. Style attributes omitted
+           per RSS best practices ? HTML attributes used instead. -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526IM0444.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8ae5ef7c6a87882151c389d227e53e85.webp"
+               alt="THE TRANSFORMERS THE MOVIE 40TH ANNIVERSARY EDITION #2 (OF 3) CVR A NICK ROCHE &amp; JOSH BURCHAM"
+               title="THE TRANSFORMERS THE MOVIE 40TH ANNIVERSARY EDITION #2 (OF 3) CVR A NICK ROCHE &amp; JOSH BURCHAM"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>THE TRANSFORMERS THE MOVIE 40TH ANNIVERSARY EDITION #2 (OF 3) CVR A NICK ROCHE &amp; JOSH BURCHAM is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
       <title>TMNT: Journeys #11 Cover A (Dooney &amp; Lawson)</title>
 
       <!-- Link points to the original full-size RAW image URL -->
@@ -1342,7 +1612,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403457801111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1387,7 +1657,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621448800611</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1432,7 +1702,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621466200111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1477,7 +1747,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621443300511</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 01:08:21 GMT</pubDate>
+      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
