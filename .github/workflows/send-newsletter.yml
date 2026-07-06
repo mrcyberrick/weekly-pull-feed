@@ -45,6 +45,6 @@ jobs:
           BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           SENDER_NAME: "Ray & Judy's Book Stop"
-          EMAIL_HTML_PATH: "email.html"
+          EMAIL_HTML_PATH: "newsletter-email.html"
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
         run: node scripts/send-brevo-campaign.js
