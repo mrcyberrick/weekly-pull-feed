@@ -42,7 +42,7 @@ jobs:
       - name: Send campaign via Brevo
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
-          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          BREVO_LIST_ID: ${{ vars.BREVO_LIST_ID }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           SENDER_NAME: "Ray & Judy's Book Stop"
           EMAIL_HTML_PATH: "newsletter-email.html"
