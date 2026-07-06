@@ -20,17 +20,20 @@
 
 <!-- Weekly Pull Feed Newsletter ? Brevo htmlContent block -->
 
-<!-- Outer wrapper: #181818 background fills campaign gutters -->
+<!-- Outer wrapper: #0f0f0f page tone with padding ? the 600px card floats on it,
+     matching newsletter.html's page/card separation -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
        style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;
-              background-color:#181818;">
+              background-color:#0f0f0f;">
   <tr>
-    <td align="center" style="padding:0;">
+    <td align="center" style="padding:24px 12px;">
 
-      <!-- Inner content table: 600px, no outer border, no border-radius -->
+      <!-- Inner content table: 600px card, bordered to separate from page background.
+           (Border restored for Brevo ? the MailerLite double-border issue no longer applies.) -->
       <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
              style="max-width:600px;width:100%;
                     border-collapse:collapse;
+                    border:1px solid #2e2e2e;
                     mso-table-lspace:0pt;mso-table-rspace:0pt;
                     background-color:#181818;">
 
@@ -183,25 +186,26 @@
               </tr>
             </table>
 
-            <!-- Bulletproof CTA button -->
-            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"
-                   style="border-collapse:separate;margin:0 auto;">
+            <!-- Full-width red CTA banner ? entire bar is clickable.
+                 Mirrors newsletter.html's "Reserve Your Comics" banner. -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                   style="border-collapse:collapse;">
               <tr>
                 <td align="center" bgcolor="#e8321c"
-                    style="border-radius:4px;
-                           mso-padding-alt:14px 32px;">
+                    style="mso-padding-alt:14px 20px;">
                   <a href="https://pulllist.app" target="_blank" rel="noopener noreferrer"
-                     style="display:inline-block;
-                            padding:14px 32px;
+                     style="display:block;
+                            padding:14px 20px;
                             font-family:'Bebas Neue','Arial Narrow','Trebuchet MS',Arial,sans-serif;
-                            font-size:18px;
-                            letter-spacing:3px;
+                            font-size:17px;
+                            letter-spacing:2px;
                             text-transform:uppercase;
                             color:#f0ece4;
                             text-decoration:none;
+                            text-align:center;
                             line-height:1;
                             mso-line-height-rule:exactly;">
-                    Reserve Your Comics
+                    &#9650;&nbsp; Reserve Your Comics &mdash; Ask About Pull List
                   </a>
                 </td>
               </tr>
