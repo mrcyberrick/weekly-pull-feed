@@ -187,16 +187,18 @@
               </tr>
             </table>
 
-            <!-- Full-width red CTA banner ? entire bar is clickable.
-                 Mirrors newsletter.html's "Reserve Your Comics" banner. -->
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                   style="border-collapse:collapse;">
+            <!-- Pill CTA button ? centered, auto-width, fully clickable.
+                 border-radius renders in all modern clients; desktop Outlook
+                 (Word engine) degrades gracefully to square corners, link intact. -->
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"
+                   style="border-collapse:separate;margin:0 auto;">
               <tr>
                 <td align="center" bgcolor="#e8321c"
-                    style="mso-padding-alt:14px 20px;">
+                    style="border-radius:26px;
+                           mso-padding-alt:15px 40px;">
                   <a href="https://pulllist.app" target="_blank" rel="noopener noreferrer"
-                     style="display:block;
-                            padding:14px 20px;
+                     style="display:inline-block;
+                            padding:15px 40px;
                             font-family:'Bebas Neue','Arial Narrow','Trebuchet MS',Arial,sans-serif;
                             font-size:17px;
                             letter-spacing:2px;
@@ -205,6 +207,7 @@
                             text-decoration:none;
                             text-align:center;
                             line-height:1;
+                            border-radius:26px;
                             mso-line-height-rule:exactly;">
                     Reserve Your Comics
                   </a>
