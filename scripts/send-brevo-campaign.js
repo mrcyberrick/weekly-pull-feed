@@ -9,6 +9,7 @@
  *   SENDER_EMAIL    (required) - verified sender address in Brevo
  *   SENDER_NAME     (optional) - defaults to "Ray & Judy's Book Stop"
  *   EMAIL_HTML_PATH (optional) - path to email-safe HTML, defaults to "email.html"
+ *   REPLY_TO        (optional) - reply-to address, defaults to hello@mrcyberrick.us
  *   DRY_RUN         (optional) - "true" creates a draft in Brevo but does NOT send
  */
 
@@ -23,6 +24,7 @@ const {
   SENDER_NAME = "Ray & Judy's Book Stop",
   EMAIL_HTML_PATH = "email.html",
   DRY_RUN = "false",
+  REPLY_TO = "hello@mrcyberrick.us",
 } = process.env;
 
 function fail(msg) {
@@ -115,6 +117,7 @@ async function brevo(method, path, body) {
     name: campaignName,
     subject,
     sender: { name: SENDER_NAME, email: SENDER_EMAIL },
+    replyTo: REPLY_TO,
     type: "classic",
     htmlContent: html,
     recipients: { listIds: [Number(BREVO_LIST_ID)] },
