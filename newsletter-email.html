@@ -17,86 +17,191 @@
     }
   }
 </style>
- 
-<!-- Weekly Pull Feed Newsletter ? MailerLite HTML Block -->
-<!-- Paste this entire snippet into a MailerLite HTML content block -->
- 
-<!-- Outer wrapper: #181818 background fills campaign gutters on either side of 600px content -->
+
+<!-- Weekly Pull Feed Newsletter ? Brevo htmlContent block -->
+
+<!-- Outer wrapper: #181818 background fills campaign gutters -->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
        style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;
               background-color:#181818;">
   <tr>
     <td align="center" style="padding:0;">
- 
-      <!-- Inner content table: 600px, NO outer border, NO border-radius -->
+
+      <!-- Inner content table: 600px, no outer border, no border-radius -->
       <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
              style="max-width:600px;width:100%;
                     border-collapse:collapse;
                     mso-table-lspace:0pt;mso-table-rspace:0pt;
                     background-color:#181818;">
- 
-        <!-- TITLE BAR -->
-        <!-- bg-elevated (#222) | border-bottom:3px accent | NO top border -->
+
+        <!-- TITLE BAR ? links to preorder app -->
         <tr>
           <td style="background-color:#222222;
                      border-bottom:3px solid #e8321c;
                      text-align:center;
                      padding:20px 24px;
                      mso-padding-alt:20px 24px;">
-            <div style="font-family:'Bebas Neue',Georgia,serif;
-                        font-size:26px;
-                        letter-spacing:4px;
-                        text-transform:uppercase;
-                        color:#f0ece4;
-                        line-height:1;
-                        mso-line-height-rule:exactly;">
-              <!--[if mso]>
-              <span style="font-family:Georgia,serif;font-size:26px;
-                           letter-spacing:4px;color:#f0ece4;">
-                PULLLIST &mdash; Weekly Previews
-              </span>
-              <![endif]-->
-              <!--[if !mso]><!-->
-              PULL<span style="color:#e8321c;">LIST</span>
-              &nbsp;&mdash;&nbsp;Weekly Previews
-              <!--<![endif]-->
-            </div>
-            <div style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
-                        font-size:11px;
-                        color:#5a5755;
-                        letter-spacing:2px;
-                        text-transform:uppercase;
-                        margin-top:6px;
-                        mso-line-height-rule:exactly;">
-              Ray &amp; Judy&rsquo;s Book Stop &nbsp;&middot;&nbsp; June 27, 2026
-            </div>
+            <a href="https://pulllist.app" target="_blank" rel="noopener noreferrer"
+               style="text-decoration:none;color:#f0ece4;display:block;">
+              <div style="font-family:'Bebas Neue',Georgia,serif;
+                          font-size:26px;
+                          letter-spacing:4px;
+                          text-transform:uppercase;
+                          color:#f0ece4;
+                          line-height:1;
+                          mso-line-height-rule:exactly;">
+                <!--[if mso]>
+                <span style="font-family:Georgia,serif;font-size:26px;
+                             letter-spacing:4px;color:#f0ece4;">
+                  PULLLIST &mdash; Weekly Previews
+                </span>
+                <![endif]-->
+                <!--[if !mso]><!-->
+                PULL<span style="color:#e8321c;">LIST</span>
+                &nbsp;&mdash;&nbsp;Weekly Previews
+                <!--<![endif]-->
+              </div>
+              <div style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                          font-size:11px;
+                          color:#5a5755;
+                          letter-spacing:2px;
+                          text-transform:uppercase;
+                          margin-top:6px;
+                          mso-line-height-rule:exactly;">
+                Ray &amp; Judy&rsquo;s Book Stop &nbsp;&middot;&nbsp; July 6, 2026
+              </div>
+            </a>
           </td>
         </tr>
- 
-        <!-- HERO IMAGE -->
-        <!-- border-bottom seam ? no top border (title bar accent handles that edge) -->
+
+        <!-- HERO IMAGE ? links to preorder app -->
         <tr>
           <td class="ml-hero"
               style="line-height:0;font-size:0;padding:0;
                      border-bottom:1px solid #2e2e2e;
                      mso-line-height-rule:exactly;">
-            <!--[if mso]>
-            <table role="presentation" width="600" cellpadding="0"
-                   cellspacing="0" border="0">
-            <tr><td width="600">
-            <![endif]-->
-            <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/hero.jpg"
-                 alt="Weekly Previews"
-                 width="600"
-                 style="display:block;width:100%;max-width:600px;
-                        height:auto;border:0;outline:none;
-                        -ms-interpolation-mode:bicubic;">
-            <!--[if mso]></td></tr></table><![endif]-->
+            <a href="https://pulllist.app" target="_blank" rel="noopener noreferrer"
+               style="display:block;line-height:0;font-size:0;border:0;">
+              <!--[if mso]>
+              <table role="presentation" width="600" cellpadding="0"
+                     cellspacing="0" border="0">
+              <tr><td width="600">
+              <![endif]-->
+              <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/hero.jpg"
+                   alt="Weekly Previews"
+                   width="600"
+                   style="display:block;width:100%;max-width:600px;
+                          height:auto;border:0;outline:none;
+                          -ms-interpolation-mode:bicubic;">
+              <!--[if mso]></td></tr></table><![endif]-->
+            </a>
           </td>
         </tr>
- 
+
+        <!-- ??? PULL LIST PROMO ? condensed email edition ??? -->
+
+        <!-- Promo label bar (no dismiss button in email) -->
+        <tr>
+          <td style="background-color:#e8321c;
+                     padding:12px 24px;
+                     mso-padding-alt:12px 24px;">
+            <div style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                        font-size:10px;font-weight:600;
+                        color:#f7d9d4;
+                        letter-spacing:3px;text-transform:uppercase;
+                        margin-bottom:3px;
+                        mso-line-height-rule:exactly;">
+              From the shop
+            </div>
+            <div style="font-family:'Bebas Neue',Georgia,serif;
+                        font-size:20px;letter-spacing:2px;
+                        color:#f0ece4;line-height:1;
+                        text-transform:uppercase;
+                        mso-line-height-rule:exactly;">
+              PULLLIST &nbsp;&middot;&nbsp;
+              <span style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                           font-size:14px;font-weight:500;
+                           letter-spacing:0;text-transform:none;">
+                Never miss an issue again
+              </span>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Promo body: 3 features + CTA button -->
+        <tr>
+          <td style="background-color:#181818;
+                     border-bottom:1px solid #2e2e2e;
+                     padding:20px 24px 22px;
+                     mso-padding-alt:20px 24px 22px;">
+
+            <!-- Feature lines (text marks ? SVG icons don't survive email clients) -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                   style="border-collapse:collapse;">
+              <tr>
+                <td style="padding:0 0 8px;">
+                  <span style="font-family:Arial,Helvetica,sans-serif;
+                               font-size:13px;font-weight:bold;color:#e8321c;">&#10003;&nbsp;&nbsp;</span>
+                  <span style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                               font-size:13px;color:#f0ece4;">Reserve upcoming releases from the monthly catalog &mdash; any time, any device</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:0 0 8px;">
+                  <span style="font-family:Arial,Helvetica,sans-serif;
+                               font-size:13px;font-weight:bold;color:#e8321c;">&#10003;&nbsp;&nbsp;</span>
+                  <span style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                               font-size:13px;color:#f0ece4;">Subscribe once and your series auto-add to your pull list every month</span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:0 0 18px;">
+                  <span style="font-family:Arial,Helvetica,sans-serif;
+                               font-size:13px;font-weight:bold;color:#e8321c;">&#10003;&nbsp;&nbsp;</span>
+                  <span style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                               font-size:13px;color:#f0ece4;">Know exactly what&rsquo;s arriving every Wednesday</span>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Bulletproof CTA button -->
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"
+                   style="border-collapse:separate;margin:0 auto;">
+              <tr>
+                <td align="center" bgcolor="#e8321c"
+                    style="border-radius:4px;
+                           mso-padding-alt:14px 32px;">
+                  <a href="https://pulllist.app" target="_blank" rel="noopener noreferrer"
+                     style="display:inline-block;
+                            padding:14px 32px;
+                            font-family:'Bebas Neue',Georgia,serif;
+                            font-size:18px;
+                            letter-spacing:3px;
+                            text-transform:uppercase;
+                            color:#f0ece4;
+                            text-decoration:none;
+                            line-height:1;
+                            mso-line-height-rule:exactly;">
+                    Reserve Your Comics
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <!-- CTA subtext -->
+            <div style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                        font-size:11px;color:#9a9390;
+                        text-align:center;margin-top:12px;
+                        mso-line-height-rule:exactly;">
+              Or ask a staff member &nbsp;&middot;&nbsp; 973-586-9182
+              &nbsp;&middot;&nbsp; 40 W Main St, Rockaway NJ
+            </div>
+
+          </td>
+        </tr>
+        <!-- ??? END PROMO ??? -->
+
         <!-- SECTION LABEL -->
-        <!-- bg-elevated (#222) | border-bottom seam only | NO top border -->
         <tr>
           <td style="background-color:#222222;
                      border-bottom:1px solid #2e2e2e;
@@ -112,9 +217,8 @@
             </div>
           </td>
         </tr>
- 
+
         <!-- THUMBNAIL GRID -->
-        <!-- bg-card (#181818) | border-bottom seam only | NO top border -->
         <tr>
           <td style="padding:12px;
                      background-color:#181818;
@@ -791,14 +895,13 @@
             </table>
           </td>
         </tr>
- 
-        <!-- FOOTER -->
-        <!-- bg-elevated (#222) | NO top border (grid td already has border-bottom) -->
+
+        <!-- FOOTER ? linked phone/address + native Brevo unsubscribe -->
         <tr>
           <td style="background-color:#222222;
                      text-align:center;
-                     padding:14px 20px;
-                     mso-padding-alt:14px 20px;">
+                     padding:14px 20px 16px;
+                     mso-padding-alt:14px 20px 16px;">
             <div style="font-family:'Bebas Neue',Georgia,serif;
                         font-size:14px;
                         letter-spacing:3px;
@@ -822,16 +925,30 @@
                         color:#5a5755;
                         letter-spacing:1px;
                         mso-line-height-rule:exactly;">
-              Generated by Weekly Previews &bull; June 27, 2026
-              &nbsp;&middot;&nbsp; 973-586-9182
-              &nbsp;&middot;&nbsp; 40 W Main St, Rockaway NJ
+              Generated by Weekly Previews &bull; July 6, 2026
+              &nbsp;&middot;&nbsp;
+              <a href="tel:+19735869182"
+                 style="color:#5a5755;text-decoration:none;">973-586-9182</a>
+              &nbsp;&middot;&nbsp;
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=40+W+Main+St+Rockaway+NJ" target="_blank" rel="noopener noreferrer"
+                 style="color:#5a5755;text-decoration:underline;">40 W Main St, Rockaway NJ</a>
+            </div>
+            <div style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                        font-size:11px;
+                        color:#5a5755;
+                        margin-top:8px;
+                        mso-line-height-rule:exactly;">
+              You&rsquo;re receiving this because you signed up for weekly pull list previews.
+              &nbsp;
+              <a href="{{ unsubscribe }}"
+                 style="color:#9a9390;text-decoration:underline;">Unsubscribe</a>
             </div>
           </td>
         </tr>
- 
+
       </table>
       <!-- End inner content table -->
- 
+
     </td>
   </tr>
 </table>
