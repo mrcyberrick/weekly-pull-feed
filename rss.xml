@@ -9,11 +9,11 @@
     <link>https://mrcyberrick.github.io/weekly-pull-feed/newsletter.html</link>
     <description>Weekly pull list of new releases with thumbnails and links to full-size cover images.</description>
     <language>en-us</language>
-    <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
-    <lastBuildDate>Sat, 27 Jun 2026 15:30:28 GMT</lastBuildDate>
+    <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
+    <lastBuildDate>Mon, 06 Jul 2026 15:31:28 GMT</lastBuildDate>
     <ttl>10080</ttl><!-- 10080 minutes = 1 week; hints to readers how often to check -->
 
-    <!-- Canonical self-reference: required by Atom namespace, recommended by feed validators -->
+    <!-- Canonical self-reference: required by Atom namespace -->
     <atom:link href="https://mrcyberrick.github.io/weekly-pull-feed/rss.xml" rel="self" type="application/rss+xml"/>
 
     <!-- Feed thumbnail shown in RSS reader channel listings -->
@@ -31,33 +31,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526DC0043.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0043.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0043.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526DC0043.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/f5bd68bc92cd76c4aec163c4e3427063.webp"
@@ -76,33 +65,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621001503211</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621001503211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621001503211" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621001503211" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b468ce2c3fdecf11bc8ded70dbd56533.webp"
@@ -121,33 +99,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621001503231</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621001503231</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621001503231" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621001503231" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b2a8e89376808d6140486e3a40f7aa8e.webp"
@@ -166,33 +133,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526AC0546.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526AC0546.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526AC0546.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526AC0546.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/74b3212833ca0012d9600702c4662918.webp"
@@ -211,33 +167,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0426DC0192.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0426DC0192.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0426DC0192.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0426DC0192.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7fa4448da3162d7a813d734247a13307.webp"
@@ -256,33 +201,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526DC0097.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0097.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0097.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526DC0097.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/76840ce7782643c351d14872cd673967.webp"
@@ -301,33 +235,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621606200111</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621606200111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621606200111" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621606200111" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/262777065561befead41f8b5efdb667e.webp"
@@ -346,33 +269,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0426MA0834.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0426MA0834.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0426MA0834.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0426MA0834.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/589790504a88e0700c5c3f0b3fb2362b.webp"
@@ -391,33 +303,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0426MA0835.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0426MA0835.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0426MA0835.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0426MA0835.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/49c0f8d17168eee32c68bf754ff06d5e.webp"
@@ -436,33 +337,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621125800811</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621125800811</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621125800811" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621125800811" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/267b533aa33898ae25d82acc08293e0b.webp"
@@ -481,33 +371,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621122701311</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621122701311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621122701311" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621122701311" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5af0708395accda1047ab1a96e078e49.webp"
@@ -526,33 +405,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621122701321</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621122701321</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621122701321" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621122701321" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/41f34587752a849120c87faf73227e6e.webp"
@@ -571,33 +439,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/82771403433201211</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403433201211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/82771403433201211" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403433201211" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0802fdd49179cb91daa75d18bce1216f.webp"
@@ -616,33 +473,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/82771403433201221</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403433201221</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/82771403433201221" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403433201221" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4b3095fdede5d62559bd699797ba989a.webp"
@@ -661,33 +507,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621491400711</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621491400711</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621491400711" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621491400711" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5adac698c90c82fae91fe89503ca0b58.webp"
@@ -706,33 +541,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621491400751</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621491400751</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621491400751" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621491400751" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ba4677243d15b9cca7f12835b4123605.webp"
@@ -751,33 +575,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526DC0141.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DC0141.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DC0141.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526DC0141.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/2ab8a53705cf6917462d5258e761c5c7.webp"
@@ -796,33 +609,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/1225DE0623.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/1225DE0623.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/1225DE0623.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/1225DE0623.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a547c225a5e2203b7f3dce2d1203cd71.webp"
@@ -841,33 +643,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621474700151</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621474700151</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621474700151" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621474700151" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/d32183ce8c4ec205b7d4b2a86bf269b0.webp"
@@ -886,33 +677,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621474700141</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621474700141</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621474700141" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621474700141" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/6bd79559281715f1e30b27995a398eb0.webp"
@@ -931,33 +711,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621284201211</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621284201211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621284201211" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621284201211" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/769b0e6d1bf7e443142a8e4675ed9834.webp"
@@ -976,33 +745,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621516400611</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621516400611</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621516400611" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621516400611" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7ec588fe5a33b3c288d6e7c5a7116c27.webp"
@@ -1021,33 +779,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526DE0775.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0775.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0775.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526DE0775.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/955fcb1820e5c953bd06f5d6dbbb1972.webp"
@@ -1066,33 +813,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526DE0777.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0777.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0777.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526DE0777.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/dea042a9e9826f9e0ab1104b5fbb34e7.webp"
@@ -1111,33 +847,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526DE0783.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0783.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0783.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526DE0783.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/46b4be3d3115cab1898b359740aa44bf.webp"
@@ -1156,33 +881,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526DE0784.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0784.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0784.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526DE0784.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/d1cff53dcb107ff7b59347152b712c02.webp"
@@ -1201,33 +915,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526DE0785.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0785.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0785.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526DE0785.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c5d35877611f727b3ad55e57c21177d9.webp"
@@ -1246,33 +949,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526DE0787.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526DE0787.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526DE0787.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526DE0787.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/23e778a0cebcdb1f23bc9c1d9b75fd8f.webp"
@@ -1291,33 +983,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0226IM0452.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM0452.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0226IM0452.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0226IM0452.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/585d2b669522fbee68e2adf77c082bdc.webp"
@@ -1336,33 +1017,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0226IM0453.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM0453.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0226IM0453.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0226IM0453.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3bce97f1adfc4a01d54d522dd06bfc10.webp"
@@ -1381,33 +1051,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0226IM0444.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM0444.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0226IM0444.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0226IM0444.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c03a368bfc8413637e8d60dbb209b6bb.webp"
@@ -1426,33 +1085,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0226IM0445.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0226IM0445.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0226IM0445.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0226IM0445.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/15a7ba7f5133dd238065c26c1abf1c1f.webp"
@@ -1471,33 +1119,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621535500111</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621535500111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621535500111" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621535500111" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3fddd27b304bad817fc8e4c442bcbf1f.webp"
@@ -1516,33 +1153,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0426DC8264.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0426DC8264.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0426DC8264.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0426DC8264.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/images/default.webp"
@@ -1561,33 +1187,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://media.lunardistribution.com/images/covers/large/0526IM0444.jpg</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526IM0444.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Comics</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://media.lunardistribution.com/images/covers/large/0526IM0444.jpg" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://media.lunardistribution.com/images/covers/large/0526IM0444.jpg" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8ae5ef7c6a87882151c389d227e53e85.webp"
@@ -1606,33 +1221,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/82771403457801111</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403457801111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/82771403457801111" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/82771403457801111" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/efeb041045af84c02e46da41eb70f935.webp"
@@ -1651,33 +1255,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621448800611</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621448800611</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621448800611" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621448800611" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a61d9814a2e81c4d1a803c5554dd4488.webp"
@@ -1696,33 +1289,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621466200111</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621466200111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621466200111" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621466200111" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/2343731d2514fd5f35d4c6dbb613186d.webp"
@@ -1741,33 +1323,22 @@
       <!-- Link points to the original full-size RAW image URL -->
       <link>https://images.penguinrandomhouse.com/cover/d/75960621443300511</link>
 
-      <!-- GUID uniquely identifies this item across feed updates.
-           Using the original URL ensures the same item is never
-           shown as new twice in a subscriber's feed reader. -->
+      <!-- GUID uniquely identifies this item across feed updates. -->
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621443300511</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 27 Jun 2026 15:30:28 GMT</pubDate>
+      <pubDate>Mon, 06 Jul 2026 15:31:28 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
 
-      <!-- category: helps Flipboard content recommendation systems
-           route items to relevant reader interests -->
+      <!-- category: helps Flipboard content recommendation systems -->
       <category>Books</category>
 
-      <!-- enclosure: points to the ORIGINAL full-size image URL.
-           Flipboard requires the smallest dimension to be 500px+.
-           Our compressed thumbnails are 300px so we use the source
-           image here instead, reserving thumbs for description only.
-           length="0" is acceptable when file size is unknown. -->
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
       <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621443300511" type="image/jpeg" length="0"/>
 
-      <!-- description: Flipboard requires 300+ characters for good
-           layout rendering. Includes thumbnail img for feed readers
-           that render HTML descriptions, followed by descriptive text
-           to meet the character threshold. Style attributes omitted
-           per RSS best practices ? HTML attributes used instead. -->
+      <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
         <a href="https://images.penguinrandomhouse.com/cover/d/75960621443300511" target="_blank" rel="noopener noreferrer">
           <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/cb919b71277d19512676656ccbacc98b.webp"
