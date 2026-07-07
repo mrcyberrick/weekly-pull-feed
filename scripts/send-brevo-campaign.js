@@ -10,7 +10,9 @@
  *   SENDER_NAME     (optional) - defaults to "Ray & Judy's Book Stop"
  *   EMAIL_HTML_PATH (optional) - path to email-safe HTML, defaults to "email.html"
  *   REPLY_TO        (optional) - reply-to address, defaults to hello@mrcyberrick.us
+ *   STALE_MAX_DAYS  (optional) - max age of content in days before send aborts, defaults to 6
  *   DRY_RUN         (optional) - "true" creates a draft in Brevo but does NOT send
+ *                                (also bypasses the stale-content guard for previews)
  */
 
 const fs = require("fs");
@@ -46,6 +48,43 @@ let html = fs.readFileSync(EMAIL_HTML_PATH, "utf8");
 
 if (html.trim().length < 500) {
   fail("HTML file looks empty or truncated. Aborting to avoid sending a blank email.");
+}
+
+// ---------- Stale-content guard ----------
+// The generator (Apps Script) writes <!-- pull-feed-generated: YYYY-MM-DD -->
+// at the top of the HTML on every run. Prep can happen any day (Fri or Mon),
+// but the send fires on a fixed weekly cron. This guard ensures a week with
+// NO prep never ships a stale duplicate: if the stamp is older than
+// STALE_MAX_DAYS, abort with a non-zero exit so GitHub emails a failure.
+// Fail-closed: audience gets nothing (and operator is alerted) rather than
+// a repeat of a previous week.
+const STALE_MAX_DAYS = Number(process.env.STALE_MAX_DAYS || "6");
+const stampMatch = html.match(/pull-feed-generated:\s*(\d{4}-\d{2}-\d{2})/);
+
+if (!stampMatch) {
+  // No stamp at all — either an old template predating the guard, or a
+  // malformed build. Fail closed unless explicitly a dry run.
+  if (DRY_RUN === "true") {
+    console.warn("WARNING: No freshness stamp found, but DRY_RUN=true so continuing.");
+  } else {
+    fail("No freshness stamp found in HTML. Regenerate via buildNewsletter(), then retry.");
+  }
+} else {
+  const stampDate = new Date(stampMatch[1] + "T00:00:00Z");
+  const ageDays = (Date.now() - stampDate.getTime()) / 86400000;
+  console.log(`Content generated: ${stampMatch[1]} (age ${ageDays.toFixed(1)} days, limit ${STALE_MAX_DAYS})`);
+
+  if (ageDays > STALE_MAX_DAYS) {
+    if (DRY_RUN === "true") {
+      console.warn(`WARNING: Content is ${ageDays.toFixed(1)} days old (over ${STALE_MAX_DAYS}), but DRY_RUN=true so continuing.`);
+    } else {
+      fail(
+        `Content is ${ageDays.toFixed(1)} days old, exceeding the ${STALE_MAX_DAYS}-day limit. ` +
+        `This week's prep likely did not run. Regenerate via buildNewsletter() and retry, ` +
+        `or raise STALE_MAX_DAYS for an intentional early build.`
+      );
+    }
+  }
 }
 
 // Brevo requires an unsubscribe link. Inject a footer if the template lacks one.
