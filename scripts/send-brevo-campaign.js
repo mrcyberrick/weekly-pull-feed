@@ -3,6 +3,13 @@
  * Creates a Brevo email campaign from a local HTML file and sends it.
  * Zero dependencies. Requires Node 18+ (native fetch).
  *
+ * Fail-closed by design. It aborts BEFORE sending if the target list has no
+ * valid recipients, and fails AFTER sending unless Brevo reports a healthy
+ * campaign status. A green run therefore means the send was verified, not
+ * merely accepted - Brevo returns 2xx from sendNow on acceptance alone, and
+ * three consecutive campaigns were once accepted and then silently suspended
+ * with 0 recipients for 18 days. See technical-reference.md F96.
+ *
  * Env vars:
  *   BREVO_API_KEY   (required) - Brevo API v3 key
  *   BREVO_LIST_ID   (required) - numeric list ID to send to
@@ -146,9 +153,75 @@ async function brevo(method, path, body) {
   return text ? JSON.parse(text) : {};
 }
 
+// Non-fatal variant for status polling. A transient 5xx or a dropped socket
+// while READING a campaign's status must not turn a send that already
+// succeeded into a red build (the false-alarm risk in this check). Returns
+// a result object instead of exiting; the caller decides when to give up.
+async function brevoTry(method, path) {
+  try {
+    const res = await fetch(`${API_BASE}${path}`, {
+      method,
+      headers: {
+        "api-key": BREVO_API_KEY,
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+    const text = await res.text();
+    if (!res.ok) return { ok: false, why: `HTTP ${res.status}: ${text.slice(0, 200)}` };
+    return { ok: true, json: text ? JSON.parse(text) : {} };
+  } catch (e) {
+    return { ok: false, why: `request failed: ${e.message}` };
+  }
+}
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// ---------- 3b. Campaign status vocabulary ----------
+// Brevo returns 2xx from sendNow on ACCEPTANCE, not on delivery. A campaign
+// can be accepted and then immediately suspended - which is exactly what
+// happened for campaigns #16/#17/#18 (2026-07-07/14/21): three consecutive
+// sends reported success while every one was Suspended with 0 recipients,
+// for 18 days, with no signal anywhere. See technical-reference.md F96.
+const STATUS_HEALTHY = ["sent", "inProcess", "queued"];
+const STATUS_BROKEN = ["suspended", "draft", "archive"];
+const STATUS_TERMINAL = ["sent", ...STATUS_BROKEN]; // stop polling on these
+
 // ---------- 4. Create the campaign ----------
 
 (async () => {
+  // ---------- Pre-send recipient guard ----------
+  // Brevo blocklisting is a per-CONTACT, account-level property, not a
+  // per-list one, so a list can look populated in the UI and still resolve
+  // to zero valid recipients - Brevo then suspends the campaign at
+  // submission. This is the check that would have caught F96 BEFORE
+  // burning a send, rather than after.
+  const list = await brevo("GET", `/contacts/lists/${Number(BREVO_LIST_ID)}`);
+  const subscribers = Number(list.totalSubscribers ?? 0);
+  const blocklisted = Number(list.totalBlacklisted ?? 0);
+  console.log(
+    `List ${BREVO_LIST_ID} ("${list.name || "?"}"): ${subscribers} subscriber(s), ` +
+    `${blocklisted} blocklisted`
+  );
+
+  if (subscribers === 0) {
+    const detail =
+      blocklisted > 0
+        ? `All ${blocklisted} contact(s) on this list are blocklisted account-wide. ` +
+          `Unblocklist them under Contacts > Blocklisted in Brevo - removing and ` +
+          `re-adding to the list will NOT clear the flag.`
+        : `The list is empty.`;
+    if (DRY_RUN === "true") {
+      console.warn(`WARNING: list ${BREVO_LIST_ID} has 0 valid recipients. ${detail}`);
+      console.warn("DRY_RUN=true so continuing, but a real send would be suspended by Brevo.");
+    } else {
+      fail(
+        `List ${BREVO_LIST_ID} has 0 valid recipients, so Brevo would accept this ` +
+        `campaign and then suspend it with nothing delivered. ${detail} (F96)`
+      );
+    }
+  }
+
   console.log(`Creating campaign: "${campaignName}"`);
   console.log(`Subject: "${subject}"`);
 
@@ -174,5 +247,74 @@ async function brevo(method, path, body) {
   }
 
   await brevo("POST", `/emailCampaigns/${created.id}/sendNow`);
-  console.log("Campaign sent successfully.");
+  console.log(`sendNow accepted for campaign ${created.id}. Verifying actual status...`);
+
+  // ---------- 6. Verify the send actually happened (F96) ----------
+  // sendNow returning 2xx means "accepted", nothing more. Read the campaign
+  // back and require a healthy status. Poll rather than reading once: the
+  // status immediately after acceptance is legitimately transient, and a
+  // single read would either false-alarm on `queued` or race past a
+  // suspension. Bounded so the Action can never hang.
+  const ATTEMPTS = 6;
+  const INTERVAL_MS = 5000;
+
+  let status = null;
+  let lastWhy = null;
+
+  for (let attempt = 1; attempt <= ATTEMPTS; attempt++) {
+    if (attempt > 1) await sleep(INTERVAL_MS);
+
+    const res = await brevoTry("GET", `/emailCampaigns/${created.id}`);
+    if (!res.ok) {
+      lastWhy = res.why;
+      console.warn(`  [${attempt}/${ATTEMPTS}] could not read status (${res.why}) - retrying`);
+      continue;
+    }
+
+    status = res.json.status;
+    const sent = res.json.statistics?.globalStats?.sent;
+    console.log(
+      `  [${attempt}/${ATTEMPTS}] status=${status}` +
+      (sent === undefined ? "" : ` sent=${sent}`)
+    );
+
+    if (STATUS_TERMINAL.includes(status)) break;
+  }
+
+  if (status === null) {
+    fail(
+      `sendNow was accepted for campaign ${created.id}, but its status could not be ` +
+      `read after ${ATTEMPTS} attempts (last error: ${lastWhy}). Treating as FAILED ` +
+      `because an unverified send is exactly the blind spot F96 documents - check ` +
+      `https://app.brevo.com > Campaigns before re-running to avoid a duplicate send.`
+    );
+  }
+
+  if (STATUS_BROKEN.includes(status)) {
+    fail(
+      `Campaign ${created.id} is "${status}" - NOTHING WAS DELIVERED. Brevo accepted ` +
+      `sendNow and then refused to send. The usual cause is zero valid recipients ` +
+      `(blocklisted contacts) or an unauthenticated sender domain. Inspect the ` +
+      `campaign at https://app.brevo.com > Campaigns. (F96)`
+    );
+  }
+
+  if (!STATUS_HEALTHY.includes(status)) {
+    fail(
+      `Campaign ${created.id} returned an unrecognized status "${status}". Failing ` +
+      `closed: this script cannot confirm the send, and an unconfirmed send is what ` +
+      `hid F96 for 18 days. If Brevo has introduced a new legitimate status, add it ` +
+      `to STATUS_HEALTHY.`
+    );
+  }
+
+  if (status === "sent") {
+    console.log(`Campaign ${created.id} confirmed SENT.`);
+  } else {
+    console.log(
+      `Campaign ${created.id} is "${status}" - accepted and in flight, not suspended. ` +
+      `Brevo has not reported final delivery within ${(ATTEMPTS * INTERVAL_MS) / 1000}s, ` +
+      `which is normal for larger lists.`
+    );
+  }
 })();
