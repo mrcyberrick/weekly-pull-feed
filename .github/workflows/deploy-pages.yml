@@ -2,9 +2,12 @@ name: Deploy GitHub Pages
 
 on:
   push:
+    branches:
+      - main                        # Pages deploys from main ONLY - a push to any
+                                    # other branch must never replace the live site
     paths:
       - 'newsletter.html'           # Triggers when browser newsletter is updated
-      - 'newsletter-email.html'     # Triggers when MailerLite template is updated
+      - 'newsletter-email.html'     # Triggers when Brevo email template is updated
       - 'rss.xml'                   # Triggers when RSS feed is updated
       - 'thumbs/*.webp'             # Triggers when any thumbnail is added/removed
       - 'images/**'                 # Triggers when hero or other images change
