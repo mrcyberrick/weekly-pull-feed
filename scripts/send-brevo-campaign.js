@@ -183,7 +183,14 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // happened for campaigns #16/#17/#18 (2026-07-07/14/21): three consecutive
 // sends reported success while every one was Suspended with 0 recipients,
 // for 18 days, with no signal anywhere. See technical-reference.md F96.
-const STATUS_HEALTHY = ["sent", "inProcess", "queued"];
+// Verified against run 30406602527: Brevo's API returns snake_case
+// "in_process". The camelCase spelling appears in parts of Brevo's own
+// docs and was what this list originally carried, so a healthy 9-recipient
+// send still in flight at the end of the poll window fell through to the
+// "unrecognized status" branch and failed a send that had 100% delivery.
+// Both spellings accepted so a vendor inconsistency cannot cost a second
+// false alarm. See technical-reference.md F96.
+const STATUS_HEALTHY = ["sent", "in_process", "inProcess", "queued"];
 const STATUS_BROKEN = ["suspended", "draft", "archive"];
 const STATUS_TERMINAL = ["sent", ...STATUS_BROKEN]; // stop polling on these
 
@@ -255,7 +262,7 @@ const STATUS_TERMINAL = ["sent", ...STATUS_BROKEN]; // stop polling on these
   // status immediately after acceptance is legitimately transient, and a
   // single read would either false-alarm on `queued` or race past a
   // suspension. Bounded so the Action can never hang.
-  const ATTEMPTS = 6;
+  const ATTEMPTS = 10;
   const INTERVAL_MS = 5000;
 
   let status = null;
