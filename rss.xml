@@ -9,8 +9,8 @@
     <link>https://mrcyberrick.github.io/weekly-pull-feed/newsletter.html</link>
     <description>Weekly pull list of new releases with thumbnails and links to full-size cover images.</description>
     <language>en-us</language>
-    <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
-    <lastBuildDate>Fri, 07 Aug 2026 18:32:18 GMT</lastBuildDate>
+    <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+    <lastBuildDate>Wed, 12 Aug 2026 01:52:44 GMT</lastBuildDate>
     <ttl>10080</ttl><!-- 10080 minutes = 1 week; hints to readers how often to check -->
 
     <!-- Canonical self-reference: required by Atom namespace -->
@@ -26,84 +26,16 @@
     </image>
     
     <item>
-      <title>ALIAS: RED BAND #5 [POLYBAGGED]</title>
+      <title>ABSOLUTE BATMAN #23 CVR A NICK DRAGOTTA</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621502700511</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0012.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621502700511</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0012.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems -->
-      <category>Books</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621502700511" type="image/jpeg" length="0"/>
-
-      <!-- description: thumbnail img + descriptive text -->
-      <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621502700511" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/dcf7d97f7b28d1043d8f8182fe79b7ec.webp"
-               alt="ALIAS: RED BAND #5 [POLYBAGGED]"
-               title="ALIAS: RED BAND #5 [POLYBAGGED]"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>ALIAS: RED BAND #5 [POLYBAGGED] is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
-      <title>BISHOP #2</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621447100211</link>
-
-      <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621447100211</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
-
-      <!-- dc:creator: required by Flipboard for each item -->
-      <dc:creator>Weekly Previews</dc:creator>
-
-      <!-- category: helps Flipboard content recommendation systems -->
-      <category>Books</category>
-
-      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621447100211" type="image/jpeg" length="0"/>
-
-      <!-- description: thumbnail img + descriptive text -->
-      <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621447100211" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/1031c6707013a31f0144a8404dbdc292.webp"
-               alt="BISHOP #2"
-               title="BISHOP #2"
-               width="300"
-               height="300"
-               border="0">
-        </a>
-        <p>BISHOP #2 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
-      ]]></description>
-    </item>
-    <item>
-      <title>CONAN THE BARBARIAN #33 CVR C MAX VON FAFNER VAR (MR)</title>
-
-      <!-- Link points to the original full-size RAW image URL -->
-      <link>https://media.lunardistribution.com/images/covers/large/0526TN1255.jpg</link>
-
-      <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526TN1255.jpg</guid>
-
-      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -112,32 +44,168 @@
       <category>Comics</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526TN1255.jpg" type="image/jpeg" length="0"/>
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0012.jpg" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://media.lunardistribution.com/images/covers/large/0526TN1255.jpg" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b6970b6660c99e27d03758791d939c50.webp"
-               alt="CONAN THE BARBARIAN #33 CVR C MAX VON FAFNER VAR (MR)"
-               title="CONAN THE BARBARIAN #33 CVR C MAX VON FAFNER VAR (MR)"
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0012.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0dac5d993224372399f99ba30e6a24ed.webp"
+               alt="ABSOLUTE BATMAN #23 CVR A NICK DRAGOTTA"
+               title="ABSOLUTE BATMAN #23 CVR A NICK DRAGOTTA"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>CONAN THE BARBARIAN #33 CVR C MAX VON FAFNER VAR (MR) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>ABSOLUTE BATMAN #23 CVR A NICK DRAGOTTA is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>DOOMQUEST #3</title>
+      <title>ABSOLUTE BATMAN #23 CVR E GABRIELE DELL OTTO DARK KNIGHT RETURNS 40TH ANNIVERSARY CARD STOCK VAR</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621590400311</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0016.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621590400311</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0016.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0016.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0016.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4fb0db649bcbd648c5c3a20b403dd090.webp"
+               alt="ABSOLUTE BATMAN #23 CVR E GABRIELE DELL OTTO DARK KNIGHT RETURNS 40TH ANNIVERSARY CARD STOCK VAR"
+               title="ABSOLUTE BATMAN #23 CVR E GABRIELE DELL OTTO DARK KNIGHT RETURNS 40TH ANNIVERSARY CARD STOCK VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>ABSOLUTE BATMAN #23 CVR E GABRIELE DELL OTTO DARK KNIGHT RETURNS 40TH ANNIVERSARY CARD STOCK VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>ACTION COMICS #1101 CVR A GUILLEM MARCH CONNECTING (KINGDOM OF ZOD)</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0116.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0116.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0116.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0116.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/cf3cc1a4be4e02fcd7bb6efb05e5b1a3.webp"
+               alt="ACTION COMICS #1101 CVR A GUILLEM MARCH CONNECTING (KINGDOM OF ZOD)"
+               title="ACTION COMICS #1101 CVR A GUILLEM MARCH CONNECTING (KINGDOM OF ZOD)"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>ACTION COMICS #1101 CVR A GUILLEM MARCH CONNECTING (KINGDOM OF ZOD) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>ACTION COMICS #1101 CVR B ARIEL OLIVETTI CARD STOCK VAR (KINGDOM OF ZOD)</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0117.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0117.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0117.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0117.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/1aac5bf77c80b994e3771663e801123c.webp"
+               alt="ACTION COMICS #1101 CVR B ARIEL OLIVETTI CARD STOCK VAR (KINGDOM OF ZOD)"
+               title="ACTION COMICS #1101 CVR B ARIEL OLIVETTI CARD STOCK VAR (KINGDOM OF ZOD)"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>ACTION COMICS #1101 CVR B ARIEL OLIVETTI CARD STOCK VAR (KINGDOM OF ZOD) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>ADVENTURE COMICS #247 FACSIMILE EDITION CVR C CURT SWAN FOIL VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0195.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0195.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0195.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0195.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/70d27277cd5a1897488a0a144379107a.webp"
+               alt="ADVENTURE COMICS #247 FACSIMILE EDITION CVR C CURT SWAN FOIL VAR"
+               title="ADVENTURE COMICS #247 FACSIMILE EDITION CVR C CURT SWAN FOIL VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>ADVENTURE COMICS #247 FACSIMILE EDITION CVR C CURT SWAN FOIL VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>AMAZING SPIDER-MAN: SPIDER-VERSITY #5</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621577500511</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621577500511</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -146,32 +214,236 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621590400311" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621577500511" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621590400311" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9fed9fd31cfe0af61ad8b12103f3530e.webp"
-               alt="DOOMQUEST #3"
-               title="DOOMQUEST #3"
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621577500511" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9a9d6ea59da2222a4df3580c60575e1a.webp"
+               alt="AMAZING SPIDER-MAN: SPIDER-VERSITY #5"
+               title="AMAZING SPIDER-MAN: SPIDER-VERSITY #5"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>DOOMQUEST #3 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>AMAZING SPIDER-MAN: SPIDER-VERSITY #5 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>GENERATION X-23 #6</title>
+      <title>BARBARA GORDON BREAKOUT #4 CVR A KARL KERSCHL</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621449500611</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0054.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621449500611</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0054.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0054.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0054.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8cccc24dfc52301199bb156cca965f9e.webp"
+               alt="BARBARA GORDON BREAKOUT #4 CVR A KARL KERSCHL"
+               title="BARBARA GORDON BREAKOUT #4 CVR A KARL KERSCHL"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>BARBARA GORDON BREAKOUT #4 CVR A KARL KERSCHL is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR A DAN MORA</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0159.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0159.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0159.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0159.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/77e8272d7804d919eb7e3872ca71323b.webp"
+               alt="CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR A DAN MORA"
+               title="CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR A DAN MORA"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR A DAN MORA is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR B MIKE DEL MUNDO CARD STOCK VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0160.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0160.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0160.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0160.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/c364e18fa499a4357f690d1b47f5ec02.webp"
+               alt="CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR B MIKE DEL MUNDO CARD STOCK VAR"
+               title="CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR B MIKE DEL MUNDO CARD STOCK VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR B MIKE DEL MUNDO CARD STOCK VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR C HAYDEN SHERMAN CARD STOCK VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0161.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0161.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0161.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0161.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e8fba443caf84b1b408e0cb00f1a2e28.webp"
+               alt="CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR C HAYDEN SHERMAN CARD STOCK VAR"
+               title="CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR C HAYDEN SHERMAN CARD STOCK VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>CLAYFACE CELEBRITY DIRT #2 (OF 6) CVR C HAYDEN SHERMAN CARD STOCK VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>DEADLY TALES OF THE GUNSLINGER SPAWN #17 CVR B PATRIC REYNOLDS B&amp;W VAR</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0126IM0349.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0126IM0349.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0126IM0349.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0126IM0349.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/bb0cb6f8b3a243cfed917978338499bf.webp"
+               alt="DEADLY TALES OF THE GUNSLINGER SPAWN #17 CVR B PATRIC REYNOLDS B&amp;W VAR"
+               title="DEADLY TALES OF THE GUNSLINGER SPAWN #17 CVR B PATRIC REYNOLDS B&amp;W VAR"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>DEADLY TALES OF THE GUNSLINGER SPAWN #17 CVR B PATRIC REYNOLDS B&amp;W VAR is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>DICK TRACY #19 CVR A GERALDO BORGES</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526MA0922.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526MA0922.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526MA0922.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526MA0922.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7d4e0091a226ffa0c3e0ada7a698d98a.webp"
+               alt="DICK TRACY #19 CVR A GERALDO BORGES"
+               title="DICK TRACY #19 CVR A GERALDO BORGES"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>DICK TRACY #19 CVR A GERALDO BORGES is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>DOCTOR STRANGE #9</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621125800911</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621125800911</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -180,32 +452,168 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621449500611" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621125800911" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621449500611" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/f7880ee4055768ed1caa312db1d2d52a.webp"
-               alt="GENERATION X-23 #6"
-               title="GENERATION X-23 #6"
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621125800911" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/82e0e461f3abd537ea0b508069b9784a.webp"
+               alt="DOCTOR STRANGE #9"
+               title="DOCTOR STRANGE #9"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>GENERATION X-23 #6 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>DOCTOR STRANGE #9 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>MORTAL THOR #13</title>
+      <title>EMPEROR AQUAMAN #20 CVR A JOHN TIMMS</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621284201311</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0149.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621284201311</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0149.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0149.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0149.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b9022b2edf796e9900a8de3f859a1d49.webp"
+               alt="EMPEROR AQUAMAN #20 CVR A JOHN TIMMS"
+               title="EMPEROR AQUAMAN #20 CVR A JOHN TIMMS"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>EMPEROR AQUAMAN #20 CVR A JOHN TIMMS is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>FIRE AND ICE DARKWOLF #2 CVR A DAN PANOSIAN</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DE0708.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DE0708.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DE0708.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DE0708.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a0cf363d0796e5eaa2dab85f284a98ff.webp"
+               alt="FIRE AND ICE DARKWOLF #2 CVR A DAN PANOSIAN"
+               title="FIRE AND ICE DARKWOLF #2 CVR A DAN PANOSIAN"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>FIRE AND ICE DARKWOLF #2 CVR A DAN PANOSIAN is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>FURY OF FIRESTORM #5 (OF 8) CVR A RAFAEL DE LATORRE</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0069.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0069.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0069.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0069.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a67f01ac7778d643f24fb5ca5262717d.webp"
+               alt="FURY OF FIRESTORM #5 (OF 8) CVR A RAFAEL DE LATORRE"
+               title="FURY OF FIRESTORM #5 (OF 8) CVR A RAFAEL DE LATORRE"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>FURY OF FIRESTORM #5 (OF 8) CVR A RAFAEL DE LATORRE is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>GARGOYLES (2026) #1 CVR A MEGHAN HETRICK</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DE0719.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DE0719.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DE0719.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DE0719.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7e80892d9a1a82ba3eff370dbfc268d3.webp"
+               alt="GARGOYLES (2026) #1 CVR A MEGHAN HETRICK"
+               title="GARGOYLES (2026) #1 CVR A MEGHAN HETRICK"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>GARGOYLES (2026) #1 CVR A MEGHAN HETRICK is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>GENERATION X-23 #7</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621449500711</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621449500711</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -214,32 +622,66 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621284201311" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621449500711" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621284201311" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/14eb975de1585374ca6649852e321df5.webp"
-               alt="MORTAL THOR #13"
-               title="MORTAL THOR #13"
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621449500711" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/619c8194b41f1d401d4a3087cdcb0e71.webp"
+               alt="GENERATION X-23 #7"
+               title="GENERATION X-23 #7"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>MORTAL THOR #13 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>GENERATION X-23 #7 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>PREDATOR VS. THE PLANET OF THE APES #1</title>
+      <title>GI JOE A REAL AMERICAN HERO #331 CVR A LEE WEEKS &amp; DAVE STEWART</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621569000111</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0626IM0341.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621569000111</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626IM0341.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626IM0341.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626IM0341.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/19c386ff7dcf772c3fe902aac8a3ddd1.webp"
+               alt="GI JOE A REAL AMERICAN HERO #331 CVR A LEE WEEKS &amp; DAVE STEWART"
+               title="GI JOE A REAL AMERICAN HERO #331 CVR A LEE WEEKS &amp; DAVE STEWART"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>GI JOE A REAL AMERICAN HERO #331 CVR A LEE WEEKS &amp; DAVE STEWART is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>Godzilla&apos;s Monsterpiece Theatre Presents: Roar of the Worlds Cover A (Scioli)</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/82771403576600111</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403576600111</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -248,32 +690,32 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621569000111" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/82771403576600111" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621569000111" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/b873d59b55e82bf7949dc571883d1e6c.webp"
-               alt="PREDATOR VS. THE PLANET OF THE APES #1"
-               title="PREDATOR VS. THE PLANET OF THE APES #1"
+        <a href="https://images.penguinrandomhouse.com/cover/d/82771403576600111" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/fa7f8d08fb4c23f65910dbe325a64606.webp"
+               alt="Godzilla&apos;s Monsterpiece Theatre Presents: Roar of the Worlds Cover A (Scioli)"
+               title="Godzilla&apos;s Monsterpiece Theatre Presents: Roar of the Worlds Cover A (Scioli)"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>PREDATOR VS. THE PLANET OF THE APES #1 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>Godzilla&apos;s Monsterpiece Theatre Presents: Roar of the Worlds Cover A (Scioli) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>PREDATOR VS. THE PLANET OF THE APES #1 CHRIS CAMPANA MOVIE POSTER HOMAGE VARIANT</title>
+      <title>Godzilla&apos;s Monsterpiece Theatre Presents: Roar of the Worlds Variant B (Baker)</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621569000131</link>
+      <link>https://images.penguinrandomhouse.com/cover/d/82771403576600121</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621569000131</guid>
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403576600121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -282,32 +724,66 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621569000131" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/82771403576600121" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621569000131" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/688f9620246945b16e96b31dfc694707.webp"
-               alt="PREDATOR VS. THE PLANET OF THE APES #1 CHRIS CAMPANA MOVIE POSTER HOMAGE VARIANT"
-               title="PREDATOR VS. THE PLANET OF THE APES #1 CHRIS CAMPANA MOVIE POSTER HOMAGE VARIANT"
+        <a href="https://images.penguinrandomhouse.com/cover/d/82771403576600121" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/62d4c32f786c7c0e8e4422f41c040e44.webp"
+               alt="Godzilla&apos;s Monsterpiece Theatre Presents: Roar of the Worlds Variant B (Baker)"
+               title="Godzilla&apos;s Monsterpiece Theatre Presents: Roar of the Worlds Variant B (Baker)"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>PREDATOR VS. THE PLANET OF THE APES #1 CHRIS CAMPANA MOVIE POSTER HOMAGE VARIANT is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>Godzilla&apos;s Monsterpiece Theatre Presents: Roar of the Worlds Variant B (Baker) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>QUEEN IN BLACK: DEFENDERS OF LIGHT AND DARK #1 [QIB]</title>
+      <title>GREEN LANTERN CORPS #19 CVR A FERNANDO PASARIN</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621589800111</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0137.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621589800111</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0137.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0137.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0137.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/eddbfb53008682635394eafefa64ac7b.webp"
+               alt="GREEN LANTERN CORPS #19 CVR A FERNANDO PASARIN"
+               title="GREEN LANTERN CORPS #19 CVR A FERNANDO PASARIN"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>GREEN LANTERN CORPS #19 CVR A FERNANDO PASARIN is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>He-Man and the Masters of the Universe #6 (CVR A) (Reilly Brown)</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/76156801401300611</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/76156801401300611</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -316,32 +792,32 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621589800111" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/76156801401300611" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621589800111" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4c9c8c750b87e71ddb94460a5bfcc76f.webp"
-               alt="QUEEN IN BLACK: DEFENDERS OF LIGHT AND DARK #1 [QIB]"
-               title="QUEEN IN BLACK: DEFENDERS OF LIGHT AND DARK #1 [QIB]"
+        <a href="https://images.penguinrandomhouse.com/cover/d/76156801401300611" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e4e5ce2f9b53df99460ec96fc11489eb.webp"
+               alt="He-Man and the Masters of the Universe #6 (CVR A) (Reilly Brown)"
+               title="He-Man and the Masters of the Universe #6 (CVR A) (Reilly Brown)"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>QUEEN IN BLACK: DEFENDERS OF LIGHT AND DARK #1 [QIB] is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>He-Man and the Masters of the Universe #6 (CVR A) (Reilly Brown) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>QUEEN IN BLACK: HELA #1 [QIB]</title>
+      <title>INFERNAL HULK #10</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621631400111</link>
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621361001011</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621631400111</guid>
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621361001011</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -350,32 +826,32 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621631400111" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621361001011" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621631400111" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/f50193a12eecdc9bbe019c1af28b1ced.webp"
-               alt="QUEEN IN BLACK: HELA #1 [QIB]"
-               title="QUEEN IN BLACK: HELA #1 [QIB]"
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621361001011" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/10a4fd69ec078eacedbd5fa4f025f69e.webp"
+               alt="INFERNAL HULK #10"
+               title="INFERNAL HULK #10"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>QUEEN IN BLACK: HELA #1 [QIB] is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>INFERNAL HULK #10 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>ROCKET RACCOON: ROCKET REWIND #1</title>
+      <title>JEFF THE LAND SHARK: SUPERSTAR #2</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621477800111</link>
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621629100211</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621477800111</guid>
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621629100211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -384,32 +860,66 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621477800111" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621629100211" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621477800111" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9d8dd159baececbf6b9447b1e2a26e4e.webp"
-               alt="ROCKET RACCOON: ROCKET REWIND #1"
-               title="ROCKET RACCOON: ROCKET REWIND #1"
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621629100211" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/574e89f6a3a18bd3382dd6c886cbdb66.webp"
+               alt="JEFF THE LAND SHARK: SUPERSTAR #2"
+               title="JEFF THE LAND SHARK: SUPERSTAR #2"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>ROCKET RACCOON: ROCKET REWIND #1 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>JEFF THE LAND SHARK: SUPERSTAR #2 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>SPECTACULAR SPIDER-MAN: BRAND NEW DAY #3</title>
+      <title>MAO TP VOL 25</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621582900311</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0626VM1267.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621582900311</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626VM1267.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626VM1267.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626VM1267.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/5f95eb640bb649aa023b2989db884c09.webp"
+               alt="MAO TP VOL 25"
+               title="MAO TP VOL 25"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>MAO TP VOL 25 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>Power Rangers Unlimited #2 A Main (Dressed, Sorressa)</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/84428401340602011</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/84428401340602011</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -418,32 +928,32 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621582900311" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/84428401340602011" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621582900311" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/6a6c3b6faf2831d50e42e492e9cd1fcd.webp"
-               alt="SPECTACULAR SPIDER-MAN: BRAND NEW DAY #3"
-               title="SPECTACULAR SPIDER-MAN: BRAND NEW DAY #3"
+        <a href="https://images.penguinrandomhouse.com/cover/d/84428401340602011" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/73bc8992abfaeb9fbc7a753de10221a0.webp"
+               alt="Power Rangers Unlimited #2 A Main (Dressed, Sorressa)"
+               title="Power Rangers Unlimited #2 A Main (Dressed, Sorressa)"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>SPECTACULAR SPIDER-MAN: BRAND NEW DAY #3 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>Power Rangers Unlimited #2 A Main (Dressed, Sorressa) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>Teenage Mutant Ninja Turtles: Saturday Morning Adventures #39 Variant B (Hunting)</title>
+      <title>Power Rangers Unlimited #2 C Every Ranger Ever Card Stock Connecting Variant (Full Art, Zonno)</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/82771403150803921</link>
+      <link>https://images.penguinrandomhouse.com/cover/d/84428401340602031</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403150803921</guid>
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/84428401340602031</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -452,32 +962,32 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/82771403150803921" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/84428401340602031" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/82771403150803921" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/76c14cb14e396eb21da95ebfb88d58ed.webp"
-               alt="Teenage Mutant Ninja Turtles: Saturday Morning Adventures #39 Variant B (Hunting)"
-               title="Teenage Mutant Ninja Turtles: Saturday Morning Adventures #39 Variant B (Hunting)"
+        <a href="https://images.penguinrandomhouse.com/cover/d/84428401340602031" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3402fa291ed108ccc9f912a2c33aad03.webp"
+               alt="Power Rangers Unlimited #2 C Every Ranger Ever Card Stock Connecting Variant (Full Art, Zonno)"
+               title="Power Rangers Unlimited #2 C Every Ranger Ever Card Stock Connecting Variant (Full Art, Zonno)"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>Teenage Mutant Ninja Turtles: Saturday Morning Adventures #39 Variant B (Hunting) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>Power Rangers Unlimited #2 C Every Ranger Ever Card Stock Connecting Variant (Full Art, Zonno) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>The Horror of Godzilla [Kai-Sei Era] #1 Cover A (Jones)</title>
+      <title>Power Rangers Unlimited #2 D Foil Variant (Full Art, Foil, Sorressa)</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/82771403545200111</link>
+      <link>https://images.penguinrandomhouse.com/cover/d/84428401340602041</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403545200111</guid>
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/84428401340602041</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -486,32 +996,32 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/82771403545200111" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/84428401340602041" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/82771403545200111" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4522e284abfe09147c655ad098465ddb.webp"
-               alt="The Horror of Godzilla [Kai-Sei Era] #1 Cover A (Jones)"
-               title="The Horror of Godzilla [Kai-Sei Era] #1 Cover A (Jones)"
+        <a href="https://images.penguinrandomhouse.com/cover/d/84428401340602041" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9405dbd84cc0881627d2dc91d5e94ee1.webp"
+               alt="Power Rangers Unlimited #2 D Foil Variant (Full Art, Foil, Sorressa)"
+               title="Power Rangers Unlimited #2 D Foil Variant (Full Art, Foil, Sorressa)"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>The Horror of Godzilla [Kai-Sei Era] #1 Cover A (Jones) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>Power Rangers Unlimited #2 D Foil Variant (Full Art, Foil, Sorressa) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>The Horror of Godzilla [Kai-Sei Era] #1 Variant B (Tunica Movie Homage Cover)</title>
+      <title>Power Rangers Unlimited #2 I FOC Reveal Variant (Dressed, Lindsay)</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/82771403545200121</link>
+      <link>https://images.penguinrandomhouse.com/cover/d/84428401340602091</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403545200121</guid>
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/84428401340602091</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -520,32 +1030,32 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/82771403545200121" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/84428401340602091" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/82771403545200121" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/78bb5f18d28899baff618c739c4695c3.webp"
-               alt="The Horror of Godzilla [Kai-Sei Era] #1 Variant B (Tunica Movie Homage Cover)"
-               title="The Horror of Godzilla [Kai-Sei Era] #1 Variant B (Tunica Movie Homage Cover)"
+        <a href="https://images.penguinrandomhouse.com/cover/d/84428401340602091" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/fd8be6967f62cb58c9e410700f594c3f.webp"
+               alt="Power Rangers Unlimited #2 I FOC Reveal Variant (Dressed, Lindsay)"
+               title="Power Rangers Unlimited #2 I FOC Reveal Variant (Dressed, Lindsay)"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>The Horror of Godzilla [Kai-Sei Era] #1 Variant B (Tunica Movie Homage Cover) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>Power Rangers Unlimited #2 I FOC Reveal Variant (Dressed, Lindsay) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>ULTIMATE IMPACT: REBORN #3</title>
+      <title>Power Rangers Unlimited #2 J Unlimited Variant (Full Art, Sorressa)</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621461700311</link>
+      <link>https://images.penguinrandomhouse.com/cover/d/84428401340602101</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621461700311</guid>
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/84428401340602101</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -554,32 +1064,32 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621461700311" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/84428401340602101" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621461700311" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a26458ae41e1a2b5bc8ce86e4a32b8d8.webp"
-               alt="ULTIMATE IMPACT: REBORN #3"
-               title="ULTIMATE IMPACT: REBORN #3"
+        <a href="https://images.penguinrandomhouse.com/cover/d/84428401340602101" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/eb5a0f93e3ac445ae99ecfc1f2ef9630.webp"
+               alt="Power Rangers Unlimited #2 J Unlimited Variant (Full Art, Sorressa)"
+               title="Power Rangers Unlimited #2 J Unlimited Variant (Full Art, Sorressa)"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>ULTIMATE IMPACT: REBORN #3 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>Power Rangers Unlimited #2 J Unlimited Variant (Full Art, Sorressa) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>WHAT IF...? SPIDER-MAN #1</title>
+      <title>PUNISHER #7</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621468600111</link>
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621516400711</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621468600111</guid>
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621516400711</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -588,32 +1098,32 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621468600111" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621516400711" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621468600111" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4a789a08d6b259bddbc7530bc55b44a3.webp"
-               alt="WHAT IF...? SPIDER-MAN #1"
-               title="WHAT IF...? SPIDER-MAN #1"
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621516400711" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/d644e37c8d60aded8826cef70a0c64e0.webp"
+               alt="PUNISHER #7"
+               title="PUNISHER #7"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>WHAT IF...? SPIDER-MAN #1 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>PUNISHER #7 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>X-MEN #34</title>
+      <title>QUEEN IN BLACK: THOR #1 [QIB]</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960620920003411</link>
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621632100111</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620920003411</guid>
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621632100111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -622,32 +1132,66 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960620920003411" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621632100111" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960620920003411" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a51921e1e5379c81d1eaf989a48bf4cb.webp"
-               alt="X-MEN #34"
-               title="X-MEN #34"
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621632100111" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/4ada8d363e05b1a79a608265fd74e0b5.webp"
+               alt="QUEEN IN BLACK: THOR #1 [QIB]"
+               title="QUEEN IN BLACK: THOR #1 [QIB]"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>X-MEN #34 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>QUEEN IN BLACK: THOR #1 [QIB] is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
     <item>
-      <title>X-MEN: OUTBACK #2</title>
+      <title>SAVAGE SWORD OF CONAN REFORGED #6 CVR A TONY HARRIS CARDSTOCK (MR)</title>
 
       <!-- Link points to the original full-size RAW image URL -->
-      <link>https://images.penguinrandomhouse.com/cover/d/75960621530000211</link>
+      <link>https://media.lunardistribution.com/images/covers/large/0626TN1146.jpg</link>
 
       <!-- GUID uniquely identifies this item across feed updates. -->
-      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621530000211</guid>
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626TN1146.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Fri, 07 Aug 2026 18:32:18 GMT</pubDate>
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626TN1146.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626TN1146.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/63990258cf1846539606b65ff48f928c.webp"
+               alt="SAVAGE SWORD OF CONAN REFORGED #6 CVR A TONY HARRIS CARDSTOCK (MR)"
+               title="SAVAGE SWORD OF CONAN REFORGED #6 CVR A TONY HARRIS CARDSTOCK (MR)"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>SAVAGE SWORD OF CONAN REFORGED #6 CVR A TONY HARRIS CARDSTOCK (MR) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>STAR WARS: THE FALL OF KYLO REN #1</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621060200111</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621060200111</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -656,19 +1200,563 @@
       <category>Books</category>
 
       <!-- enclosure: points to the ORIGINAL full-size image URL. -->
-      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621530000211" type="image/jpeg" length="0"/>
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621060200111" type="image/jpeg" length="0"/>
 
       <!-- description: thumbnail img + descriptive text -->
       <description><![CDATA[
-        <a href="https://images.penguinrandomhouse.com/cover/d/75960621530000211" target="_blank" rel="noopener noreferrer">
-          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3e16c90b7fcaa0e5769a20911c738013.webp"
-               alt="X-MEN: OUTBACK #2"
-               title="X-MEN: OUTBACK #2"
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621060200111" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/7e95c771d8ec4bfae8b06395ccb6f2d1.webp"
+               alt="STAR WARS: THE FALL OF KYLO REN #1"
+               title="STAR WARS: THE FALL OF KYLO REN #1"
                width="300"
                height="300"
                border="0">
         </a>
-        <p>X-MEN: OUTBACK #2 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+        <p>STAR WARS: THE FALL OF KYLO REN #1 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>STAR WARS: THE FALL OF KYLO REN #1 CHRIS SPROUSE ROGUE ONE 10TH ANNIVERSARY VARIANT</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621060200121</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621060200121</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621060200121" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621060200121" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/8085e2d9a241eb857907aad790edc55d.webp"
+               alt="STAR WARS: THE FALL OF KYLO REN #1 CHRIS SPROUSE ROGUE ONE 10TH ANNIVERSARY VARIANT"
+               title="STAR WARS: THE FALL OF KYLO REN #1 CHRIS SPROUSE ROGUE ONE 10TH ANNIVERSARY VARIANT"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>STAR WARS: THE FALL OF KYLO REN #1 CHRIS SPROUSE ROGUE ONE 10TH ANNIVERSARY VARIANT is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>STAR WARS: THE FALL OF KYLO REN #1 LUKE ROSS VARIANT</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621060200131</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621060200131</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621060200131" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621060200131" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/d0af2ee5a17bc832ebe0791f9d9a73b6.webp"
+               alt="STAR WARS: THE FALL OF KYLO REN #1 LUKE ROSS VARIANT"
+               title="STAR WARS: THE FALL OF KYLO REN #1 LUKE ROSS VARIANT"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>STAR WARS: THE FALL OF KYLO REN #1 LUKE ROSS VARIANT is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>SUPERGIRL #16 CVR A GUILLEM MARCH CONNECTING (KINGDOM OF ZOD)</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0111.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0111.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0111.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0111.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/3c8db56f8d5f5d8da70b2459fc38eae1.webp"
+               alt="SUPERGIRL #16 CVR A GUILLEM MARCH CONNECTING (KINGDOM OF ZOD)"
+               title="SUPERGIRL #16 CVR A GUILLEM MARCH CONNECTING (KINGDOM OF ZOD)"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>SUPERGIRL #16 CVR A GUILLEM MARCH CONNECTING (KINGDOM OF ZOD) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>SUPERGIRL #16 CVR B NOOBOVICH CARD STOCK VAR (KINGDOM OF ZOD)</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626DC0112.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626DC0112.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626DC0112.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626DC0112.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/0a67ae6bdfba824faa4ede58848e813d.webp"
+               alt="SUPERGIRL #16 CVR B NOOBOVICH CARD STOCK VAR (KINGDOM OF ZOD)"
+               title="SUPERGIRL #16 CVR B NOOBOVICH CARD STOCK VAR (KINGDOM OF ZOD)"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>SUPERGIRL #16 CVR B NOOBOVICH CARD STOCK VAR (KINGDOM OF ZOD) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>The Twilight Zone #10 Cover A (Peacock)</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/82771403461501011</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403461501011</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/82771403461501011" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/82771403461501011" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/9057faa11568af396ed35302d333b25c.webp"
+               alt="The Twilight Zone #10 Cover A (Peacock)"
+               title="The Twilight Zone #10 Cover A (Peacock)"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>The Twilight Zone #10 Cover A (Peacock) is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>THUNDERBIRDS INTERNATIONAL RESCUE ENAMEL PIN BADGE</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526TN1300.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526TN1300.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526TN1300.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526TN1300.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/baff2b0e8c01b7fe47c82ba52948fa26.webp"
+               alt="THUNDERBIRDS INTERNATIONAL RESCUE ENAMEL PIN BADGE"
+               title="THUNDERBIRDS INTERNATIONAL RESCUE ENAMEL PIN BADGE"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>THUNDERBIRDS INTERNATIONAL RESCUE ENAMEL PIN BADGE is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>TRANSFORMERS #35 CVR A DAVID NAKAYAMA</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0626IM0421.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0626IM0421.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0626IM0421.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0626IM0421.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/744e6020e691cf62f4415d211fcf7428.webp"
+               alt="TRANSFORMERS #35 CVR A DAVID NAKAYAMA"
+               title="TRANSFORMERS #35 CVR A DAVID NAKAYAMA"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>TRANSFORMERS #35 CVR A DAVID NAKAYAMA is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>TRILLION DOLLAR KID #2 (OF 2) CVR A FRANCIS MANAPUL</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://media.lunardistribution.com/images/covers/large/0526IM0447.jpg</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0526IM0447.jpg</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Comics</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://media.lunardistribution.com/images/covers/large/0526IM0447.jpg" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://media.lunardistribution.com/images/covers/large/0526IM0447.jpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/77b95f9214e28d3eaf7b485597c2a770.webp"
+               alt="TRILLION DOLLAR KID #2 (OF 2) CVR A FRANCIS MANAPUL"
+               title="TRILLION DOLLAR KID #2 (OF 2) CVR A FRANCIS MANAPUL"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>TRILLION DOLLAR KID #2 (OF 2) CVR A FRANCIS MANAPUL is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>VENOM #260 [QIB]</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621330626011</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621330626011</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621330626011" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621330626011" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/db02d8ca53075013e01bcf663bb8981c.webp"
+               alt="VENOM #260 [QIB]"
+               title="VENOM #260 [QIB]"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>VENOM #260 [QIB] is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>WOLVERINE #25</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960620841802511</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620841802511</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960620841802511" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960620841802511" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/90c2f9eadb209b7a7e361b7ba25d3d37.webp"
+               alt="WOLVERINE #25"
+               title="WOLVERINE #25"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>WOLVERINE #25 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>WOLVERINE #25 MARK BAGLEY MARY JANE WATSON VARIANT</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960620841802521</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620841802521</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960620841802521" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960620841802521" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/1064762fabd7b2377b7f4193e88938b2.webp"
+               alt="WOLVERINE #25 MARK BAGLEY MARY JANE WATSON VARIANT"
+               title="WOLVERINE #25 MARK BAGLEY MARY JANE WATSON VARIANT"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>WOLVERINE #25 MARK BAGLEY MARY JANE WATSON VARIANT is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>X-MEN &apos;97: SEASON TWO #3</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621123400311</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621123400311</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621123400311" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621123400311" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/e89c1bacbe9bd5ef464eb9ac52c2be33.webp"
+               alt="X-MEN &apos;97: SEASON TWO #3"
+               title="X-MEN &apos;97: SEASON TWO #3"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>X-MEN &apos;97: SEASON TWO #3 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>X-MEN &apos;97: SEASON TWO #3 ANIMATION VARIANT</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621123400321</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621123400321</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621123400321" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621123400321" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/96e9ba7078ab932c0eca6d000675a69c.webp"
+               alt="X-MEN &apos;97: SEASON TWO #3 ANIMATION VARIANT"
+               title="X-MEN &apos;97: SEASON TWO #3 ANIMATION VARIANT"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>X-MEN &apos;97: SEASON TWO #3 ANIMATION VARIANT is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>X-MEN #35</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960620920003511</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620920003511</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960620920003511" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960620920003511" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/ab83976fa8a106edbfe143ea6648d60c.webp"
+               alt="X-MEN #35"
+               title="X-MEN #35"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>X-MEN #35 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>X-MEN OF APOCALYPSE OMEGA #1 JOE MADUREIRA VARIANT</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621273600131</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621273600131</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621273600131" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621273600131" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/a39852e992c071e65f2c9fe5cd211369.webp"
+               alt="X-MEN OF APOCALYPSE OMEGA #1 JOE MADUREIRA VARIANT"
+               title="X-MEN OF APOCALYPSE OMEGA #1 JOE MADUREIRA VARIANT"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>X-MEN OF APOCALYPSE OMEGA #1 JOE MADUREIRA VARIANT is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
+      ]]></description>
+    </item>
+    <item>
+      <title>X-MEN UNITED #6</title>
+
+      <!-- Link points to the original full-size RAW image URL -->
+      <link>https://images.penguinrandomhouse.com/cover/d/75960621443300611</link>
+
+      <!-- GUID uniquely identifies this item across feed updates. -->
+      <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621443300611</guid>
+
+      <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
+      <pubDate>Wed, 12 Aug 2026 01:52:44 GMT</pubDate>
+
+      <!-- dc:creator: required by Flipboard for each item -->
+      <dc:creator>Weekly Previews</dc:creator>
+
+      <!-- category: helps Flipboard content recommendation systems -->
+      <category>Books</category>
+
+      <!-- enclosure: points to the ORIGINAL full-size image URL. -->
+      <enclosure url="https://images.penguinrandomhouse.com/cover/d/75960621443300611" type="image/jpeg" length="0"/>
+
+      <!-- description: thumbnail img + descriptive text -->
+      <description><![CDATA[
+        <a href="https://images.penguinrandomhouse.com/cover/d/75960621443300611" target="_blank" rel="noopener noreferrer">
+          <img src="https://mrcyberrick.github.io/weekly-pull-feed/thumbs/bdfa836a84f044aa714b5176230803b8.webp"
+               alt="X-MEN UNITED #6"
+               title="X-MEN UNITED #6"
+               width="300"
+               height="300"
+               border="0">
+        </a>
+        <p>X-MEN UNITED #6 is part of this week's pull list. This release is now available and featured in the Weekly Previews. Click the cover image above to view the full-size image from the publisher. This item was included in the weekly shipment and is ready for pickup or delivery.</p>
       ]]></description>
     </item>
   </channel>
