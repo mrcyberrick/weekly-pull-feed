@@ -2,11 +2,27 @@ name: Send Weekly Newsletter
 
 on:
   schedule:
-    # Tuesday 6:00 PM ET (22:00 UTC during EDT).
+    # Tuesday 21:00 UTC (5:00 PM ET during EDT).
     # Comics drop Wednesday, so this lands the night before as a preview.
-    # NOTE: adjust to 23:00 UTC when EST resumes in November, or leave as-is
-    # and accept a 1-hour shift.
-    - cron: "0 22 * * 2"
+    #
+    # Scheduled an hour EARLIER than the intended arrival, deliberately.
+    # GitHub delays scheduled workflows under load and never runs them early,
+    # and the delay on this job has grown steadily. Measured against the cron:
+    #   2026-08-18 +25m | 08-25 +28m | 09-01 +1h51m | 09-08 +1h53m | 09-15 +2h01m
+    #
+    # At 22:00 UTC that drift pushed the 2026-09-15 send to 00:01 UTC on the
+    # 16th - past midnight UTC - which cost a whole day of the send script's
+    # STALE_MAX_DAYS budget: it reported age 5.0 against a limit of 6 for a feed
+    # that was only 4 days old when the cron fired. One more day of drift, or an
+    # import that slips a day, and the send aborts instead of going out.
+    #
+    # 21:00 UTC keeps a typical arrival near 7 PM ET at the current drift, lands
+    # the send on the correct UTC day even at +2h, and if GitHub's queue recovers
+    # it simply arrives earlier - still an evening preview, which is the point.
+    #
+    # NOTE: adjust to 22:00 UTC when EST resumes in November, or leave as-is and
+    # accept a 1-hour shift.
+    - cron: "0 21 * * 2"
   workflow_dispatch:
     inputs:
       dry_run:
