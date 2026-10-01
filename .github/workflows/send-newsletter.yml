@@ -1,5 +1,21 @@
 name: Send Weekly Newsletter
 
+# F135 (comic-preorder docs/f135-decouple-feed-publish.md): this workflow now BUILDS
+# the week's feed from the database and then sends it, in one run. Publishing the
+# newsletter no longer depends on a data import running on a laptop.
+#
+#   build  -> unit tests -> build + publish this run's week (one commit)
+#             -> make sure Pages builds it -> wait until its images are SERVED
+#   send   -> check the email was built TODAY -> Brevo send (verified, F96)
+#
+# The send never runs if the build fails: a red run is GitHub's alert to Rick.
+# The one input it needs that it cannot create is the week's shipment rows -
+# loaded by the weekly shipment import. No rows for this week = a loud failure
+# here ("the import has not run"), never a stale issue.
+#
+# Repository variables (non-secret): SUPABASE_URL, SUPABASE_ANON_KEY (public by
+# design), BREVO_LIST_ID. Secrets: BREVO_API_KEY, SENDER_EMAIL.
+
 on:
   schedule:
     # Tuesday 21:00 UTC (5:00 PM ET during EDT).
@@ -16,6 +32,10 @@ on:
     # that was only 4 days old when the cron fired. One more day of drift, or an
     # import that slips a day, and the send aborts instead of going out.
     #
+    # (F135: build and send are now adjacent, so that stale-age budget is no
+    # longer the hazard it was. The one clock that still matters is the UTC
+    # stamp: a run that drifts past 00:00 UTC would build for the wrong week.)
+    #
     # 21:00 UTC keeps a typical arrival near 7 PM ET at the current drift, lands
     # the send on the correct UTC day even at +2h, and if GitHub's queue recovers
     # it simply arrives earlier - still an evening preview, which is the point.
@@ -25,17 +45,47 @@ on:
     - cron: "0 21 * * 2"
   workflow_dispatch:
     inputs:
+      mode:
+        description: "build-only = publish the feed, send nothing (default, safest) | build-and-send = what the schedule does | send-only = send the feed already committed (the pre-F135 behaviour)"
+        type: choice
+        options:
+          - build-only
+          - build-and-send
+          - send-only
+        default: build-only
+      week:
+        description: "Week to build: any date inside it (YYYY-MM-DD). Blank = the week containing today. A PAST week is allowed when named - that is how you deliberately re-publish one."
+        type: string
+        required: false
+        default: ""
       dry_run:
-        description: "Create draft in Brevo without sending"
+        description: "Send step only: create the Brevo draft without sending"
         type: boolean
         default: true
+      thumb_wait_minutes:
+        description: "How long to wait for GitHub Pages to serve the new images before failing"
+        type: string
+        default: "10"
 
 permissions:
   contents: read
 
+# One newsletter run at a time; a late scheduled run queues behind a manual one
+# instead of racing it for the same branch.
+concurrency:
+  group: newsletter
+  cancel-in-progress: false
+
 jobs:
-  send:
+  build:
+    if: ${{ github.event_name == 'schedule' || inputs.mode != 'send-only' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write   # the single Git Data API commit on this branch
+      pages: write      # request a Pages build if the push does not start one (F100: same single deployer)
+    outputs:
+      commit: ${{ steps.build.outputs.commit }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -43,17 +93,90 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
-      # ------------------------------------------------------------------
-      # OPTION A: your existing build step already generates email.html
-      # into the repo (committed by another workflow). Nothing needed here.
-      #
-      # OPTION B: generate it fresh in this run. Replace the command below
-      # with whatever your weekly-pull-feed generator uses.
-      # ------------------------------------------------------------------
-      # - name: Generate email HTML
-      #   run: node scripts/build-email.js
+      # The guards below are the whole safety story, so prove they still fail
+      # when they should before trusting them with a send.
+      - name: Unit tests
+        run: node --test test/*.test.mjs
+
+      - name: Build and publish this run's week
+        id: build
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+          TENANT_SLUG: rjbookstop
+          GITHUB_TOKEN: ${{ github.token }}
+          WEEK: ${{ inputs.week }}
+        run: |
+          args=(--publish)
+          if [ -n "$WEEK" ]; then args+=("--week=$WEEK"); fi
+          node scripts/build-pull-feed.js "${args[@]}"
+
+      # GITHUB_TOKEN pushes do not start most workflows, and whether they start
+      # the legacy Pages builder is exactly the open question (plan R1). Measure
+      # it every run, and request a build only if the push did not start one -
+      # the same single built-in deployer either way, never a second one (F100).
+      # Skipped on a rehearsal branch: legacy Pages only ever builds the default.
+      - name: Make sure Pages builds this commit
+        if: ${{ steps.build.outputs.commit != '' && github.ref_name == github.event.repository.default_branch }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COMMIT: ${{ steps.build.outputs.commit }}
+        run: |
+          for i in $(seq 1 9); do
+            latest=$(gh api "repos/$GITHUB_REPOSITORY/pages/builds/latest" --jq '.commit' || true)
+            if [ "$latest" = "$COMMIT" ]; then
+              echo "Pages build of ${COMMIT:0:8} was started by the push itself (R1: yes)."
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "::warning::Pages did not start a build of ${COMMIT:0:8} within 90s (R1: no) - requesting one."
+          gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds"
+
+      # verifyPublishedTree() proves the commit's TREE holds every image; only
+      # this proves the SITE serves them - the F98 / F100 gap. Reads the email
+      # exactly as committed (by sha, not a stale checkout) and fails closed.
+      - name: Wait until the images are actually served
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COMMIT: ${{ steps.build.outputs.commit }}
+          THUMB_WAIT_MINUTES: ${{ inputs.thumb_wait_minutes || '10' }}
+        run: |
+          ref="${COMMIT:-$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/$GITHUB_REF_NAME" --jq .object.sha)}"
+          gh api "repos/$GITHUB_REPOSITORY/contents/newsletter-email.html?ref=$ref" \
+            -H "Accept: application/vnd.github.raw" > "$RUNNER_TEMP/newsletter-email.html"
+          node scripts/wait-for-thumbs.js "$RUNNER_TEMP/newsletter-email.html"
+
+  send:
+    needs: [build]
+    # always(): a SKIPPED build (send-only) must not skip the send, but a failed
+    # or cancelled build must - so the build's result is checked explicitly.
+    if: >-
+      ${{ always()
+          && (github.event_name == 'schedule' || inputs.mode != 'build-only')
+          && (needs.build.result == 'success' || needs.build.result == 'skipped') }}
+    runs-on: ubuntu-latest
+    steps:
+      # The branch TIP, not the commit that triggered the run: the build job
+      # just committed to it, and the default checkout would read the OLD email.
+      - name: Checkout repo (branch tip)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # With build and send adjacent, the send script's 6-day stale guard is
+      # near-vacuous (a fresh build always passes it, and so does a week-old
+      # one). This is the check that is not: the email must be stamped TODAY.
+      - name: Confirm the email was built by this run
+        if: ${{ needs.build.result == 'success' }}
+        run: node scripts/check-stamp.js newsletter-email.html
 
       - name: Send campaign via Brevo
         env:
