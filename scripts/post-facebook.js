@@ -112,6 +112,17 @@ function shortTitle(title) {
   return t || String(title || '');
 }
 
+// PRH covers are stored as .../cover/{id}, which serves a ~300x450 image; .../cover/d/{id}
+// serves the full-size one (measured 2026-10-14: 297x450 / 52 KB vs 1400x2123 / 903 KB).
+// The picture's cover slot is 312x468, so always ask for the full size. Same rule as the
+// builder's normalizeCoverUrl() (not exported; copied rather than editing the builder).
+function fullSizeCover(url) {
+  return String(url || '').replace(
+    /^https:\/\/images\.penguinrandomhouse\.com\/cover\/(?!d\/)/,
+    'https://images.penguinrandomhouse.com/cover/d/'
+  );
+}
+
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
@@ -295,7 +306,7 @@ async function run({
     const picks = await fetchSpotlight({ ...db, start }, fetchImpl);
     const covers = [];
     for (const p of picks) {
-      try { covers.push({ title: p.title, dataUri: await downloadCover(p.cover_url, fetchImpl) }); }
+      try { covers.push({ title: p.title, dataUri: await downloadCover(fullSizeCover(p.cover_url), fetchImpl) }); }
       catch (e) { say(`::warning::cover dropped (${p.title}): ${e.message}`); }
     }
     if (!covers.length) return fail('no spotlight cover could be downloaded');
@@ -344,7 +355,7 @@ async function run({
 
 module.exports = {
   weekMarker, describeDate, feedBuildDate, countItems, freshnessProblem, alreadyPosted,
-  buildMessage, shortTitle, escapeHtml, renderHtml, pngSize, makeRedactor, readFbConfig,
+  buildMessage, shortTitle, fullSizeCover, escapeHtml, renderHtml, pngSize, makeRedactor, readFbConfig,
   fetchSpotlight, downloadCover, run, IMAGE_W, IMAGE_H,
 };
 

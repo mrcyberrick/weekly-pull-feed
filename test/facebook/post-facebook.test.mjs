@@ -274,6 +274,27 @@ test('shortTitle drops cover credits but never empties a title', () => {
   assert.equal(fb.shortTitle('VENOM #1'), 'VENOM #1');
 });
 
+test('fullSizeCover asks PRH for the full-size image and leaves everything else alone', () => {
+  assert.equal(fb.fullSizeCover('https://images.penguinrandomhouse.com/cover/75960623001300111'),
+    'https://images.penguinrandomhouse.com/cover/d/75960623001300111');
+  assert.equal(fb.fullSizeCover('https://images.penguinrandomhouse.com/cover/d/75960623001300111'),
+    'https://images.penguinrandomhouse.com/cover/d/75960623001300111');
+  assert.equal(fb.fullSizeCover('https://media.lunardistribution.com/images/covers/large/0826IM0514.jpg'),
+    'https://media.lunardistribution.com/images/covers/large/0826IM0514.jpg');
+});
+
+test('the run downloads PRH covers at full size', async () => {
+  const w = world({ spotlight: [{ title: 'DNX #3', cover_url: 'https://images.penguinrandomhouse.com/cover/123', series_name: 'DNX' }] });
+  const inner = w.fetchImpl;
+  w.fetchImpl = async (u, o) => String(u).startsWith('https://images.penguinrandomhouse.com/')
+    ? (w.calls.push({ method: 'GET', url: String(u) }), new Response(Buffer.alloc(5000, 1), { status: 200, headers: { 'content-type': 'image/jpeg' } }))
+    : inner(u, o);
+  const r = await go(w);
+  assert.equal(r.code, 0);
+  assert.ok(w.calls.some(c => c.url === 'https://images.penguinrandomhouse.com/cover/d/123'));
+  assert.ok(!w.calls.some(c => c.url === 'https://images.penguinrandomhouse.com/cover/123'));
+});
+
 test('renderHtml escapes titles and refuses a template with an unfilled placeholder', () => {
   const tpl = '{{FONT_ANTON}}{{FONT_ARCHIVO}}{{COVER_COUNT}}{{DAY}}{{DATE}}{{ITEM_COUNT}}{{COVERS}}{{SHOP_NAME}}{{SHOP_TOWN}}';
   const args = { day: 'Wednesday', date: 'Oct 14', itemCount: 3, shop: 'R & J', town: 'T',
