@@ -1,0 +1,75 @@
+name: Newsletter Preflight
+
+# F135 / comic-preorder docs/weekly-newsletter-architecture.md W1.2 (decision D4).
+#
+# A Monday early warning for the Tuesday newsletter. The Tuesday build needs one
+# input it cannot create - this week's shipment rows, loaded by the weekly
+# shipment import on Rick's laptop. If they are missing the build fails loudly
+# (it never publishes a stale issue), but that is Tuesday evening with the issue
+# already due. This asks the same question on Monday morning, with a day and a
+# half left to run the import. A red run here is GitHub's email to Rick.
+#
+# READ-ONLY, by construction rather than by promise:
+#   - `permissions: contents: read` - it cannot commit, and cannot request a Pages build
+#   - it references no Brevo variable or secret, so it cannot create or send a campaign
+#   - the only network call is the same anonymous RPC the builder reads
+# It deliberately does NOT join the `newsletter` concurrency group: it must never
+# wait behind, or cancel, a build or a send.
+#
+# The week rule is the builder's own (scripts/preflight-week.js requires it from
+# build-pull-feed.js), so this and Tuesday's build cannot disagree about what a
+# ready week is.
+#
+# Repository variables (non-secret, public by design): SUPABASE_URL, SUPABASE_ANON_KEY.
+#
+# To see the red path on purpose: dispatch with week = 2030-01-09 (a week that
+# can never have rows). Blank = the week containing today.
+
+on:
+  schedule:
+    # Monday 13:00 UTC = 9:00 AM EDT / 8:00 AM EST. A morning heads-up either side of
+    # the DST change, so unlike the Tuesday send this needs no twice-a-year edit.
+    - cron: "0 13 * * 1"
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Week to check: any date inside it (YYYY-MM-DD). Blank = the week containing today. A far-future date (e.g. 2030-01-09) shows the red path."
+        type: string
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: preflight
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # The same suite the Tuesday build runs first. A failing test would stop that
+      # build too, so Monday is the cheaper day to find out.
+      - name: Unit tests
+        run: node --test test/*.test.mjs
+
+      - name: Check this week has shipment rows
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+          TENANT_SLUG: rjbookstop
+          WEEK: ${{ inputs.week }}
+        run: |
+          args=()
+          if [ -n "$WEEK" ]; then args+=("--week=$WEEK"); fi
+          node scripts/preflight-week.js "${args[@]}"
