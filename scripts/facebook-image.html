@@ -1,0 +1,44 @@
+<!doctype html>
+<!--
+  facebook-image.html - the weekly Facebook post's picture, 1080 x 1350 (4:5 portrait).
+  Filled by scripts/post-facebook.js (renderHtml) and screenshotted by headless Chrome.
+  comic-preorder docs/facebook-weekly-post.md § 3a / 3b: "In the spotlight" wording, the
+  covers in TITLE order, never a rank or a count of copies.
+  Placeholders are upper-case names in double braces; every one is replaced, and the script
+  refuses to render if any is left.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "Anton"; src: url({{FONT_ANTON}}) format("woff2"); font-weight: 400; }
+@font-face { font-family: "Archivo"; src: url({{FONT_ARCHIVO}}) format("woff2"); font-weight: 100 900; }
+html, body { margin: 0; padding: 0; width: 1080px; height: 1350px; overflow: hidden; background: #141418; }
+.card { width: 1080px; height: 1350px; box-sizing: border-box; background: #141418; color: #f6f3ee;
+  display: grid; grid-template-rows: auto 1fr auto; font-family: "Archivo", Arial, sans-serif; }
+.top { padding: 76px 65px 40px; display: grid; gap: 20px; }
+.kicker { font: 400 71px/0.95 "Anton", Impact, sans-serif; letter-spacing: 1px; text-transform: uppercase; }
+.kicker em { font-style: normal; color: #ff3b52; display: block; font-size: 162px; line-height: .9; }
+.count { font-weight: 600; font-size: 38px; line-height: 1.2; color: #c9c3ba; text-transform: uppercase; letter-spacing: 2px; }
+.covers { display: grid; grid-template-columns: repeat({{COVER_COUNT}}, 312px); justify-content: center; gap: 30px; align-items: start; align-content: center; padding: 0 39px; }
+figure { margin: 0; display: grid; gap: 18px; }
+figure img { width: 312px; height: 468px; object-fit: cover; display: block; border-radius: 8px; box-shadow: 0 16px 40px rgba(0,0,0,.6); background: #26262c; }
+figcaption { font-weight: 600; font-size: 26px; line-height: 1.2; color: #c9c3ba; text-transform: uppercase; letter-spacing: 1px; text-align: center; text-wrap: balance; }
+.shop { margin: 48px 65px 65px; padding-top: 30px; border-top: 5px solid #ff3b52; font-weight: 800; font-size: 41px; line-height: 1.2;
+  display: flex; justify-content: space-between; gap: 20px; }
+.shop span { font-weight: 600; color: #c9c3ba; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="top">
+    <div class="kicker">New this {{DAY}}<em>{{DATE}}</em></div>
+    <div class="count">{{ITEM_COUNT}} new arrivals &middot; In the spotlight</div>
+  </div>
+  <div class="covers">
+{{COVERS}}
+  </div>
+  <div class="shop">{{SHOP_NAME}} <span>{{SHOP_TOWN}}</span></div>
+</div>
+</body>
+</html>

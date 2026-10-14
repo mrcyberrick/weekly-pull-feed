@@ -1,0 +1,99 @@
+name: Post to Facebook
+
+# comic-preorder docs/facebook-weekly-post.md - one Facebook Page photo post per week,
+# linking to the shop's own news page (rjbookstop.com/news/), with a picture of three
+# "spotlight" covers (most copies received that week, shown in title order, never ranked).
+#
+#   tests -> check the news page shows THIS week -> already posted? -> build the picture
+#   (headless Chrome) -> post -> read the post back. A red run is GitHub's email to Rick.
+#
+# Separate from the newsletter on purpose:
+#   - `permissions: contents: read`: it never commits, so it can never start a Pages
+#     build or race the newsletter's (F98 / F100)
+#   - no Brevo variable or secret: it cannot touch the email
+#   - its own concurrency group: it never waits behind, or cancels, a newsletter run
+#   - its tests live in test/facebook/, outside the newsletter build's test/*.test.mjs
+#
+# THE SCHEDULE DOES NOTHING until the repository variable FACEBOOK_ENABLED is "true".
+# A manual run (workflow_dispatch) always works and is a DRY RUN by default: it builds
+# the picture and attaches it to the run, and posts nothing.
+#
+# Secret:    FACEBOOK_PAGE_TOKEN (a Page access token; never printed, never in a URL)
+# Variables: FACEBOOK_ENABLED, FACEBOOK_PAGE_ID, FACEBOOK_GRAPH_VERSION, LANDING_URL,
+#            FEED_CHECK_URL, STORE_NAME, STORE_TOWN, STORE_APP_URL, SUPABASE_URL,
+#            SUPABASE_ANON_KEY (the last two already exist for the newsletter)
+
+on:
+  schedule:
+    # Wednesday 12:00 UTC = 8:00 AM EDT / 7:00 AM EST. GitHub starts scheduled runs
+    # late (the newsletter has seen +2h to +3h20m), so the post lands mid-morning on
+    # new-comics day. Needs no DST edit.
+    - cron: "0 12 * * 3"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Build the picture and the message, post nothing (default, safest)"
+        type: boolean
+        default: true
+      week:
+        description: "Any date inside the week to post (YYYY-MM-DD). Blank = this week. Only this week or last week can be built (the spotlight lookup refuses others)."
+        type: string
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: facebook
+  cancel-in-progress: false
+
+jobs:
+  post:
+    if: ${{ github.event_name == 'workflow_dispatch' || vars.FACEBOOK_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Unit tests
+        run: node --test "test/facebook/*.test.mjs"
+
+      # The picture is a headless-Chrome screenshot. GitHub's Ubuntu image ships Google
+      # Chrome; fail clearly here if that ever stops being true.
+      - name: Check Chrome is available
+        run: google-chrome --version
+
+      - name: Build the picture and post
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
+          TENANT_SLUG: rjbookstop
+          FACEBOOK_PAGE_ID: ${{ vars.FACEBOOK_PAGE_ID }}
+          FACEBOOK_PAGE_TOKEN: ${{ secrets.FACEBOOK_PAGE_TOKEN }}
+          FACEBOOK_GRAPH_VERSION: ${{ vars.FACEBOOK_GRAPH_VERSION }}
+          LANDING_URL: ${{ vars.LANDING_URL }}
+          FEED_CHECK_URL: ${{ vars.FEED_CHECK_URL }}
+          STORE_NAME: ${{ vars.STORE_NAME }}
+          STORE_TOWN: ${{ vars.STORE_TOWN }}
+          STORE_APP_URL: ${{ vars.STORE_APP_URL }}
+          CHROME_BIN: google-chrome
+          OUT_DIR: ${{ runner.temp }}/post-facebook
+          WEEK: ${{ inputs.week }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
+        run: node scripts/post-facebook.js
+
+      - name: Attach the picture to this run
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: facebook-picture
+          path: ${{ runner.temp }}/post-facebook/fb-*.png
+          if-no-files-found: ignore
+          retention-days: 30
