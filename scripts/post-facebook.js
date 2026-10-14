@@ -165,7 +165,7 @@ function readFbConfig(env) {
     dryRun,
     pageId: env.FACEBOOK_PAGE_ID || '',
     token: env.FACEBOOK_PAGE_TOKEN || '',
-    graph: `https://graph.facebook.com/${env.FACEBOOK_GRAPH_VERSION || 'v25.0'}`,
+    graph: `https://graph.facebook.com/${env.FACEBOOK_GRAPH_VERSION || 'v26.0'}`,
     landingUrl: env.LANDING_URL || 'https://rjbookstop.com/news/',
     feedCheckUrl: env.FEED_CHECK_URL || 'https://rss-feed.rjbookstop.com/rss.xml',
     store: env.STORE_NAME || "Ray & Judy's Book Stop",
