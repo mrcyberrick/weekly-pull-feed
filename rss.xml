@@ -9,8 +9,8 @@
     <link>https://mrcyberrick.github.io/weekly-pull-feed/newsletter.html</link>
     <description>Weekly pull list of new releases with thumbnails and links to full-size cover images.</description>
     <language>en-us</language>
-    <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
-    <lastBuildDate>Sat, 10 Oct 2026 13:43:54 GMT</lastBuildDate>
+    <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
+    <lastBuildDate>Wed, 14 Oct 2026 00:08:16 GMT</lastBuildDate>
     <ttl>10080</ttl><!-- 10080 minutes = 1 week; hints to readers how often to check -->
 
     <!-- Canonical self-reference: required by Atom namespace -->
@@ -35,7 +35,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960623001300111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -69,7 +69,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960623001300141</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -103,7 +103,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960623001300121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -137,7 +137,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621696300111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -171,7 +171,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DE0695.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -205,7 +205,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DE0696.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -239,7 +239,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DE0697.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -273,7 +273,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826AC0618.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -307,7 +307,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826AC0619.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -341,7 +341,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826AC0620.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -375,7 +375,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826AC0621.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -409,7 +409,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0044.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -443,7 +443,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0228.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -477,7 +477,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0229.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -511,7 +511,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0230.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -545,7 +545,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0231.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -579,7 +579,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0232.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -613,7 +613,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0258.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -647,7 +647,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0259.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -681,7 +681,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0260.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -715,7 +715,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0103.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -749,7 +749,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0104.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -783,7 +783,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0105.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -817,7 +817,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0106.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -851,7 +851,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0099.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -885,7 +885,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0100.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -919,7 +919,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621252101511</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -953,7 +953,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621252101531</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -987,7 +987,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621473000111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1021,7 +1021,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621473000121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1055,7 +1055,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0233.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1089,7 +1089,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0234.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1123,7 +1123,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0235.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1157,7 +1157,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0236.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1191,7 +1191,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621519500311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1225,7 +1225,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621519500341</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1259,7 +1259,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621519500331</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1293,7 +1293,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621519500351</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1327,7 +1327,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621519500321</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1361,7 +1361,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621472300111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1395,7 +1395,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621472300161</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1429,7 +1429,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621472300121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1463,7 +1463,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0025.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1497,7 +1497,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0026.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1531,7 +1531,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0027.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1565,7 +1565,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0028.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1599,7 +1599,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/76156801598000311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1633,7 +1633,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DE0740.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1667,7 +1667,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621449500911</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1701,7 +1701,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826IM0428.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1735,7 +1735,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826IM0429.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1769,7 +1769,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0212.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1803,7 +1803,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0214.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1837,7 +1837,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621585000111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1871,7 +1871,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621491401011</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1905,7 +1905,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0001.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1939,7 +1939,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0002.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -1973,7 +1973,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0003.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2007,7 +2007,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0726DC0237.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2041,7 +2041,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/76156801633800111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2075,7 +2075,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/76156801633800121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2109,7 +2109,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621714400111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2143,7 +2143,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0726DC0215.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2177,7 +2177,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0726DC0216.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2211,7 +2211,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621748900111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2245,7 +2245,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621748900121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2279,7 +2279,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/84428401340604011</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2313,7 +2313,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/84428401340604021</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2347,7 +2347,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/84428401340604031</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2381,7 +2381,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/84428401340604041</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2415,7 +2415,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403548300311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2449,7 +2449,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403548300321</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2483,7 +2483,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826IM0493.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2517,7 +2517,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826IM0494.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2551,7 +2551,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826IM0380.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2585,7 +2585,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826IM0381.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2619,7 +2619,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826IM0382.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2653,7 +2653,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0726TN1296.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2687,7 +2687,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403591900211</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2721,7 +2721,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403550600311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2755,7 +2755,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403550600321</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2789,7 +2789,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403599500111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2823,7 +2823,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403599500121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2857,7 +2857,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403599500131</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2891,7 +2891,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403599500141</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2925,7 +2925,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621536200111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2959,7 +2959,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621536200141</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -2993,7 +2993,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621536200121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3027,7 +3027,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620601800311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3061,7 +3061,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/76156801222400311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3095,7 +3095,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403600800111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3129,7 +3129,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403600800121</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3163,7 +3163,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403600800131</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3197,7 +3197,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0183.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3231,7 +3231,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0184.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3265,7 +3265,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0185.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3299,7 +3299,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0186.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3333,7 +3333,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0029.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3367,7 +3367,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0030.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3401,7 +3401,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0031.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3435,7 +3435,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826DC0032.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3469,7 +3469,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403315102311</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3503,7 +3503,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403315102321</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3537,7 +3537,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403315102331</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3571,7 +3571,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403315102341</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3605,7 +3605,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/82771403315102351</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3639,7 +3639,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826IM0514.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3673,7 +3673,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826IM0515.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3707,7 +3707,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621771715911</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3741,7 +3741,7 @@
       <guid isPermaLink="true">https://media.lunardistribution.com/images/covers/large/0826IM0349.jpg</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3775,7 +3775,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621682600111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3809,7 +3809,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621448800911</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3843,7 +3843,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621351100111</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3877,7 +3877,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621351100141</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3911,7 +3911,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621123400511</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3945,7 +3945,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621123400521</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -3979,7 +3979,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960621123400531</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -4013,7 +4013,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620920003911</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
@@ -4047,7 +4047,7 @@
       <guid isPermaLink="true">https://images.penguinrandomhouse.com/cover/d/75960620920003931</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>Sat, 10 Oct 2026 13:43:54 GMT</pubDate>
+      <pubDate>Wed, 14 Oct 2026 00:08:16 GMT</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>Weekly Previews</dc:creator>
