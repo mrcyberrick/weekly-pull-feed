@@ -70,8 +70,33 @@ jobs:
       - name: Check Chrome is available
         run: google-chrome --version
 
+      # Dedupe. Facebook refuses this app a read of the Page's posts (code 100,
+      # subcode 33, measured 2026-10-21), so the record of "posted for week X on
+      # Page Y" is a GitHub Actions cache entry. The week comes from the builder's
+      # own rule, the same one the script uses.
+      - name: Work out the week
+        id: week
+        env:
+          WEEK: ${{ inputs.week }}
+        run: |
+          node -e "
+            const b = require('./scripts/build-pull-feed.js');
+            const { refDate } = b.resolveTargetWeek({ weekArg: process.env.WEEK || null, today: b.todayUTC() });
+            console.log('start=' + b.weekRange(refDate).start);
+          " >> "$GITHUB_OUTPUT"
+          cat "$GITHUB_OUTPUT"
+
+      - name: Already posted this week?
+        id: posted
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ github.workspace }}/.fb-out/posted-${{ steps.week.outputs.start }}.txt
+          key: fb-posted-${{ vars.FACEBOOK_PAGE_ID }}-${{ steps.week.outputs.start }}
+          lookup-only: true
+
       - name: Build the picture and post
         env:
+          ALREADY_POSTED: ${{ steps.posted.outputs.cache-hit }}
           SUPABASE_URL: ${{ vars.SUPABASE_URL }}
           SUPABASE_ANON_KEY: ${{ vars.SUPABASE_ANON_KEY }}
           TENANT_SLUG: rjbookstop
@@ -84,16 +109,26 @@ jobs:
           STORE_TOWN: ${{ vars.STORE_TOWN }}
           STORE_APP_URL: ${{ vars.STORE_APP_URL }}
           CHROME_BIN: google-chrome
-          OUT_DIR: ${{ runner.temp }}/post-facebook
+          OUT_DIR: ${{ github.workspace }}/.fb-out
           WEEK: ${{ inputs.week }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
         run: node scripts/post-facebook.js
+
+      # The script writes the record the moment Facebook returns a post id, before
+      # it reads the post back, so this saves it even if the read-back fails and the
+      # run is red. No file (dry run, or nothing posted) = nothing saved.
+      - name: Record that this week is posted
+        if: ${{ always() && hashFiles('.fb-out/posted-*.txt') != '' }}
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ github.workspace }}/.fb-out/posted-${{ steps.week.outputs.start }}.txt
+          key: fb-posted-${{ vars.FACEBOOK_PAGE_ID }}-${{ steps.week.outputs.start }}
 
       - name: Attach the picture to this run
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: facebook-picture
-          path: ${{ runner.temp }}/post-facebook/fb-*.png
+          path: ${{ github.workspace }}/.fb-out/fb-*.png
           if-no-files-found: ignore
           retention-days: 30

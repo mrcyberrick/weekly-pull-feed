@@ -49,9 +49,9 @@ function world(over = {}) {
                 { title: 'TRANSFORMERS #37 CVR A', cover_url: 'https://img/2', series_name: 'TF' },
                 { title: 'VENOM #1', cover_url: 'https://img/3', series_name: 'Venom' }],
     badCovers: new Set(),
-    posts: [],
     photoResponse: { id: 'photo1', post_id: 'page_123' },
     readBack: { id: 'page_123', permalink_url: 'https://facebook.com/page/posts/123' },
+    readBackError: null,
     graphError: null,
     ...over,
   };
@@ -68,9 +68,13 @@ function world(over = {}) {
     }
     if (u.startsWith('https://graph.facebook.com/')) {
       if (s.graphError) return json({ error: s.graphError }, 400);
-      if (method === 'GET' && u.includes('/posts?')) return json({ data: s.posts });
+      // Facebook refuses this app a read of the Page's posts (measured 2026-10-21),
+      // so the fake refuses it too: a job that relied on it would fail here.
+      if (method === 'GET' && /\/(posts|feed)\?/.test(u)) {
+        return json({ error: { code: 100, error_subcode: 33, message: 'Unsupported get request.' } }, 400);
+      }
       if (method === 'POST' && u.includes('/photos')) return json(s.photoResponse);
-      if (method === 'GET') return json(s.readBack);
+      if (method === 'GET') return s.readBackError ? json({ error: s.readBackError }, 400) : json(s.readBack);
     }
     throw new Error(`unexpected fetch ${method} ${u}`);
   };
@@ -140,20 +144,43 @@ test('news page feed unreachable: fails', async () => {
   assert.match(r.logs, /HTTP 502/);
 });
 
-test('already posted this week: exit 0, no second post, no picture', async () => {
-  const w = world({ posts: [{ id: 'p1', message: `... https://rjbookstop.com/news/?ref=facebook&w=${START}` }] });
-  const r = await go(w, POSTING);
+test('already posted this week (cache hit): exit 0, no second post, no picture', async () => {
+  const w = world();
+  const r = await go(w, { ...POSTING, ALREADY_POSTED: 'true' });
   assert.equal(r.code, 0);
   assert.equal(photoPosts(w.calls).length, 0);
   assert.equal(r.rendered.length, 0);
   assert.match(r.logs, /Already posted/);
 });
 
-test('a post from a DIFFERENT week does not count as already posted', async () => {
-  const w = world({ posts: [{ id: 'p1', message: 'see https://rjbookstop.com/news/?ref=facebook&w=2026-10-05' }] });
-  const r = await go(w, POSTING);
+test('no cache hit: it posts, and never tries to read the Page\'s posts or feed', async () => {
+  const w = world();
+  const r = await go(w, { ...POSTING, ALREADY_POSTED: 'false' });
   assert.equal(r.code, 0);
   assert.equal(photoPosts(w.calls).length, 1);
+  assert.equal(w.calls.filter(c => /\/(posts|feed)\?/.test(c.url)).length, 0);
+});
+
+test('a post is recorded for the cache the moment Facebook returns its id', async () => {
+  const w = world();
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 0);
+  assert.equal(fs.readFileSync(path.join(r.out, `posted-${START}.txt`), 'utf8').trim(), 'page_123');
+});
+
+test('read-back refused: fails red, but the post is still recorded so a rerun cannot post twice', async () => {
+  const w = world({ readBackError: { code: 100, error_subcode: 33, message: 'Unsupported get request.' } });
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 1);
+  assert.match(r.logs, /posted as page_123, but it could not be read back/);
+  assert.ok(fs.existsSync(path.join(r.out, `posted-${START}.txt`)), 'no record: a rerun would post again');
+});
+
+test('a dry run never writes a posted record', async () => {
+  const w = world();
+  const r = await go(w, { FACEBOOK_PAGE_ID: '615', FACEBOOK_PAGE_TOKEN: TOKEN });
+  assert.equal(r.code, 0);
+  assert.ok(!fs.existsSync(path.join(r.out, `posted-${START}.txt`)));
 });
 
 test('posting: exactly one photo upload with the token in the header, then a read-back', async () => {

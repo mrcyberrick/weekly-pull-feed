@@ -12,9 +12,9 @@
 //   3. The landing page shows this week: the feed read THROUGH the site's Worker
 //      (what rjbookstop.com/news/ renders) must have a lastBuildDate inside the week.
 //   4. Count: <item>s in that feed (what a visitor will see).
-//   5. Already posted? The Page's own recent posts are searched for this week's
-//      marker (w=<monday>). Found -> exit 0, nothing posted. This is the dedupe;
-//      there is no state file and the job never commits.
+//   5. Already posted? A GitHub Actions cache entry keyed on page + week (the
+//      workflow passes ALREADY_POSTED=true on a hit). Facebook refuses this app a
+//      read of the Page's posts, so the Page cannot be the record. Never commits.
 //   6. Picture: get_pull_feed_spotlight (3 covers, title order, no rank); download
 //      the full-size covers; fill scripts/facebook-image.html; headless Chrome takes
 //      a 1080x1350 screenshot. A cover that fails to download is dropped; none left
@@ -80,10 +80,6 @@ function freshnessProblem(built, start, end) {
       `the Tuesday newsletter build has not published this week, or the site's Worker is serving an old copy`;
   }
   return null;
-}
-
-function alreadyPosted(posts, start) {
-  return (posts || []).some(p => (p.message || '').includes(weekMarker(start)));
 }
 
 function withParams(url, params) {
@@ -289,17 +285,15 @@ async function run({
     if (count !== rawRows.length) say(`::warning::the feed lists ${count} titles, the shipment has ${rawRows.length} rows (a difference is normal when rows share a cover)`);
     const message = buildMessage({ onSale, count, store: fb.store, landingUrl: fb.landingUrl, appUrl: fb.appUrl, start });
 
-    // 5. already posted?
-    if (fb.token && fb.pageId) {
-      const since = Math.floor(new Date(`${start}T00:00:00Z`).getTime() / 1000);
-      const posts = await graph(fetchImpl, fb, 'GET', `${fb.pageId}/posts?fields=id,message,created_time&limit=25&since=${since}`);
-      if (alreadyPosted(posts.data, start)) {
-        say(`Already posted for the week of ${start}; nothing to do.`);
-        summary(`Facebook: already posted for the week of ${start}. Nothing posted.`);
-        return 0;
-      }
-    } else {
-      say('No Page id or token: skipping the already-posted check (dry run only).');
+    // 5. already posted? Facebook will not let this app read the Page's posts
+    // (measured 2026-10-21: GET /{page}/posts is code 100 / subcode 33 with a valid
+    // Page token holding pages_read_engagement, in Graph API Explorer too), so the
+    // record is a GitHub Actions cache entry keyed on page + week. The workflow
+    // restores it before this step and passes ALREADY_POSTED=true on a hit.
+    if (env.ALREADY_POSTED === 'true') {
+      say(`Already posted for the week of ${start} on this Page; nothing to do.`);
+      summary(`Facebook: already posted for the week of ${start}. Nothing posted.`);
+      return 0;
     }
 
     // 6. picture
@@ -343,8 +337,17 @@ async function run({
     const created = await graph(fetchImpl, fb, 'POST', `${fb.pageId}/photos`, form);
     const postId = created.post_id || created.id;
     if (!postId) return fail('Facebook accepted the photo but returned no post id');
-    const back = await graph(fetchImpl, fb, 'GET', `${postId}?fields=id,permalink_url,created_time`);
-    if (!back.permalink_url) return fail(`post ${postId} was created but could not be read back with a permalink`);
+    // Record the post BEFORE trying to read it back: if the read-back is refused or
+    // fails, the post still exists, and the workflow saves this file to the cache so
+    // a rerun does not post a second time.
+    fs.writeFileSync(path.join(outDir, `posted-${start}.txt`), `${postId}\n`);
+    let back;
+    try {
+      back = await graph(fetchImpl, fb, 'GET', `${postId}?fields=id,permalink_url,created_time`);
+    } catch (e) {
+      return fail(`posted as ${postId}, but it could not be read back (${e.message}); check the Page. It is recorded, so a rerun will not post again`);
+    }
+    if (!back.permalink_url) return fail(`post ${postId} was created but could not be read back with a permalink; it is recorded, so a rerun will not post again`);
     say(`Posted: ${back.permalink_url}`);
     summary(`Facebook: posted for the week of ${start} - ${back.permalink_url}`);
     return 0;
@@ -354,7 +357,7 @@ async function run({
 }
 
 module.exports = {
-  weekMarker, describeDate, feedBuildDate, countItems, freshnessProblem, alreadyPosted,
+  weekMarker, describeDate, feedBuildDate, countItems, freshnessProblem,
   buildMessage, shortTitle, fullSizeCover, escapeHtml, renderHtml, pngSize, makeRedactor, readFbConfig,
   fetchSpotlight, downloadCover, run, IMAGE_W, IMAGE_H,
 };
