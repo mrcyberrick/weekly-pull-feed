@@ -90,7 +90,7 @@ jobs:
         id: posted
         uses: actions/cache/restore@v4
         with:
-          path: ${{ github.workspace }}/.fb-out/posted-${{ steps.week.outputs.start }}.txt
+          path: ${{ github.workspace }}/fb-out/posted-${{ steps.week.outputs.start }}.txt
           key: fb-posted-${{ vars.FACEBOOK_PAGE_ID }}-${{ steps.week.outputs.start }}
           lookup-only: true
 
@@ -109,7 +109,7 @@ jobs:
           STORE_TOWN: ${{ vars.STORE_TOWN }}
           STORE_APP_URL: ${{ vars.STORE_APP_URL }}
           CHROME_BIN: google-chrome
-          OUT_DIR: ${{ github.workspace }}/.fb-out
+          OUT_DIR: ${{ github.workspace }}/fb-out
           WEEK: ${{ inputs.week }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
         run: node scripts/post-facebook.js
@@ -118,10 +118,10 @@ jobs:
       # it reads the post back, so this saves it even if the read-back fails and the
       # run is red. No file (dry run, or nothing posted) = nothing saved.
       - name: Record that this week is posted
-        if: ${{ always() && hashFiles('.fb-out/posted-*.txt') != '' }}
+        if: ${{ always() && hashFiles('fb-out/posted-*.txt') != '' }}
         uses: actions/cache/save@v4
         with:
-          path: ${{ github.workspace }}/.fb-out/posted-${{ steps.week.outputs.start }}.txt
+          path: ${{ github.workspace }}/fb-out/posted-${{ steps.week.outputs.start }}.txt
           key: fb-posted-${{ vars.FACEBOOK_PAGE_ID }}-${{ steps.week.outputs.start }}
 
       - name: Attach the picture to this run
@@ -129,6 +129,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: facebook-picture
-          path: ${{ github.workspace }}/.fb-out/fb-*.png
-          if-no-files-found: ignore
+          path: ${{ github.workspace }}/fb-out/fb-*.png
+          # A run that got as far as building the picture must attach it; an early
+          # failure (no rows, stale page) has none, which is fine, so warn, not fail.
+          if-no-files-found: warn
           retention-days: 30
