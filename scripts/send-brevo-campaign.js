@@ -128,9 +128,28 @@ const dateStr = today.toLocaleDateString("en-US", {
 
 // Prefer the <title> from the generated HTML if present.
 const titleMatch = html.match(/<title>([^<]{3,120})<\/title>/i);
-const subject = titleMatch
-  ? `${titleMatch[1].trim()} - ${dateStr}`
-  : `This Week's Comic Previews - ${dateStr}`;
+
+// The date in the subject is the day the books go ON SALE, read from the
+// <!-- pull-feed-onsale: YYYY-MM-DD --> stamp build-pull-feed.js writes (same
+// reading style as the freshness stamp above). The send date is the Tuesday
+// BEFORE: the 2026-10-20 subject said October 20 over a masthead that said
+// October 21. No stamp, or one that is not a real calendar date, and the
+// subject is exactly what it was before this existed. Built from split parts,
+// never new Date(iso), which parses as UTC and prints the previous day west of
+// Greenwich (F28); the round trip rejects a roll-over such as 2026-02-31.
+function onSaleLabel(markup) {
+  const m = markup.match(/pull-feed-onsale:\s*(\d{4})-(\d{2})-(\d{2})/);
+  if (!m) return null;
+  const [y, mo, d] = [+m[1], +m[2], +m[3]];
+  const date = new Date(y, mo - 1, d);
+  if (date.getFullYear() !== y || date.getMonth() !== mo - 1 || date.getDate() !== d) return null;
+  return date.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+}
+const onSale = onSaleLabel(html);
+const subjectTitle = titleMatch ? titleMatch[1].trim() : "This Week's Comic Previews";
+const subject = onSale
+  ? `${subjectTitle} - on sale ${onSale}`
+  : `${subjectTitle} - ${dateStr}`;
 
 const campaignName = `weekly-pull-feed ${today.toISOString().slice(0, 10)}`;
 

@@ -287,6 +287,62 @@ function dominantOnSaleDate(rows) {
   return best.date;
 }
 
+// ── The on-sale date, as a reader sees it ───────────────────────────────────
+// One date (dominantOnSaleDate) shown three ways: "Wednesday, October 21, 2026"
+// on the page and in the email, "Wed, Oct 21" in the preheader and subject, and
+// as the RSS item date. See comic-preorder docs/newsletter-arrival-date.md.
+//
+// All three take the ISO string the RPC returns and answer NULL for anything that
+// is not a real calendar date, so a caller can omit the line instead of printing
+// "Invalid Date" into a mail that cannot be recalled.
+
+// A real YYYY-MM-DD as a Date at local midnight, else null. Built from split
+// parts, never new Date(iso): that parses as UTC midnight and renders the
+// previous day west of Greenwich (F28). The round-trip check rejects values the
+// Date constructor would silently roll over (2026-02-31 -> March 3).
+function onSaleParts(iso) {
+  const m = typeof iso === 'string' && /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+  if (!m) return null;
+  const [y, mo, d] = [+m[1], +m[2], +m[3]];
+  const date = new Date(y, mo - 1, d);
+  if (date.getFullYear() !== y || date.getMonth() !== mo - 1 || date.getDate() !== d) return null;
+  return { y, mo, d, date };
+}
+
+// 'Wednesday, October 21, 2026'. The weekday comes from the date: a holiday week
+// can ship another day, and "Wednesday is not special" (comic-preorder CLAUDE.md).
+function formatOnSale(iso) {
+  const p = onSaleParts(iso);
+  return p && p.date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+// 'Wed, Oct 21' - the form that fits a preheader and a subject line.
+function formatOnSaleShort(iso) {
+  const p = onSaleParts(iso);
+  return p && p.date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+}
+
+// The RFC-822 instant for 12:00 noon in New York on that date, e.g.
+// 'Wed, 21 Oct 2026 16:00:00 GMT' (EDT) or '... 17:00:00 GMT' (EST).
+//
+// Why noon and not midnight: rjbookstop.com/news prints each card's date from its
+// <pubDate> in the READER's time zone, and midnight UTC is the previous evening in
+// New Jersey. Noon Eastern lands on the right calendar day from Hawaii to Moscow.
+//
+// The offset is measured for THAT date, not hardcoded: DST ends on 2026-11-01 and
+// the Tuesday cron keeps running straight through it. Noon is never ambiguous
+// (both switches happen at 2 AM), so asking what the New York wall clock reads at
+// 12:00 UTC gives 8 (EDT) or 7 (EST), and the offset is 12 minus that.
+function onSaleNoonEasternRfc822(iso) {
+  const p = onSaleParts(iso);
+  if (!p) return null;
+  const probe = new Date(Date.UTC(p.y, p.mo - 1, p.d, 12));
+  const nyHour = +new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York', hour: '2-digit', hourCycle: 'h23',
+  }).format(probe);
+  return new Date(Date.UTC(p.y, p.mo - 1, p.d, 12 + (12 - nyHour))).toUTCString();
+}
+
 // Returns null when the week is publishable, else the reason it is not. Three
 // distinct failures, each worded so the operator knows what to DO:
 //   1. no rows        — the weekly shipment import has not run (F135 case b).
@@ -656,7 +712,7 @@ async function publishPullFeed({ refDate = todayUTC(), explicit = false, branch 
   const artifacts = {
     'newsletter.html': buildNewsletterHtml(rows, thumbMap, { onSaleDate, shipmentCount }),
     'newsletter-email.html': buildEmailHtml(rows, thumbMap, { onSaleDate, shipmentCount }),
-    'rss.xml': buildRssXml(rows, thumbMap),
+    'rss.xml': buildRssXml(rows, thumbMap, { onSaleDate }),
     // Committed with the deletions it justifies, in the same tree — so the
     // ledger can never describe a purge that did not happen, or vice versa.
     [RETENTION_FILE]: JSON.stringify(manifest, null, 2) + '\n',
@@ -729,7 +785,7 @@ async function buildLocal({ refDate = todayUTC(), explicit = false } = {}) {
   fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(path.join(outDir, 'newsletter.html'), buildNewsletterHtml(rows, thumbMap, { onSaleDate, shipmentCount }));
   fs.writeFileSync(path.join(outDir, 'newsletter-email.html'), buildEmailHtml(rows, thumbMap, { onSaleDate, shipmentCount }));
-  fs.writeFileSync(path.join(outDir, 'rss.xml'), buildRssXml(rows, thumbMap));
+  fs.writeFileSync(path.join(outDir, 'rss.xml'), buildRssXml(rows, thumbMap, { onSaleDate }));
   console.log(`✅ Wrote 3 artifacts for ${rows.length} titles → ${outDir}`);
   console.log('   (thumb URLs are canonical; --publish is what uploads any missing thumbs)');
 }
@@ -739,12 +795,17 @@ module.exports = {
   // F135 week selection + guards: pure, exported so each failure can be forced
   // in test/week-guard.test.mjs.
   resolveTargetWeek, checkWeek, dominantOnSaleDate, weekRange, todayUTC,
+  // The on-sale date as a reader sees it (test/on-sale-date.test.mjs).
+  formatOnSale, formatOnSaleShort, onSaleNoonEasternRfc822,
   // Exported for the retention regression suite (test/thumb-retention.test.mjs).
   // planPurge is pure — the whole point of extracting it is that the delete
   // decision can be asserted without a publish, which is how the earlier
   // delete-everything-unreferenced behaviour went a year unnoticed: it was only
   // observable by reading a commit message after the fact.
   planPurge, md5, todayLocalDate, daysBetween, THUMB_RETENTION_DAYS, RETENTION_FILE,
+  // The three renderers, pure given (rows, thumbMap, meta) - exported so
+  // test/on-sale-date.test.mjs can assert what a reader is actually shown.
+  buildNewsletterHtml, buildEmailHtml, buildRssXml,
 };
 
 // ── CLI ──────────────────────────────────────────────────────────────────────
@@ -842,6 +903,10 @@ function buildNewsletterHtml(rows, thumbMap, meta = {}) {
     ? (([y, m, d]) => new Date(+y, +m - 1, +d))(onSaleDate.split('-'))
         .toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
     : new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+  // "Wednesday, October 21, 2026", or null (no line at all) when the week has no
+  // usable date. The masthead above keeps its own "today" fallback.
+  const onSaleText = formatOnSale(onSaleDate);
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -1314,7 +1379,11 @@ function buildNewsletterHtml(rows, thumbMap, meta = {}) {
                           font-size:13px;letter-spacing:0.18em;
                           text-transform:uppercase;color:#5a5755;">
                 This Week&rsquo;s Releases
-              </div>
+              </div>${onSaleText ? `
+              <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
+                          font-size:10px;color:#5a5755;margin-top:3px;">
+                On sale / in store ${onSaleText}
+              </div>` : ''}
               <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
                           font-size:10px;color:#5a5755;margin-top:3px;">
                 One cover per series &nbsp;&middot;&nbsp; ${shipmentCount} titles arriving
@@ -1416,6 +1485,13 @@ function buildEmailHtml(rows, thumbMap, meta = {}) {
         .toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
     : new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
+  // The on-sale date as the reader should see it: long form for the section
+  // label, short form for the inbox preview line. Both null when the week has no
+  // usable date, and every use below then falls back to what the email said
+  // before this existed (no line; "on sale Wednesday").
+  const onSaleText  = formatOnSale(onSaleDate);
+  const onSaleShort = formatOnSaleShort(onSaleDate);
+
   // Machine-readable freshness stamp (YYYY-MM-DD) for the stale-content guard.
   // The Node send script reads this comment, computes age in days, and aborts
   // the send if content is older than its threshold — fail-closed so a week
@@ -1488,7 +1564,8 @@ function buildEmailHtml(rows, thumbMap, meta = {}) {
 </style>`;
 
   const html = `${mobileStyles}
-<!-- pull-feed-generated: ${stampISO} -->
+<!-- pull-feed-generated: ${stampISO} -->${onSaleText ? `
+<!-- pull-feed-onsale: ${onSaleDate} -->` : ''}
 
 <!-- Preheader — the inbox preview line shown next to the subject in Gmail /
      Apple Mail. Hidden in the rendered email. Without it, clients scrape
@@ -1496,7 +1573,7 @@ function buildEmailHtml(rows, thumbMap, meta = {}) {
      zero-width spaces stop that copy bleeding in after this text. -->
 <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;
             font-size:1px;line-height:1px;color:#0f0f0f;">
-  ${shipmentCount} new titles on sale Wednesday &mdash; stop in before your favorites are gone
+  ${shipmentCount} new titles on sale ${onSaleShort || 'Wednesday'} &mdash; stop in before your favorites are gone
   &#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;
 </div>
 
@@ -1724,7 +1801,12 @@ function buildEmailHtml(rows, thumbMap, meta = {}) {
                         color:#5a5755;
                         mso-line-height-rule:exactly;">
               This Week&rsquo;s Releases
-            </div>
+            </div>${onSaleText ? `
+            <div style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
+                        font-size:10px;color:#5a5755;margin-top:3px;
+                        mso-line-height-rule:exactly;">
+              On sale / in store ${onSaleText}
+            </div>` : ''}
             <!-- The grid shows ONE cover per series (gridRowsFor), so it is
                  shorter than the title count in the preheader. Say so, rather
                  than leave a reader wondering where the rest went. -->
@@ -1812,8 +1894,9 @@ function buildEmailHtml(rows, thumbMap, meta = {}) {
   return html;
 }
 
-function buildRssXml(rows, thumbMap) {
+function buildRssXml(rows, thumbMap, meta = {}) {
   Logger.log("--- BUILDING RSS FEED ---");
+  const { onSaleDate } = meta;
 
   // FEED_URL must exactly match the canonical public URL where rss.xml
   // is served — this is what the <atom:link rel="self"> tag references.
@@ -1823,6 +1906,17 @@ function buildRssXml(rows, thumbMap) {
 
   // RFC-822 date format required by RSS spec
   const pubDate = new Date().toUTCString();
+
+  // The books' date, for the wording and for each ITEM's <pubDate>. rjbookstop.com
+  // /news prints a card's date straight from its item <pubDate>, and that used to
+  // be the build time - so last week's cards read the Tuesday BEFORE the books
+  // arrived. Items are therefore dated the on-sale day at noon Eastern (noon, not
+  // midnight: midnight UTC is the previous evening in New Jersey). The CHANNEL
+  // <pubDate> and <lastBuildDate> stay the real build time: they say when the feed
+  // was generated, which is what a reader polls on. Both are null for a week with
+  // no usable date, and then this is the feed it always was.
+  const onSaleText = formatOnSale(onSaleDate);
+  const itemPubDate = onSaleNoonEasternRfc822(onSaleDate) || pubDate;
 
   // Build individual RSS items
   let items = "";
@@ -1845,10 +1939,20 @@ function buildRssXml(rows, thumbMap) {
       .replace(/'/g, '&apos;');
 
     // Flipboard requires 300+ characters in <description> for good layout.
-    const descriptionText = `${safeTitle} is part of this week\'s pull list. `
-      + `This release is now available and featured in the ${NEWSLETTER_TITLE}. `
-      + `Click the cover image above to view the full-size image from the publisher. `
-      + `This item was included in the weekly shipment and is ready for pickup or delivery.`;
+    // With a date, the old "now available ... ready for pickup or delivery" is
+    // gone: on a Tuesday preview it is untrue until the next day. The sentence
+    // about the newsletter replaces it so the text stays over 300 characters
+    // even for a one-word title (asserted in test/on-sale-date.test.mjs).
+    const descriptionText = onSaleText
+      ? `${safeTitle} is part of this week's pull list at Ray &amp; Judy's Book Stop, `
+        + `on sale / in store ${onSaleText}. `
+        + `This release is featured in the ${NEWSLETTER_TITLE}, the shop's weekly look at the new comics and books arriving that week. `
+        + `Check back every week to see what is coming in. `
+        + `Click the cover image above to view the full-size image from the publisher.`
+      : `${safeTitle} is part of this week\'s pull list. `
+        + `This release is now available and featured in the ${NEWSLETTER_TITLE}. `
+        + `Click the cover image above to view the full-size image from the publisher. `
+        + `This item was included in the weekly shipment and is ready for pickup or delivery.`;
 
     // Derive category from URL — Lunar URLs contain lunardistribution.com,
     // PRH URLs contain penguinrandomhouse.com
@@ -1865,7 +1969,7 @@ function buildRssXml(rows, thumbMap) {
       <guid isPermaLink="true">${originalUrl}</guid>
 
       <!-- pubDate: RFC-822 format required by RSS spec and Flipboard -->
-      <pubDate>${pubDate}</pubDate>
+      <pubDate>${itemPubDate}</pubDate>
 
       <!-- dc:creator: required by Flipboard for each item -->
       <dc:creator>${NEWSLETTER_TITLE}</dc:creator>
@@ -1901,7 +2005,9 @@ function buildRssXml(rows, thumbMap) {
   <channel>
     <title>${NEWSLETTER_TITLE}</title>
     <link>${SITE_URL}</link>
-    <description>Weekly pull list of new releases with thumbnails and links to full-size cover images.</description>
+    <description>${onSaleText
+      ? `This week's releases, on sale / in store ${onSaleText}. Weekly pull list with thumbnails and links to full-size cover images.`
+      : 'Weekly pull list of new releases with thumbnails and links to full-size cover images.'}</description>
     <language>en-us</language>
     <pubDate>${pubDate}</pubDate>
     <lastBuildDate>${pubDate}</lastBuildDate>
