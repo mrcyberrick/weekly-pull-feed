@@ -82,6 +82,38 @@ function freshnessProblem(built, start, end) {
   return null;
 }
 
+// The DATE most of the feed's items carry (UTC calendar date), or null. Since
+// weekly-pull-feed a74692a8 (2026-10-21) each item's <pubDate> is the week's on-sale
+// day at noon Eastern, so this is the week the page is ABOUT. (An older feed dated
+// every item with its build time, which is also inside the build's week, so both
+// formats read correctly.) Ties go to the later date, as dominantOnSaleDate() does.
+function feedItemsDate(rssXml) {
+  const counts = new Map();
+  for (const item of (rssXml || '').match(/<item>[\s\S]*?<\/item>/g) || []) {
+    const m = /<pubDate>([^<]+)<\/pubDate>/.exec(item);
+    if (!m) continue;
+    const d = new Date(m[1].trim());
+    if (Number.isNaN(d.getTime())) continue;
+    const iso = d.toISOString().slice(0, 10);
+    counts.set(iso, (counts.get(iso) || 0) + 1);
+  }
+  let best = null;
+  for (const [date, n] of counts) if (!best || n > best.n || (n === best.n && date > best.date)) best = { date, n };
+  return best ? best.date : null;
+}
+
+// null when the feed's items are this week's titles, else why not. This is the check
+// freshnessProblem() cannot make: a past week's newsletter re-published by hand during
+// THIS week has a current build date but last week's titles.
+function itemsWeekProblem(itemsDate, start, end) {
+  if (!itemsDate) return 'the news page feed\'s items carry no readable dates';
+  if (itemsDate < start || itemsDate > end) {
+    return `the news page lists the titles for ${itemsDate}, not this week (${start} to ${end}): ` +
+      `a past week's newsletter may have been re-published`;
+  }
+  return null;
+}
+
 function withParams(url, params) {
   const u = new URL(url);
   for (const [k, v] of Object.entries(params)) u.searchParams.set(k, v);
@@ -280,6 +312,8 @@ async function run({
     const rss = await getText(fb.feedCheckUrl, fetchImpl, 'the news page feed (FEED_CHECK_URL)');
     const stale = freshnessProblem(feedBuildDate(rss), start, end);
     if (stale) return fail(stale);
+    const wrongWeek = itemsWeekProblem(feedItemsDate(rss), start, end);
+    if (wrongWeek) return fail(wrongWeek);
     const count = countItems(rss);
     if (!count) return fail('the news page feed has no items');
     if (count !== rawRows.length) say(`::warning::the feed lists ${count} titles, the shipment has ${rawRows.length} rows (a difference is normal when rows share a cover)`);
@@ -357,7 +391,7 @@ async function run({
 }
 
 module.exports = {
-  weekMarker, describeDate, feedBuildDate, countItems, freshnessProblem,
+  weekMarker, describeDate, feedBuildDate, countItems, freshnessProblem, feedItemsDate, itemsWeekProblem,
   buildMessage, shortTitle, fullSizeCover, escapeHtml, renderHtml, pngSize, makeRedactor, readFbConfig,
   fetchSpotlight, downloadCover, run, IMAGE_W, IMAGE_H,
 };

@@ -30,8 +30,11 @@ function fakePng(width = 1080, height = 1350, bytes = 80 * 1024) {
   return b;
 }
 
-function rss(buildDate, items = 3) {
-  return `<rss><channel><lastBuildDate>${buildDate}</lastBuildDate>${'<item><title>x</title></item>'.repeat(items)}</channel></rss>`;
+// The feed as weekly-pull-feed builds it since a74692a8: each item dated the week's
+// on-sale day at noon Eastern (16:00 GMT in EDT). itemDate null = items with no date.
+function rss(buildDate, items = 3, itemDate = 'Wed, 14 Oct 2026 16:00:00 GMT') {
+  const item = itemDate ? `<item><title>x</title><pubDate>${itemDate}</pubDate></item>` : '<item><title>x</title></item>';
+  return `<rss><channel><pubDate>${buildDate}</pubDate><lastBuildDate>${buildDate}</lastBuildDate>${item.repeat(items)}</channel></rss>`;
 }
 
 const json = (body, status = 200) => new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json' } });
@@ -267,6 +270,38 @@ test('the picture keeps the lookup\'s title order and never states a rank', asyn
 });
 
 // ── pure helpers ─────────────────────────────────────────────────────────
+
+test('a PAST week re-published this week: built today, but its titles are last week\'s -> red, nothing posted', async () => {
+  const w = world({ feed: rss('Wed, 14 Oct 2026 00:08:16 GMT', 3, 'Wed, 07 Oct 2026 16:00:00 GMT') });
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 1);
+  assert.match(r.logs, /lists the titles for 2026-10-07, not this week/);
+  assert.equal(w.calls.filter(c => c.url.includes('graph.facebook.com')).length, 0);
+  assert.equal(r.rendered.length, 0);
+});
+
+test('feed items with no dates: red, nothing posted', async () => {
+  const w = world({ feed: rss('Wed, 14 Oct 2026 00:08:16 GMT', 3, null) });
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 1);
+  assert.match(r.logs, /items carry no readable dates/);
+});
+
+test('an older-format feed (items dated with the build time) still passes', async () => {
+  const w = world({ feed: rss('Tue, 13 Oct 2026 23:40:35 GMT', 3, 'Tue, 13 Oct 2026 23:40:35 GMT') });
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 0);
+  assert.equal(photoPosts(w.calls).length, 1);
+});
+
+test('feedItemsDate: the most common item date wins, ties to the later one', () => {
+  const feed = items => `<rss>${items.map(d => `<item><pubDate>${d}</pubDate></item>`).join('')}</rss>`;
+  assert.equal(fb.feedItemsDate(feed(['Wed, 14 Oct 2026 16:00:00 GMT', 'Wed, 14 Oct 2026 16:00:00 GMT', 'Wed, 07 Oct 2026 16:00:00 GMT'])), '2026-10-14');
+  assert.equal(fb.feedItemsDate(feed(['Wed, 07 Oct 2026 16:00:00 GMT', 'Wed, 14 Oct 2026 16:00:00 GMT'])), '2026-10-14');
+  assert.equal(fb.feedItemsDate('<rss><channel><pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate></channel></rss>'), null, 'a CHANNEL date is not an item date');
+  assert.equal(fb.itemsWeekProblem('2026-10-18', START, END), null);
+  assert.match(fb.itemsWeekProblem('2026-10-19', START, END), /not this week/);
+});
 
 test('freshness: inside the week passes, the day before and the day after fail', () => {
   assert.equal(fb.freshnessProblem(START, START, END), null);
