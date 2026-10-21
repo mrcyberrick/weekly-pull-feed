@@ -1,5 +1,6 @@
-// The on-sale / in-store date shown beside "This Week's Releases" - web page, email
-// and RSS (comic-preorder docs/newsletter-arrival-date.md, decisions D1-D5).
+// The in-store date shown beside "This Week's Releases" - web page, email and RSS
+// (comic-preorder docs/newsletter-arrival-date.md, decisions D1-D5; wording changed
+// 2026-10-21 by Rick: "In store Wednesday, ...", and no "on sale" anywhere a customer sees).
 //
 // What this file guards, in order of how badly it would hurt if it regressed:
 //   1. The date never shifts by a day in any time zone (F28). The builder runs on
@@ -107,7 +108,7 @@ const ROWS = [
 ];
 const WITH = { onSaleDate: '2026-10-21', shipmentCount: 3 };
 const WITHOUT = { shipmentCount: 3 };
-const ON_SALE_LINE = 'On sale / in store Wednesday, October 21, 2026';
+const ON_SALE_LINE = 'In store Wednesday, October 21, 2026';
 
 // The builders log progress; keep the test output readable.
 function quiet(fn) {
@@ -134,15 +135,15 @@ for (const [name, build, label] of [
 
   test(`${name}: no date, no line - and the rest of the section is untouched`, () => {
     const html = build(WITHOUT);
-    assert.ok(!html.includes('On sale / in store'), 'no on-sale line without a date');
+    assert.ok(!html.includes('In store Wednesday'), 'no in-store date line without a date');
     assert.ok(html.includes('One cover per series'), 'count line still present');
     assert.ok(html.includes('3 titles arriving'), 'count still present');
   });
 }
 
 test('email: the preheader carries the date, and falls back to the old wording without one', () => {
-  assert.ok(email(WITH).includes('3 new titles on sale Wed, Oct 21 &mdash; stop in before your favorites are gone'));
-  assert.ok(email(WITHOUT).includes('3 new titles on sale Wednesday &mdash; stop in before your favorites are gone'));
+  assert.ok(email(WITH).includes('3 new titles in store Wed, Oct 21 &mdash; stop in before your favorites are gone'));
+  assert.ok(email(WITHOUT).includes('3 new titles in store Wednesday &mdash; stop in before your favorites are gone'));
 });
 
 test('email: pull-feed-onsale stamp is present with a date, absent without, and does not disturb the freshness stamp', () => {
@@ -159,6 +160,19 @@ test('email: the new date lines add under 1 KB (Gmail clips near 102 KB; the sen
   const added = Buffer.byteLength(email(WITH)) - Buffer.byteLength(email(WITHOUT));
   assert.ok(added > 0 && added < 1024, `added ${added} bytes`);
 });
+
+// Rick's call: customers see "In store ...", never "on sale". Asserted across all three
+// artifacts, with a date AND without one (the preheader's old fallback said "on sale
+// Wednesday"). The machine-readable stamp is spelled "onsale" inside an HTML comment, so
+// the pattern below does not match it, and a mail client does not display it.
+for (const [name, build] of [['web page', page], ['email', email], ['rss', rss]]) {
+  for (const [which, meta] of [['with a date', WITH], ['without a date', WITHOUT]]) {
+    test(`${name} ${which}: the words "on sale" never appear`, () => {
+      const hit = build(meta).match(/.{0,40}\bon[ -]sale\b.{0,40}/i);
+      assert.equal(hit, null, hit && hit[0]);
+    });
+  }
+}
 
 // ── RSS ─────────────────────────────────────────────────────────────────────
 
@@ -182,7 +196,7 @@ test('rss: every item is dated the on-sale day at noon Eastern; the channel keep
 
 test('rss: the channel description says when the books land', () => {
   assert.match(channelTag(rss(WITH), 'description'),
-    /^This week's releases, on sale \/ in store Wednesday, October 21, 2026\. /);
+    /^This week's releases, in store Wednesday, October 21, 2026\. /);
 });
 
 test('rss: item text carries the on-sale date, drops the untrue "now available / ready for pickup", and stays over 300 characters', () => {
@@ -192,12 +206,12 @@ test('rss: item text carries the on-sale date, drops the untrue "now available /
   for (const xml of [worst, longest]) {
     for (const item of items(xml)) {
       const text = itemText(item);
-      assert.ok(text.includes('on sale / in store'), text);
+      assert.ok(/In store (Wednesday|Monday)/.test(text), text);
       assert.ok(!/now available|ready for pickup/i.test(text), text);
       assert.ok(text.length >= 300, `item text is ${text.length} chars: ${text}`);
     }
   }
-  assert.ok(itemText(items(longest)[0]).includes('on sale / in store Wednesday, October 21, 2026'));
+  assert.ok(itemText(items(longest)[0]).includes('In store Wednesday, October 21, 2026'));
   // The shop name is written as an entity inside CDATA-wrapped HTML, like the title.
   assert.ok(items(longest)[0].includes("Ray &amp; Judy's Book Stop"));
 });

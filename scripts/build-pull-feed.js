@@ -1382,7 +1382,7 @@ function buildNewsletterHtml(rows, thumbMap, meta = {}) {
               </div>${onSaleText ? `
               <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
                           font-size:10px;color:#5a5755;margin-top:3px;">
-                On sale / in store ${onSaleText}
+                In store ${onSaleText}
               </div>` : ''}
               <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
                           font-size:10px;color:#5a5755;margin-top:3px;">
@@ -1488,7 +1488,8 @@ function buildEmailHtml(rows, thumbMap, meta = {}) {
   // The on-sale date as the reader should see it: long form for the section
   // label, short form for the inbox preview line. Both null when the week has no
   // usable date, and every use below then falls back to what the email said
-  // before this existed (no line; "on sale Wednesday").
+  // before this existed (no line; "in store Wednesday"). Customers never see the
+  // words "on sale" (Rick, 2026-10-21): the wording is "in store" everywhere.
   const onSaleText  = formatOnSale(onSaleDate);
   const onSaleShort = formatOnSaleShort(onSaleDate);
 
@@ -1573,7 +1574,7 @@ function buildEmailHtml(rows, thumbMap, meta = {}) {
      zero-width spaces stop that copy bleeding in after this text. -->
 <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;
             font-size:1px;line-height:1px;color:#0f0f0f;">
-  ${shipmentCount} new titles on sale ${onSaleShort || 'Wednesday'} &mdash; stop in before your favorites are gone
+  ${shipmentCount} new titles in store ${onSaleShort || 'Wednesday'} &mdash; stop in before your favorites are gone
   &#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;
 </div>
 
@@ -1805,7 +1806,7 @@ function buildEmailHtml(rows, thumbMap, meta = {}) {
             <div style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
                         font-size:10px;color:#5a5755;margin-top:3px;
                         mso-line-height-rule:exactly;">
-              On sale / in store ${onSaleText}
+              In store ${onSaleText}
             </div>` : ''}
             <!-- The grid shows ONE cover per series (gridRowsFor), so it is
                  shorter than the title count in the preheader. Say so, rather
@@ -1944,8 +1945,8 @@ function buildRssXml(rows, thumbMap, meta = {}) {
     // about the newsletter replaces it so the text stays over 300 characters
     // even for a one-word title (asserted in test/on-sale-date.test.mjs).
     const descriptionText = onSaleText
-      ? `${safeTitle} is part of this week's pull list at Ray &amp; Judy's Book Stop, `
-        + `on sale / in store ${onSaleText}. `
+      ? `${safeTitle} is part of this week's pull list at Ray &amp; Judy's Book Stop. `
+        + `In store ${onSaleText}. `
         + `This release is featured in the ${NEWSLETTER_TITLE}, the shop's weekly look at the new comics and books arriving that week. `
         + `Check back every week to see what is coming in. `
         + `Click the cover image above to view the full-size image from the publisher.`
@@ -2006,7 +2007,7 @@ function buildRssXml(rows, thumbMap, meta = {}) {
     <title>${NEWSLETTER_TITLE}</title>
     <link>${SITE_URL}</link>
     <description>${onSaleText
-      ? `This week's releases, on sale / in store ${onSaleText}. Weekly pull list with thumbnails and links to full-size cover images.`
+      ? `This week's releases, in store ${onSaleText}. Weekly pull list with thumbnails and links to full-size cover images.`
       : 'Weekly pull list of new releases with thumbnails and links to full-size cover images.'}</description>
     <language>en-us</language>
     <pubDate>${pubDate}</pubDate>

@@ -148,7 +148,7 @@ function onSaleLabel(markup) {
 const onSale = onSaleLabel(html);
 const subjectTitle = titleMatch ? titleMatch[1].trim() : "This Week's Comic Previews";
 const subject = onSale
-  ? `${subjectTitle} - on sale ${onSale}`
+  ? `${subjectTitle} - in store ${onSale}`
   : `${subjectTitle} - ${dateStr}`;
 
 const campaignName = `weekly-pull-feed ${today.toISOString().slice(0, 10)}`;
