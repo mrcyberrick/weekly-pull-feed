@@ -174,6 +174,37 @@ for (const [name, build] of [['web page', page], ['email', email], ['rss', rss]]
   }
 }
 
+// The date line is the point of this feature, so it has to be readable. It was first built
+// in the same muted grey as the count line under it (#5a5755 on #222222, about 2.2:1, 10px)
+// and was hard to see in the real render. Asserted from the markup itself, so a later style
+// tweak that makes it faint again goes red. WCAG relative luminance; the band behind the
+// line is #222222 in both the page and the email.
+const luminance = hex => {
+  const [r, g, b] = [1, 3, 5]
+    .map(i => parseInt(hex.slice(i, i + 2), 16) / 255)
+    .map(c => (c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4));
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+};
+const contrast = (a, b) => {
+  const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x);
+  return (hi + 0.05) / (lo + 0.05);
+};
+const BAND = '#222222';
+const colorOf = style => style.match(/color:(#[0-9a-fA-F]{6})/)[1];
+
+for (const [name, build] of [['web page', page], ['email', email]]) {
+  test(`${name}: the date line is readable (contrast 4.5:1 or better, 12px or larger) and stands out from the count line`, () => {
+    const html = build(WITH);
+    const dateStyle = html.match(/<div style="([^"]*)">\s*In store Wednesday/)[1];
+    const countStyle = html.match(/<div style="([^"]*)">\s*One cover per series/)[1];
+    const ratio = contrast(colorOf(dateStyle), BAND);
+    assert.ok(ratio >= 4.5, `date line ${colorOf(dateStyle)} on ${BAND} is ${ratio.toFixed(2)}:1`);
+    const px = Number(dateStyle.match(/font-size:(\d+)px/)[1]);
+    assert.ok(px >= 12, `date line is ${px}px`);
+    assert.notEqual(colorOf(dateStyle), colorOf(countStyle), 'the date should not share the count line\'s muted colour');
+  });
+}
+
 // ── RSS ─────────────────────────────────────────────────────────────────────
 
 const items = xml => [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(m => m[1]);

@@ -1381,7 +1381,7 @@ function buildNewsletterHtml(rows, thumbMap, meta = {}) {
                 This Week&rsquo;s Releases
               </div>${onSaleText ? `
               <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
-                          font-size:10px;color:#5a5755;margin-top:3px;">
+                          font-size:12px;color:#9a9390;margin-top:3px;">
                 In store ${onSaleText}
               </div>` : ''}
               <div style="font-family:'IBM Plex Sans',Arial,sans-serif;
@@ -1804,7 +1804,7 @@ function buildEmailHtml(rows, thumbMap, meta = {}) {
               This Week&rsquo;s Releases
             </div>${onSaleText ? `
             <div style="font-family:'IBM Plex Sans',Arial,Helvetica,sans-serif;
-                        font-size:10px;color:#5a5755;margin-top:3px;
+                        font-size:12px;color:#9a9390;margin-top:3px;
                         mso-line-height-rule:exactly;">
               In store ${onSaleText}
             </div>` : ''}
