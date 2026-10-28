@@ -282,6 +282,7 @@ function chromeRender(html, { chromeBin, workDir }) {
 async function run({
   argv = [], env = process.env, fetchImpl = fetch, now = new Date(),
   render = chromeRender, log = console.log, error = console.error,
+  sleep = ms => new Promise(r => setTimeout(r, ms)),
   outDir = env.OUT_DIR || path.join(os.tmpdir(), 'post-facebook'),
   summary = env.GITHUB_STEP_SUMMARY ? s => fs.appendFileSync(env.GITHUB_STEP_SUMMARY, s + '\n') : () => {},
 } = {}) {
@@ -308,12 +309,21 @@ async function run({
     if (!rawRows.length) return fail(`no shipment rows for ${start} -> ${end}: the weekly shipment import has not run`);
     const onSale = dominantOnSaleDate(rawRows) || start;
 
-    // 3 + 4. the landing page's feed
-    const rss = await getText(fb.feedCheckUrl, fetchImpl, 'the news page feed (FEED_CHECK_URL)');
-    const stale = freshnessProblem(feedBuildDate(rss), start, end);
-    if (stale) return fail(stale);
-    const wrongWeek = itemsWeekProblem(feedItemsDate(rss), start, end);
-    if (wrongWeek) return fail(wrongWeek);
+    // 3 + 4. the landing page's feed. When this run is started by the newsletter
+    // finishing, the news page can still serve last week's copy for a few minutes
+    // (its Worker caches 5 min, GitHub Pages 10), so FEED_WAIT_MINUTES lets it
+    // re-check once a minute before failing. Default 0: check once.
+    const retries = Math.max(0, Math.floor(Number(env.FEED_WAIT_MINUTES) || 0));
+    let rss, feedProblem;
+    for (let attempt = 0; ; attempt++) {
+      rss = await getText(fb.feedCheckUrl, fetchImpl, 'the news page feed (FEED_CHECK_URL)');
+      feedProblem = freshnessProblem(feedBuildDate(rss), start, end)
+        || itemsWeekProblem(feedItemsDate(rss), start, end);
+      if (!feedProblem || attempt >= retries) break;
+      say(`The news page is not showing this week yet (${feedProblem}); checking again in 1 minute.`);
+      await sleep(60000);
+    }
+    if (feedProblem) return fail(feedProblem);
     const count = countItems(rss);
     if (!count) return fail('the news page feed has no items');
     if (count !== rawRows.length) say(`::warning::the feed lists ${count} titles, the shipment has ${rawRows.length} rows (a difference is normal when rows share a cover)`);

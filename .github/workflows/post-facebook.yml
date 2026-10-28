@@ -14,9 +14,19 @@ name: Post to Facebook
 #   - its own concurrency group: it never waits behind, or cancels, a newsletter run
 #   - its tests live in test/facebook/, outside the newsletter build's test/*.test.mjs
 #
-# THE SCHEDULE DOES NOTHING until the repository variable FACEBOOK_ENABLED is "true".
-# A manual run (workflow_dispatch) always works and is a DRY RUN by default: it builds
-# the picture and attaches it to the run, and posts nothing.
+# WHEN IT RUNS (2026-10-28, Rick: "option 1"): straight after the newsletter's
+# SCHEDULED run succeeds, Tuesday evening, the night before in-store day. That is the
+# moment the news page switches to the new week, so the link is always right. No clock
+# or time zone of its own: the newsletter's cron is the only clock. It used to be its
+# own cron (Wednesday 12:00 UTC); GitHub never started that run on 2026-10-28.
+#   - a newsletter run that fails, or a MANUAL newsletter run, does not start it; after
+#     a manual recovery send, run this workflow by hand (dry_run off)
+#   - the news page can lag the newsletter by its cache (Worker 5 min, Pages 10), so
+#     the script re-checks once a minute for up to FEED_WAIT_MINUTES before failing
+#
+# NOTHING IS POSTED AUTOMATICALLY until the repository variable FACEBOOK_ENABLED is
+# "true". A manual run (workflow_dispatch) always works and is a DRY RUN by default: it
+# builds the picture and attaches it to the run, and posts nothing.
 #
 # Secret:    FACEBOOK_PAGE_TOKEN (a Page access token; never printed, never in a URL)
 # Variables: FACEBOOK_ENABLED, FACEBOOK_PAGE_ID, FACEBOOK_GRAPH_VERSION, LANDING_URL,
@@ -24,11 +34,9 @@ name: Post to Facebook
 #            SUPABASE_ANON_KEY (the last two already exist for the newsletter)
 
 on:
-  schedule:
-    # Wednesday 12:00 UTC = 8:00 AM EDT / 7:00 AM EST. GitHub starts scheduled runs
-    # late (the newsletter has seen +2h to +3h20m), so the post lands mid-morning on
-    # new-comics day. Needs no DST edit.
-    - cron: "0 12 * * 3"
+  workflow_run:
+    workflows: ["Send Weekly Newsletter"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       dry_run:
@@ -50,9 +58,15 @@ concurrency:
 
 jobs:
   post:
-    if: ${{ github.event_name == 'workflow_dispatch' || vars.FACEBOOK_ENABLED == 'true' }}
+    # Automatic only after a SCHEDULED newsletter run that succeeded: a manual one may
+    # be build-only or a dry run, and a failed one means the news page is not updated.
+    if: >-
+      ${{ github.event_name == 'workflow_dispatch'
+          || (vars.FACEBOOK_ENABLED == 'true'
+              && github.event.workflow_run.event == 'schedule'
+              && github.event.workflow_run.conclusion == 'success') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -111,6 +125,7 @@ jobs:
           CHROME_BIN: google-chrome
           OUT_DIR: ${{ github.workspace }}/fb-out
           WEEK: ${{ inputs.week }}
+          FEED_WAIT_MINUTES: ${{ github.event_name == 'workflow_run' && '20' || '0' }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
         run: node scripts/post-facebook.js
 

@@ -64,7 +64,12 @@ function world(over = {}) {
     calls.push({ method, url: u, auth: opts.headers && opts.headers.Authorization, body: opts.body });
     if (u.endsWith('/rpc/get_pull_feed_week')) return json(s.rows);
     if (u.endsWith('/rpc/get_pull_feed_spotlight')) return json(s.spotlight);
-    if (u.startsWith('https://rss-feed.')) return new Response(s.feed, { status: s.feedStatus });
+    if (u.startsWith('https://rss-feed.')) {
+      // feeds: a sequence served one per request (the last one repeats), to model
+      // the news page catching up while the job waits for it.
+      const body = s.feeds ? (s.feeds.length > 1 ? s.feeds.shift() : s.feeds[0]) : s.feed;
+      return new Response(body, { status: s.feedStatus });
+    }
     if (u.startsWith('https://img/')) {
       if (s.badCovers.has(u)) return new Response('nope', { status: 404 });
       return new Response(Buffer.alloc(5000, 1), { status: 200, headers: { 'content-type': 'image/jpeg' } });
@@ -88,6 +93,7 @@ async function go(w, envOver = {}, renderImpl) {
   const out = fs.mkdtempSync(path.join(os.tmpdir(), 'fbtest-'));
   const logs = [];
   const rendered = [];
+  const sleeps = [];
   const code = await fb.run({
     env: { ...BASE_ENV, FEED_CHECK_URL: 'https://rss-feed.example/rss.xml', ...envOver },
     fetchImpl: w.fetchImpl,
@@ -97,8 +103,9 @@ async function go(w, envOver = {}, renderImpl) {
     log: m => logs.push(String(m)),
     error: m => logs.push(String(m)),
     summary: m => logs.push(String(m)),
+    sleep: async ms => { sleeps.push(ms); },
   });
-  return { code, logs: logs.join('\n'), rendered, out };
+  return { code, logs: logs.join('\n'), rendered, out, sleeps };
 }
 
 const POSTING = { DRY_RUN: 'false', FACEBOOK_PAGE_ID: '615', FACEBOOK_PAGE_TOKEN: TOKEN };
@@ -138,6 +145,33 @@ test('news page still shows LAST week: fails before any Facebook call', async ()
   assert.equal(r.code, 1);
   assert.match(r.logs, /not this week/);
   assert.equal(w.calls.filter(c => c.url.includes('graph.facebook.com')).length, 0);
+  assert.equal(r.sleeps.length, 0, 'with no FEED_WAIT_MINUTES it checks once and does not wait');
+});
+
+test('FEED_WAIT_MINUTES: the news page catches up while it waits, then it posts once', async () => {
+  const w = world({ feeds: [rss('Wed, 07 Oct 2026 00:20:00 GMT'), rss('Wed, 07 Oct 2026 00:20:00 GMT'), rss('Wed, 14 Oct 2026 00:08:16 GMT')] });
+  const r = await go(w, { ...POSTING, FEED_WAIT_MINUTES: '20' });
+  assert.equal(r.code, 0);
+  assert.deepEqual(r.sleeps, [60000, 60000]);
+  assert.equal(photoPosts(w.calls).length, 1);
+});
+
+test('FEED_WAIT_MINUTES: still last week when the wait runs out -> red, nothing posted', async () => {
+  const w = world({ feeds: [rss('Wed, 07 Oct 2026 00:20:00 GMT')] });
+  const r = await go(w, { ...POSTING, FEED_WAIT_MINUTES: '3' });
+  assert.equal(r.code, 1);
+  assert.match(r.logs, /not this week/);
+  assert.equal(r.sleeps.length, 3);
+  assert.equal(w.calls.filter(c => c.url.startsWith('https://rss-feed.')).length, 4);
+  assert.equal(w.calls.filter(c => c.url.includes('graph.facebook.com')).length, 0);
+});
+
+test('FEED_WAIT_MINUTES also waits out a past week re-published this week', async () => {
+  const w = world({ feeds: [rss('Wed, 14 Oct 2026 00:08:16 GMT', 3, 'Wed, 07 Oct 2026 16:00:00 GMT')] });
+  const r = await go(w, { ...POSTING, FEED_WAIT_MINUTES: '2' });
+  assert.equal(r.code, 1);
+  assert.equal(r.sleeps.length, 2);
+  assert.equal(photoPosts(w.calls).length, 0);
 });
 
 test('news page feed unreachable: fails', async () => {
