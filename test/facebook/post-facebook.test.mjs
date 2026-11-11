@@ -14,6 +14,8 @@ const require = createRequire(import.meta.url);
 const fb = require('../../scripts/post-facebook.js');
 
 const NOW = new Date('2026-10-14T12:00:00Z');        // a Wednesday
+const NOW_SEC = Math.floor(NOW.getTime() / 1000);
+const DAY = 86400;
 const START = '2026-10-12', END = '2026-10-18';
 const TOKEN = 'EAAtest-SECRET-token-123';
 const BASE_ENV = {
@@ -56,6 +58,9 @@ function world(over = {}) {
     readBack: { id: 'page_123', permalink_url: 'https://facebook.com/page/posts/123' },
     readBackError: null,
     graphError: null,
+    // debug_token's `data` for a good, never-expiring token of Page 615 (the
+    // shape the Access Token Debugger shows: Type Page, Expires Never).
+    debug: { type: 'PAGE', is_valid: true, expires_at: 0, data_access_expires_at: NOW_SEC + 80 * DAY, profile_id: '615' },
     ...over,
   };
   const fetchImpl = async (url, opts = {}) => {
@@ -76,6 +81,7 @@ function world(over = {}) {
     }
     if (u.startsWith('https://graph.facebook.com/')) {
       if (s.graphError) return json({ error: s.graphError }, 400);
+      if (method === 'GET' && u.includes('/debug_token?')) return json({ data: s.debug });
       // Facebook refuses this app a read of the Page's posts (measured 2026-10-21),
       // so the fake refuses it too: a job that relied on it would fail here.
       if (method === 'GET' && /\/(posts|feed)\?/.test(u)) {
@@ -139,12 +145,12 @@ test('no shipment rows: fails, and nothing is rendered or posted', async () => {
   assert.equal(photoPosts(w.calls).length, 0);
 });
 
-test('news page still shows LAST week: fails before any Facebook call', async () => {
+test('news page still shows LAST week: fails before posting (only the token check reaches Facebook)', async () => {
   const w = world({ feed: rss('Wed, 07 Oct 2026 00:20:00 GMT') });
   const r = await go(w, POSTING);
   assert.equal(r.code, 1);
   assert.match(r.logs, /not this week/);
-  assert.equal(w.calls.filter(c => c.url.includes('graph.facebook.com')).length, 0);
+  assert.equal(w.calls.filter(c => c.url.includes('graph.facebook.com') && !c.url.includes('/debug_token?')).length, 0, 'only the token check reaches Facebook');
   assert.equal(r.sleeps.length, 0, 'with no FEED_WAIT_MINUTES it checks once and does not wait');
 });
 
@@ -163,7 +169,7 @@ test('FEED_WAIT_MINUTES: still last week when the wait runs out -> red, nothing 
   assert.match(r.logs, /not this week/);
   assert.equal(r.sleeps.length, 3);
   assert.equal(w.calls.filter(c => c.url.startsWith('https://rss-feed.')).length, 4);
-  assert.equal(w.calls.filter(c => c.url.includes('graph.facebook.com')).length, 0);
+  assert.equal(w.calls.filter(c => c.url.includes('graph.facebook.com') && !c.url.includes('/debug_token?')).length, 0, 'only the token check reaches Facebook');
 });
 
 test('FEED_WAIT_MINUTES also waits out a past week re-published this week', async () => {
@@ -260,6 +266,103 @@ test('posting without a token is refused up front', async () => {
   assert.equal(w.calls.length, 0);
 });
 
+// ── the token check (plan § 8, 2026-11-11) ───────────────────────────────
+
+const debugCalls = calls => calls.filter(c => c.url.includes('/debug_token?'));
+
+test('a good token: checked once, first, and the run posts green', async () => {
+  const w = world();
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 0);
+  assert.equal(debugCalls(w.calls).length, 1);
+  assert.ok(w.calls.findIndex(c => c.url.includes('/debug_token?')) < w.calls.findIndex(c => c.url.endsWith('/rpc/get_pull_feed_week')),
+    'the token is checked before anything else');
+  assert.match(r.logs, /never expires, data access until 2027-01-02/);
+  assert.equal(photoPosts(w.calls).length, 1);
+});
+
+test('the 2026-11-04 token (short-lived) turns a DRY RUN red, so it is caught before a real post', async () => {
+  const w = world({ debug: { type: 'PAGE', is_valid: true, expires_at: NOW_SEC + 3600, data_access_expires_at: NOW_SEC + 89 * DAY, profile_id: '615' } });
+  const r = await go(w, { FACEBOOK_PAGE_ID: '615', FACEBOOK_PAGE_TOKEN: TOKEN });
+  assert.equal(r.code, 1);
+  assert.match(r.logs, /short-lived/);
+  assert.equal(photoPosts(w.calls).length, 0);
+  assert.match(r.logs, /DRY RUN: nothing posted/, 'the dry run still builds the picture');
+});
+
+test('a short-lived token that still works: it posts once, then ends red', async () => {
+  const w = world({ debug: { type: 'PAGE', is_valid: true, expires_at: NOW_SEC + 3600, profile_id: '615' } });
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 1);
+  assert.equal(photoPosts(w.calls).length, 1);
+  assert.match(r.logs, /Posted: /);
+  assert.ok(fs.existsSync(path.join(r.out, `posted-${START}.txt`)), 'recorded, so a rerun does not post twice');
+});
+
+test('an expired token (the 2026-11-10 failure): red before the news-page wait, nothing built or posted', async () => {
+  const w = world({ debug: { type: 'PAGE', is_valid: false, expires_at: NOW_SEC - 3600, profile_id: '615',
+    error: { code: 190, message: 'Session has expired on Wednesday, 04-Nov-26 10:00:00 PST.' } } });
+  const r = await go(w, { ...POSTING, FEED_WAIT_MINUTES: '20' });
+  assert.equal(r.code, 1);
+  assert.match(r.logs, /not valid: Session has expired/);
+  assert.equal(r.rendered.length, 0);
+  assert.equal(r.sleeps.length, 0);
+  assert.equal(w.calls.filter(c => c.url.startsWith('https://rss-feed.')).length, 0);
+  assert.equal(photoPosts(w.calls).length, 0);
+});
+
+test('a USER token saved by mistake: red, nothing posted, says to use the Page\'s token', async () => {
+  const w = world({ debug: { type: 'USER', is_valid: true, expires_at: 0, data_access_expires_at: NOW_SEC + 80 * DAY } });
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 1);
+  assert.match(r.logs, /USER token, not the Page's own token/);
+  assert.match(r.logs, /me\/accounts/);
+  assert.equal(photoPosts(w.calls).length, 0);
+});
+
+test('a token for another Page: red, nothing posted', async () => {
+  const w = world({ debug: { type: 'PAGE', is_valid: true, expires_at: 0, profile_id: '999' } });
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 1);
+  assert.match(r.logs, /belongs to Page 999, not FACEBOOK_PAGE_ID 615/);
+  assert.equal(photoPosts(w.calls).length, 0);
+});
+
+test('data access ends within 14 days: it posts once, then ends red with the renewal date', async () => {
+  const w = world({ debug: { type: 'PAGE', is_valid: true, expires_at: 0, data_access_expires_at: NOW_SEC + 10 * DAY + 60, profile_id: '615' } });
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 1);
+  assert.equal(photoPosts(w.calls).length, 1);
+  assert.match(r.logs, /data access .* ends 2026-10-24 \(in 10 days\)/);
+  assert.match(r.logs, /red only so GitHub emails this warning/);
+});
+
+test('data access already ended: red, nothing posted', async () => {
+  const w = world({ debug: { type: 'PAGE', is_valid: true, expires_at: 0, data_access_expires_at: NOW_SEC - DAY, profile_id: '615' } });
+  const r = await go(w, POSTING);
+  assert.equal(r.code, 1);
+  assert.match(r.logs, /data access .* ended 2026-10-13/);
+  assert.equal(photoPosts(w.calls).length, 0);
+});
+
+test('the token check: header auth, token only in the debug_token query, never in the log', async () => {
+  const w = world({ debug: { type: 'USER', is_valid: true, expires_at: 0 } });
+  const r = await go(w, POSTING);
+  const d = debugCalls(w.calls);
+  assert.equal(d[0].auth, `Bearer ${TOKEN}`);
+  assert.ok(d[0].url.startsWith('https://graph.facebook.com/'), 'sent to Facebook only');
+  assert.equal(w.calls.filter(c => c.url.includes(TOKEN)).length, 1, 'the token is in no other URL');
+  assert.ok(!r.logs.includes(TOKEN), 'token leaked into the log');
+});
+
+test('tokenProblems: 14 days left is fine, 13 warns; no data-access date is fine', () => {
+  const page = { type: 'PAGE', is_valid: true, expires_at: 0, profile_id: '615' };
+  assert.ok(fb.tokenProblems({ ...page, data_access_expires_at: NOW_SEC + 14 * DAY }, { pageId: '615', nowSec: NOW_SEC }).info);
+  assert.ok(fb.tokenProblems({ ...page, data_access_expires_at: NOW_SEC + 14 * DAY - 1 }, { pageId: '615', nowSec: NOW_SEC }).warn);
+  assert.ok(fb.tokenProblems(page, { pageId: '615', nowSec: NOW_SEC }).info);
+  assert.ok(fb.tokenProblems(null, { pageId: '615', nowSec: NOW_SEC }).stop);
+});
+
 test('one cover fails to download: the picture uses the other two', async () => {
   const w = world({ badCovers: new Set(['https://img/2']) });
   const r = await go(w, POSTING);
@@ -310,7 +413,7 @@ test('a PAST week re-published this week: built today, but its titles are last w
   const r = await go(w, POSTING);
   assert.equal(r.code, 1);
   assert.match(r.logs, /lists the titles for 2026-10-07, not this week/);
-  assert.equal(w.calls.filter(c => c.url.includes('graph.facebook.com')).length, 0);
+  assert.equal(w.calls.filter(c => c.url.includes('graph.facebook.com') && !c.url.includes('/debug_token?')).length, 0, 'only the token check reaches Facebook');
   assert.equal(r.rendered.length, 0);
 });
 

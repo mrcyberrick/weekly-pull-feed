@@ -7,6 +7,11 @@
 //
 // WHAT ONE RUN DOES (exit 0 = posted, already posted, or dry run; exit 1 = alert):
 //   1. Week: the builder's own rule (todayUTC / resolveTargetWeek / weekRange).
+//   1b. Token check (dry runs too, whenever a token is set): Facebook's debug_token.
+//      Stop if the token is invalid, not the Page's own token, for another Page, or
+//      its data access has ended. Post but end red (so GitHub emails Rick) if it is a
+//      short-lived token or data access ends within 14 days. The 2026-11-10 post was
+//      lost to a short-lived token that a dry run could not see (plan § 8).
 //   2. Rows: get_pull_feed_week, as the preflight reads it. None = the shipment
 //      import has not run -> fail.
 //   3. The landing page shows this week: the feed read THROUGH the site's Worker
@@ -23,8 +28,10 @@
 //      BACK; only a permalink makes the run green (F96: acceptance is not delivery).
 //   8. Log + $GITHUB_STEP_SUMMARY.
 //
-// SAFETY: the Page token is read only from FACEBOOK_PAGE_TOKEN, sent only in the
-// Authorization header, and redacted from every message this script prints. POST is
+// SAFETY: the Page token is read only from FACEBOOK_PAGE_TOKEN, sent only to
+// graph.facebook.com over HTTPS (in the Authorization header, and once more as
+// debug_token's input_token, which that endpoint takes only as a query parameter),
+// and redacted from every message this script prints. POST is
 // never retried (a retry could double-post; a rerun is covered by step 5).
 //
 // Usage: node scripts/post-facebook.js [--week=YYYY-MM-DD]
@@ -181,6 +188,48 @@ function pngSize(buf) {
   return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
 }
 
+// What debug_token says about the Page token (its `data` object), checked against the
+// Page we post to. Returns { stop } = do not post, { warn } = post, then end the run
+// red so GitHub emails the warning, or { info } = all good. A never-expiring Page
+// token reads type PAGE, expires_at 0; data_access_expires_at is about 90 days after
+// Rick last authorised the app, and the token stops working then.
+function tokenProblems(d, { pageId, nowSec, warnDays = 14 }) {
+  const day = s => new Date(s * 1000).toISOString().slice(0, 10);
+  const steps = 'plan § 8, 2026-11-11 steps';
+  if (!d) return { stop: 'Facebook returned no details for FACEBOOK_PAGE_TOKEN' };
+  if (d.is_valid === false) {
+    const why = d.error && d.error.message ? `: ${d.error.message}` : '';
+    return { stop: `FACEBOOK_PAGE_TOKEN is not valid${why}. Make a new non-expiring Page token (${steps})` };
+  }
+  const type = String(d.type || '').toUpperCase();
+  if (type !== 'PAGE') {
+    return { stop: `FACEBOOK_PAGE_TOKEN holds a ${type || 'non-Page'} token, not the Page's own token: ` +
+      `take the access_token from the Page's entry in me/accounts (${steps})` };
+  }
+  if (pageId && d.profile_id && String(d.profile_id) !== String(pageId)) {
+    return { stop: `FACEBOOK_PAGE_TOKEN belongs to Page ${d.profile_id}, not FACEBOOK_PAGE_ID ${pageId}` };
+  }
+  const access = Number(d.data_access_expires_at) || 0;
+  if (access > 0 && access <= nowSec) {
+    return { stop: `Facebook data access for FACEBOOK_PAGE_TOKEN ended ${day(access)}: renew the token (${steps})` };
+  }
+  const expires = Number(d.expires_at) || 0;
+  if (expires > 0) {
+    return { warn: `FACEBOOK_PAGE_TOKEN expires ${new Date(expires * 1000).toISOString()}: it is a short-lived ` +
+      `Page token (taken from me/accounts before the user token was extended). Replace it with a ` +
+      `non-expiring one before the next post (${steps})` };
+  }
+  if (access > 0) {
+    const left = Math.floor((access - nowSec) / 86400);
+    if (left < warnDays) {
+      return { warn: `Facebook data access for FACEBOOK_PAGE_TOKEN ends ${day(access)} (in ${left} ` +
+        `day${left === 1 ? '' : 's'}): renew the token before then (${steps}, about 5 minutes)` };
+    }
+    return { info: `Token: the Page's own token, never expires, data access until ${day(access)}` };
+  }
+  return { info: 'Token: the Page\'s own token, never expires' };
+}
+
 function makeRedactor(secret) {
   return s => (secret ? String(s).split(secret).join('[redacted]') : String(s));
 }
@@ -294,6 +343,12 @@ async function run({
     summary(redact(`**Facebook post FAILED:** ${m}`));
     return 1;
   };
+  // A token warning does not stop the post; it turns the finished run red, so the
+  // warning reaches Rick by GitHub's failure email while posting still works.
+  let tokenWarning = null;
+  const finish = () => (tokenWarning
+    ? fail(`${tokenWarning}. (Everything else in this run worked; it is red only so GitHub emails this warning.)`)
+    : 0);
   try {
     // 1. week
     const weekArg = (argv.find(a => a.startsWith('--week=')) || '').replace('--week=', '') || env.WEEK || null;
@@ -303,6 +358,18 @@ async function run({
     const db = readConfig(env);
     const fb = readFbConfig(env);
     say(`Facebook post: week ${start} -> ${end}${fb.dryRun ? ' (DRY RUN: nothing will be posted)' : ''}`);
+
+    // 1b. the token. Done first, so a bad token fails before the news-page wait, and
+    // in dry runs too (a dry run otherwise never calls Facebook, which is how the
+    // short-lived token of 2026-11-04 passed one).
+    if (fb.token) {
+      const dbg = await graph(fetchImpl, fb, 'GET', `debug_token?input_token=${encodeURIComponent(fb.token)}`);
+      const t = tokenProblems(dbg.data, { pageId: fb.pageId, nowSec: Math.floor(now.getTime() / 1000) });
+      if (t.stop) return fail(t.stop);
+      if (t.warn) { tokenWarning = t.warn; say(`::warning::${t.warn}`); } else say(t.info);
+    } else {
+      say('No FACEBOOK_PAGE_TOKEN: token check skipped (dry run).');
+    }
 
     // 2. rows
     const rawRows = await fetchRawWeek({ ...db, start }, fetchImpl);
@@ -337,7 +404,7 @@ async function run({
     if (env.ALREADY_POSTED === 'true') {
       say(`Already posted for the week of ${start} on this Page; nothing to do.`);
       summary(`Facebook: already posted for the week of ${start}. Nothing posted.`);
-      return 0;
+      return finish();
     }
 
     // 6. picture
@@ -370,7 +437,7 @@ async function run({
     if (fb.dryRun) {
       summary(`Facebook DRY RUN for the week of ${start}: ${count} titles, spotlight ${covers.map(c => c.title).join(' / ')}. Nothing posted; the picture is attached to this run.`);
       say('DRY RUN: nothing posted.');
-      return 0;
+      return finish();
     }
 
     // 7. post, then read it back
@@ -394,7 +461,7 @@ async function run({
     if (!back.permalink_url) return fail(`post ${postId} was created but could not be read back with a permalink; it is recorded, so a rerun will not post again`);
     say(`Posted: ${back.permalink_url}`);
     summary(`Facebook: posted for the week of ${start} - ${back.permalink_url}`);
-    return 0;
+    return finish();
   } catch (err) {
     return fail(err.message);
   }
@@ -402,7 +469,7 @@ async function run({
 
 module.exports = {
   weekMarker, describeDate, feedBuildDate, countItems, freshnessProblem, feedItemsDate, itemsWeekProblem,
-  buildMessage, shortTitle, fullSizeCover, escapeHtml, renderHtml, pngSize, makeRedactor, readFbConfig,
+  buildMessage, shortTitle, fullSizeCover, escapeHtml, renderHtml, pngSize, tokenProblems, makeRedactor, readFbConfig,
   fetchSpotlight, downloadCover, run, IMAGE_W, IMAGE_H,
 };
 

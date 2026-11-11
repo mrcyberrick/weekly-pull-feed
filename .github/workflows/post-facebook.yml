@@ -28,7 +28,10 @@ name: Post to Facebook
 # "true". A manual run (workflow_dispatch) always works and is a DRY RUN by default: it
 # builds the picture and attaches it to the run, and posts nothing.
 #
-# Secret:    FACEBOOK_PAGE_TOKEN (a Page access token; never printed, never in a URL)
+# Secret:    FACEBOOK_PAGE_TOKEN (the Page's own, non-expiring token; never printed; sent
+#            only to graph.facebook.com). Every run, dry runs too, checks it first with
+#            debug_token: wrong or dead token = red before posting; a short-lived token or
+#            data access ending within 14 days = posts, then red so GitHub emails Rick.
 # Variables: FACEBOOK_ENABLED, FACEBOOK_PAGE_ID, FACEBOOK_GRAPH_VERSION, LANDING_URL,
 #            FEED_CHECK_URL, STORE_NAME, STORE_TOWN, STORE_APP_URL, SUPABASE_URL,
 #            SUPABASE_ANON_KEY (the last two already exist for the newsletter)
